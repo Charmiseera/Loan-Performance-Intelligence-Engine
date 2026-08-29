@@ -1,0 +1,52 @@
+seed: 42
+
+paths:
+  data_raw_dir: "data/raw"
+  artifacts_dir: "artifacts"
+  reports_dir: "artifacts/reports"
+  contracts_dir: "specs/001-loan-performance-intelligence/contracts"
+
+sampling:
+  enabled: true
+  target_loans_total: 60000
+  stratified_by_vintage: true
+  retain_all_credit_events: true
+  seed: 42
+
+stages:
+  ingest:
+    enabled: true
+  contract:
+    enabled: true
+  profile:
+    enabled: true
+  label:
+    enabled: true
+  split:
+    enabled: true
+  features:
+    enabled: true
+  train:
+    enabled: true
+  survival:
+    enabled: true
+  anomaly:
+    enabled: true
+  explain:
+    enabled: true
+  scenario:
+    enabled: true
+  narrate:
+    enabled: true
+  report:
+    enabled: true
+  submit:
+    enabled: true
+
+schema_file: "config/schema_r47.yaml"
+field_mapping_file: "config/field_mapping.yaml"
+splits_file: "config/splits.yaml"
+features_file: "config/features.yaml"
+scenarios_file: "config/scenarios.yaml"
+llm_file: "config/llm.yaml"
+validation_rules_file: "config/validation_rules.json"

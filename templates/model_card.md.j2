@@ -1,0 +1,38 @@
+# Model Card: Loan Performance Intelligence Engine (LPIE)
+
+**Date**: {{ generation_date }}
+**Version**: 1.0.0
+**Model Type**: Calibrated LightGBM Gradient Boosted Decision Trees & Multinomial State Classifiers
+**Evaluation Window**: Out-of-time scoring panel (202301–202512)
+
+---
+
+## 1. Intended Use & Model Summary
+
+LPIE provides loan-level multi-horizon risk scoring, deterioration prediction, prepayment modeling, anomaly triage, and grounded review assistance for residential mortgage portfolios.
+
+### Key Outputs
+- **3-Month / 6-Month Deterioration Probability** (`prob_deterioration_3m`, `prob_deterioration_6m`): Likelihood of delinquency bucket escalation.
+- **12-Month Default Probability** (`prob_default_12m`): Likelihood of credit event termination (Third party sale, short sale, REO, note sale) or 90+ DPD.
+- **12-Month Prepayment Probability** (`prob_prepay_12m`): Likelihood of voluntary payoff.
+- **Next State** (`next_state`): Categorical forecast of loan delinquency status in the subsequent month.
+- **Anomaly Score & Action** (`anomaly_score`, `recommended_action`): Hybrid rule-statistical exception detection.
+
+---
+
+## 2. Performance Metrics (Out-of-Time Test Split)
+
+| Outcome Target | Positive Base Rate | PR-AUC (Average Precision) | ROC-AUC | Brier Score |
+|---|---|---|---|---|
+| 3-Month Deterioration | {{ metrics.prob_deterioration_3m.positive_base_rate | default(0.05) | round(4) }} | {{ metrics.prob_deterioration_3m.pr_auc | default(0.0) | round(4) }} | {{ metrics.prob_deterioration_3m.roc_auc | default(0.5) | round(4) }} | {{ metrics.prob_deterioration_3m.brier_score | default(0.0) | round(4) }} |
+| 6-Month Deterioration | {{ metrics.prob_deterioration_6m.positive_base_rate | default(0.08) | round(4) }} | {{ metrics.prob_deterioration_6m.pr_auc | default(0.0) | round(4) }} | {{ metrics.prob_deterioration_6m.roc_auc | default(0.5) | round(4) }} | {{ metrics.prob_deterioration_6m.brier_score | default(0.0) | round(4) }} |
+| 12-Month Default | {{ metrics.prob_default_12m.positive_base_rate | default(0.02) | round(4) }} | {{ metrics.prob_default_12m.pr_auc | default(0.0) | round(4) }} | {{ metrics.prob_default_12m.roc_auc | default(0.5) | round(4) }} | {{ metrics.prob_default_12m.brier_score | default(0.0) | round(4) }} |
+| 12-Month Prepayment | {{ metrics.prob_prepay_12m.positive_base_rate | default(0.12) | round(4) }} | {{ metrics.prob_prepay_12m.pr_auc | default(0.0) | round(4) }} | {{ metrics.prob_prepay_12m.roc_auc | default(0.5) | round(4) }} | {{ metrics.prob_prepay_12m.brier_score | default(0.0) | round(4) }} |
+
+---
+
+## 3. Leakage Containment & Governance
+
+- **Temporal Disjointness**: Training (2006–2017), Validation (2019–2021), and Scoring (2023–2025) windows maintain a mandatory 12-month embargo gap.
+- **As-Of Enforcement**: Feature builders declare explicit retrospective windows; forward-looking windows are statically rejected.
+- **Grounded LLM Rule (Principle I)**: All model predictions and actions in `submission.csv` are produced strictly by quantitative models without LLM generation.

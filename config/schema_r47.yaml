@@ -1,0 +1,277 @@
+origination_fields:
+  - position: 1
+    name: "credit_score"
+    dtype: "float64"
+    sentinels: [9999, 9999.0]
+    description: "Credit Score (300-850)"
+  - position: 2
+    name: "first_payment_date"
+    dtype: "Int64"
+    description: "First Payment Date (YYYYMM)"
+  - position: 3
+    name: "first_time_homebuyer_flag"
+    dtype: "string"
+    sentinels: ["9"]
+    decodes: {"Y": "Yes", "N": "No", "9": "Not Available"}
+  - position: 4
+    name: "maturity_date"
+    dtype: "Int64"
+    description: "Maturity Date (YYYYMM)"
+  - position: 5
+    name: "msa_code"
+    dtype: "string"
+    description: "MSA or Metropolitan Division Code"
+  - position: 6
+    name: "mi_percentage"
+    dtype: "float64"
+    sentinels: [999, 999.0]
+    description: "Mortgage Insurance Percentage (0 = No MI)"
+  - position: 7
+    name: "unit_count"
+    dtype: "Int64"
+    sentinels: [99]
+    description: "Number of Units (1-4)"
+  - position: 8
+    name: "occupancy_status"
+    dtype: "string"
+    sentinels: ["9"]
+    decodes: {"P": "Primary", "I": "Investment", "S": "Second Home", "9": "Not Available"}
+  - position: 9
+    name: "original_cltv"
+    dtype: "float64"
+    sentinels: [999, 999.0]
+    description: "Original Combined Loan-to-Value"
+  - position: 10
+    name: "original_dti"
+    dtype: "float64"
+    sentinels: [999, 999.0]
+    description: "Original Debt-to-Income"
+  - position: 11
+    name: "original_upb"
+    dtype: "float64"
+    description: "Original Unpaid Principal Balance"
+  - position: 12
+    name: "original_ltv"
+    dtype: "float64"
+    sentinels: [999, 999.0]
+    description: "Original Loan-to-Value"
+  - position: 13
+    name: "original_interest_rate"
+    dtype: "float64"
+    description: "Original Interest Rate"
+  - position: 14
+    name: "channel"
+    dtype: "string"
+    sentinels: ["9"]
+    decodes: {"R": "Retail", "B": "Broker", "C": "Correspondent", "T": "TPO Unspecified", "9": "Not Available"}
+  - position: 15
+    name: "prepayment_penalty_flag"
+    dtype: "string"
+    decodes: {"Y": "Yes", "N": "No"}
+  - position: 16
+    name: "amortization_type"
+    dtype: "string"
+    description: "Amortization Type (FRM/ARM)"
+  - position: 17
+    name: "property_state"
+    dtype: "string"
+    description: "Property State (2-letter postal code)"
+  - position: 18
+    name: "property_type"
+    dtype: "string"
+    sentinels: ["99"]
+    decodes: {"SF": "Single Family", "CO": "Condo", "PU": "Planned Unit Dev", "MH": "Manufactured", "CP": "Co-op", "99": "Not Available"}
+  - position: 19
+    name: "postal_code"
+    dtype: "string"
+    description: "First 3 digits of ZIP Code"
+  - position: 20
+    name: "loan_id"
+    dtype: "string"
+    is_key: true
+    description: "Loan Sequence Number (Join key)"
+  - position: 21
+    name: "loan_purpose"
+    dtype: "string"
+    sentinels: ["9"]
+    decodes: {"P": "Purchase", "C": "Cash-out Refinance", "N": "No Cash-out Refinance", "R": "Refinance Unspecified", "9": "Not Available"}
+  - position: 22
+    name: "original_loan_term"
+    dtype: "Int64"
+    description: "Original Loan Term in Months"
+  - position: 23
+    name: "borrower_count"
+    dtype: "Int64"
+    sentinels: [99]
+    description: "Number of Borrowers"
+  - position: 24
+    name: "seller_name"
+    dtype: "string"
+    description: "Seller Name"
+  - position: 25
+    name: "super_conforming_flag"
+    dtype: "string"
+    decodes: {"Y": "Yes", "N": "No"}
+  - position: 26
+    name: "pre_harp_loan_id"
+    dtype: "string"
+    description: "Pre-HARP Loan Sequence Number"
+  - position: 27
+    name: "program_indicator"
+    dtype: "string"
+    sentinels: ["9"]
+    decodes: {"H": "Home Possible", "F": "HFA Advantage", "R": "Refi Possible", "9": "Not Available"}
+  - position: 28
+    name: "harp_indicator"
+    dtype: "string"
+    decodes: {"Y": "Yes", "N": "No"}
+  - position: 29
+    name: "property_valuation_method"
+    dtype: "string"
+    sentinels: ["7"]
+    decodes: {"1": "Appraisal Waiver", "2": "Appraisal", "3": "Other", "4": "ACE+PDR", "7": "Not Available"}
+  - position: 30
+    name: "interest_only_indicator"
+    dtype: "string"
+    decodes: {"Y": "Yes", "N": "No"}
+  - position: 31
+    name: "vantagescore_4"
+    dtype: "float64"
+    sentinels: [9999, 9999.0]
+    description: "VantageScore 4.0"
+
+performance_fields:
+  - position: 1
+    name: "loan_id"
+    dtype: "string"
+    is_key: true
+    description: "Loan Sequence Number (Join key)"
+  - position: 2
+    name: "monthly_reporting_period"
+    dtype: "Int64"
+    is_temporal_key: true
+    description: "Monthly Reporting Period (YYYYMM)"
+  - position: 3
+    name: "current_actual_upb"
+    dtype: "float64"
+    description: "Current Actual Unpaid Principal Balance"
+  - position: 4
+    name: "current_delinquency_status"
+    dtype: "string"
+    description: "Delinquency Status (00-99 months past due, or RA for REO Acquisition)"
+  - position: 5
+    name: "loan_age"
+    dtype: "Int64"
+    description: "Loan Age (months since first payment or reset modification date)"
+  - position: 6
+    name: "remaining_months_to_maturity"
+    dtype: "Int64"
+    description: "Remaining Months to Legal Maturity"
+  - position: 7
+    name: "defect_settlement_date"
+    dtype: "string"
+    description: "Defect Settlement Date (YYYYMM)"
+  - position: 8
+    name: "modification_flag"
+    dtype: "string"
+    decodes: {"Y": "Current Period Modification", "P": "Prior Period Modification"}
+  - position: 9
+    name: "zero_balance_code"
+    dtype: "string"
+    decodes: {"01": "Prepaid/Matured", "02": "Third Party Sale", "03": "Short Sale/Charge Off", "09": "REO Disposition", "15": "Non-Performing Note Sale", "16": "RPL Securitization", "96": "Defect Repurchase"}
+  - position: 10
+    name: "zero_balance_effective_date"
+    dtype: "string"
+    description: "Zero Balance Effective Date (YYYYMM)"
+  - position: 11
+    name: "current_interest_rate"
+    dtype: "float64"
+    description: "Current Interest Rate"
+  - position: 12
+    name: "current_deferred_upb"
+    dtype: "float64"
+    description: "Current Deferred Unpaid Principal Balance"
+  - position: 13
+    name: "due_date_last_paid_installment"
+    dtype: "string"
+    description: "Due Date of Last Paid Installment (YYYYMM)"
+  - position: 14
+    name: "mi_recoveries"
+    dtype: "float64"
+    description: "Mortgage Insurance Recoveries (Negative in R47)"
+  - position: 15
+    name: "net_sales_proceeds"
+    dtype: "string"
+    description: "Net Sales Proceeds (Negative in R47)"
+  - position: 16
+    name: "non_mi_recoveries"
+    dtype: "float64"
+    description: "Non-MI Recoveries (Negative in R47)"
+  - position: 17
+    name: "expenses"
+    dtype: "float64"
+    description: "Total Expenses (Sum of items 18-21)"
+  - position: 18
+    name: "legal_costs"
+    dtype: "float64"
+  - position: 19
+    name: "maintenance_costs"
+    dtype: "float64"
+  - position: 20
+    name: "taxes_insurance"
+    dtype: "float64"
+  - position: 21
+    name: "misc_expenses"
+    dtype: "float64"
+  - position: 22
+    name: "actual_loss"
+    dtype: "float64"
+    description: "Actual Loss Calculation (Populated for credit event terminations)"
+  - position: 23
+    name: "modification_cost"
+    dtype: "float64"
+  - position: 24
+    name: "step_modification_flag"
+    dtype: "string"
+    decodes: {"Y": "Step Mod", "N": "Non-Step Mod"}
+  - position: 25
+    name: "payment_deferral_flag"
+    dtype: "string"
+    decodes: {"C": "Current Period Deferral", "P": "Prior Period Deferral"}
+  - position: 26
+    name: "estimated_ltv"
+    dtype: "float64"
+    sentinels: [999, 999.0]
+    description: "Estimated LTV (ELTV)"
+  - position: 27
+    name: "zero_balance_removal_upb"
+    dtype: "float64"
+  - position: 28
+    name: "delinquent_accrued_interest"
+    dtype: "float64"
+  - position: 29
+    name: "disaster_delinquency_flag"
+    dtype: "string"
+    decodes: {"Y": "Yes"}
+  - position: 30
+    name: "borrower_assistance_status"
+    dtype: "string"
+    decodes: {"F": "Forbearance", "R": "Repayment Plan", "T": "Trial Period"}
+  - position: 31
+    name: "current_month_modification_cost"
+    dtype: "float64"
+  - position: 32
+    name: "interest_bearing_upb"
+    dtype: "float64"
+  - position: 33
+    name: "mi_cancellation_indicator"
+    dtype: "string"
+    sentinels: ["7", "9"]
+    decodes: {"Y": "Canceled", "N": "Not Canceled", "7": "N/A", "9": "Not Disclosed"}
+  - position: 34
+    name: "servicer_name"
+    dtype: "string"
+    description: "Servicer Name (Time-varying in R47)"
+  - position: 35
+    name: "bankruptcy_cramdown_costs"
+    dtype: "float64"

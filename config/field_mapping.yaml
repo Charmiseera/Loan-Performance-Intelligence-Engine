@@ -1,0 +1,46 @@
+# Mapping from internal/R47 normalized field names to Problem Statement §7 Vocabulary
+# Enables declarative dataset swaps without code modification (Principle IV / FR-002)
+
+field_mapping:
+  # Identifiers & Temporal
+  loan_id: "loan_id"
+  monthly_reporting_period: "reporting_month"
+  
+  # Origination attributes
+  credit_score: "credit_score"
+  original_upb: "original_balance"
+  original_interest_rate: "interest_rate"
+  original_ltv: "ltv"
+  original_cltv: "cltv"
+  original_dti: "dti"
+  original_loan_term: "loan_term"
+  property_state: "property_state"
+  property_type: "property_type"
+  occupancy_status: "occupancy_type"
+  loan_purpose: "loan_purpose"
+  channel: "origination_channel"
+  seller_name: "originator"
+  
+  # Monthly performance
+  current_actual_upb: "current_balance"
+  current_interest_rate: "current_interest_rate"
+  current_delinquency_status: "delinquency_status"
+  loan_age: "loan_age"
+  remaining_months_to_maturity: "remaining_term"
+  servicer_name: "servicer"
+  modification_flag: "modification_flag"
+  zero_balance_code: "zero_balance_code"
+  actual_loss: "actual_loss"
+  
+  # Submission outputs
+  prob_deterioration_3m: "prob_deterioration_3m"
+  prob_deterioration_6m: "prob_deterioration_6m"
+  prob_default_12m: "prob_default_12m"
+  prob_prepay_12m: "prob_prepay_12m"
+  next_state: "next_state"
+  anomaly_score: "anomaly_score"
+  exception_required: "exception_required"
+  exception_type: "exception_type"
+  top_drivers: "top_drivers"
+  recommended_action: "recommended_action"
+  confidence: "confidence"

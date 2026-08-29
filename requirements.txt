@@ -1,0 +1,56 @@
+# Loan Performance Intelligence Engine — direct dependencies
+#
+# Constitution Principle IV (Reproducibility by Construction) requires exact pins.
+# These are the DIRECT dependencies only, pinned to versions verified working together
+# on Python 3.11.9 / Windows (see docs/environment.md for the smoke-test evidence).
+#
+# For a byte-exact reproduction of the full resolved tree, use:
+#     pip install -r requirements-lock.txt
+#
+# Install:
+#     python -m venv .venv
+#     .venv/Scripts/python.exe -m pip install -r requirements.txt     # Windows
+#     .venv/bin/python -m pip install -r requirements.txt             # macOS/Linux
+
+# ---- Data handling ----
+numpy==2.2.6
+pandas==2.3.3
+pyarrow==25.0.1
+
+# ---- Statistics & scientific computing ----
+scipy==1.17.1
+statsmodels==0.15.0
+
+# ---- Supervised modeling (Task 2) ----
+scikit-learn==1.9.0
+lightgbm==4.7.0
+xgboost==3.2.0
+
+# ---- Time-to-event / survival modeling (Task 3) ----
+lifelines==0.30.3
+
+# ---- Explainability (Task 6) ----
+# NOTE: shap compiles numba kernels against the numpy ABI. This pin is verified
+# against numpy 2.2.6 — do not bump numpy without re-running the stack smoke test.
+shap==0.51.0
+
+# ---- Visualization ----
+matplotlib==3.11.1
+seaborn==0.13.2
+plotly==7.0.0
+
+# ---- Demo surface (Streamlit app is a read-only artifact consumer) ----
+streamlit==1.62.0
+
+# ---- LLM reviewer copilot (Task 7) ----
+# Groq client. Model id is configuration, never a literal (Constitution: Technology
+# Constraints) because hosted model availability changes.
+groq==1.7.0
+
+# ---- Configuration & utilities ----
+python-dotenv==1.2.3
+PyYAML==6.0.3
+tqdm==4.70.0
+
+# ---- Testing (MANDATORY per Constitution: Development Workflow & Quality Gates) ----
+pytest==9.1.1

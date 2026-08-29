@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /d/Intain rev-parse --is-inside-work-tree)",
+      "Bash(python -c \"import pypdf; print\\('pypdf ok'\\)\")",
+      "Bash(python -c \"import fitz; print\\('pymupdf ok'\\)\")",
+      "Bash(python -c \"import pdfplumber; print\\('pdfplumber ok'\\)\")",
+      "Bash(python -c ' *)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(python -m venv .venv)",
+      "Bash(./.venv/Scripts/python.exe -m pip install --quiet --upgrade pip setuptools wheel)",
+      "Bash(./.venv/Scripts/python.exe -m pip install \"numpy>=1.26,<2.3\" pandas scipy scikit-learn lightgbm xgboost shap lifelines matplotlib seaborn statsmodels streamlit plotly pyarrow groq python-dotenv pyyaml pytest tqdm)",
+      "Bash(./.venv/Scripts/python.exe -c ' *)",
+      "Bash(./.venv/Scripts/python.exe artifacts/scratch/profile_raw.py)",
+      "WebFetch(domain:www.freddiemac.com)",
+      "WebSearch",
+      "WebFetch(domain:usermanual.wiki)",
+      "Bash(mkdir -p /tmp/fm)",
+      "Read(//tmp/**)",
+      "Bash(curl -sL -o user_guide.pdf \"https://www.freddiemac.com/fmac-resources/research/pdf/user_guide.pdf\" -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\)\")",
+      "Bash(xxd)",
+      "Bash(curl -sL -o release_notes.pdf \"https://www.freddiemac.com/fmac-resources/research/pdf/release_notes.pdf\" -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\)\")",
+      "Bash(curl -sL -o file_layout.xlsx \"https://www.freddiemac.com/fmac-resources/research/pdf/file_layout.xlsx\" -A \"Mozilla/5.0\")",
+      "Bash(pdftotext -v)",
+      "Bash(python -)",
+      "Bash(pwd -W)",
+      "Bash(echo \"WINPATH: $\\(pwd -W\\)\")",
+      "Bash(pdftotext -layout release_notes.pdf rn.txt)",
+      "Bash(git check-ignore *)",
+      "Bash(git checkout *)",
+      "Bash(powershell -NoProfile -ExecutionPolicy Bypass -File .specify/scripts/powershell/setup-plan.ps1 -Json)",
+      "Bash(python -c \" *)",
+      "Bash(rm -f \"D:/Intain/.claude/_pdf_text.txt\" \"D:/Intain/.claude/_pdf_blocks.txt\" && echo \"temp files removed\")"
+    ]
+  }
+}

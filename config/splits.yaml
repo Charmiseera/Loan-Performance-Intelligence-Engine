@@ -1,0 +1,19 @@
+# Temporal split configuration with strict embargo gaps
+# Enforces Principle II (Leakage Containment) and FR-070
+
+embargo_months: 12
+
+train:
+  start_month: 200601
+  end_month: 201712
+  description: "Training window (Crisis and recovery vintages 2006-2017)"
+
+validation:
+  start_month: 201901
+  end_month: 202112
+  description: "Validation and tuning window (Post-embargo 2019-2021)"
+
+scoring:
+  start_month: 202301
+  end_month: 202512
+  description: "Out-of-time test & scoring window (Post-embargo 2023-2025)"

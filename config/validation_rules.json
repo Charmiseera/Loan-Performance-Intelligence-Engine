@@ -1,0 +1,60 @@
+{
+  "rules": [
+    {
+      "id": "RULE_001",
+      "name": "valid_maturity_sequence",
+      "level": "origination",
+      "description": "Maturity date must be strictly after first payment date",
+      "severity": "CRITICAL",
+      "expression": "maturity_date > first_payment_date"
+    },
+    {
+      "id": "RULE_002",
+      "name": "credit_score_range",
+      "level": "origination",
+      "description": "Credit score must fall between 300 and 850 when not missing",
+      "severity": "HIGH",
+      "expression": "credit_score.isna() | ((credit_score >= 300) & (credit_score <= 850))"
+    },
+    {
+      "id": "RULE_003",
+      "name": "original_ltv_range",
+      "level": "origination",
+      "description": "Original LTV must be positive and not exceed 200",
+      "severity": "HIGH",
+      "expression": "original_ltv.isna() | ((original_ltv > 0) & (original_ltv <= 200))"
+    },
+    {
+      "id": "RULE_004",
+      "name": "original_dti_range",
+      "level": "origination",
+      "description": "Original DTI must be positive and not exceed 65",
+      "severity": "HIGH",
+      "expression": "original_dti.isna() | ((original_dti > 0) & (original_dti <= 65))"
+    },
+    {
+      "id": "RULE_005",
+      "name": "upb_balance_cap",
+      "level": "monthly",
+      "description": "Current actual UPB must not exceed original UPB unless modification occurred",
+      "severity": "MEDIUM",
+      "expression": "(current_actual_upb <= original_upb * 1.05) | (modification_flag.isin(['Y', 'P']))"
+    },
+    {
+      "id": "RULE_006",
+      "name": "interest_rate_bounds",
+      "level": "monthly",
+      "description": "Interest rate must be between 0.1% and 25%",
+      "severity": "HIGH",
+      "expression": "(current_interest_rate > 0.1) & (current_interest_rate <= 25.0)"
+    },
+    {
+      "id": "RULE_007",
+      "name": "delinquency_code_validity",
+      "level": "monthly",
+      "description": "Delinquency status must be a valid 2-digit integer or REO code RA",
+      "severity": "CRITICAL",
+      "expression": "current_delinquency_status.isin(['RA'] + [str(i).zfill(2) for i in range(100)])"
+    }
+  ]
+}

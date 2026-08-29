@@ -1,0 +1,28 @@
+# Macroeconomic stress and scenario definitions (FR-047 / US6)
+
+baseline:
+  name: "baseline"
+  description: "Baseline economic trajectory with neutral rate and growth projections"
+  interest_rate_shift_bps: 0.0
+  hpi_growth_pct: 3.5
+  unemployment_rate_delta_pct: 0.0
+  prepayment_multiplier: 1.0
+  default_multiplier: 1.0
+
+adverse:
+  name: "adverse"
+  description: "Adverse credit shock: severe home price drop, unemployment spike, credit tightening"
+  interest_rate_shift_bps: 150.0
+  hpi_growth_pct: -15.0
+  unemployment_rate_delta_pct: 4.5
+  prepayment_multiplier: 0.4
+  default_multiplier: 2.8
+
+high_prepayment:
+  name: "high_prepayment"
+  description: "Aggressive rate cut cycle triggering widespread refinancing wave"
+  interest_rate_shift_bps: -200.0
+  hpi_growth_pct: 6.0
+  unemployment_rate_delta_pct: -0.5
+  prepayment_multiplier: 2.5
+  default_multiplier: 0.8

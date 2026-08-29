@@ -1,0 +1,209 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://intain-challenge-2026/loan-performance-intelligence/contracts/artifact_manifest_schema.json",
+  "title": "artifacts/run_manifest.json",
+  "description": "The record of what actually ran. Principle V requires every reported number to trace to a computation that executed; this file is the root of that trace. Written by store/manifest.py.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "run_id",
+    "started_at_utc",
+    "finished_at_utc",
+    "exit_code",
+    "root_seed",
+    "config",
+    "environment",
+    "stages",
+    "gates"
+  ],
+  "properties": {
+    "schema_version": { "type": "string", "const": "1" },
+    "run_id": {
+      "type": "string",
+      "description": "Content-derived, not time-derived: sha256 of (config digest + root seed + code revision), truncated. A time-derived id would change between two runs that are supposed to be byte-identical, which would defeat the determinism test that this manifest is meant to support."
+    },
+    "started_at_utc": { "type": "string", "format": "date-time" },
+    "finished_at_utc": { "type": "string", "format": "date-time" },
+    "exit_code": { "type": "integer", "enum": [0, 1, 2, 3, 4] },
+    "root_seed": { "type": "integer" },
+    "seed_override": {
+      "type": ["integer", "null"],
+      "description": "Set when --seed was passed, so a run that did not use the configured seed cannot be mistaken for one that did."
+    },
+    "config": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["digest", "files", "resolved"],
+      "properties": {
+        "digest": { "type": "string", "description": "sha256 over all config files, sorted by path." },
+        "files": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["path", "sha256"],
+            "properties": {
+              "path": { "type": "string" },
+              "sha256": { "type": "string" }
+            }
+          }
+        },
+        "resolved": {
+          "type": "object",
+          "description": "The fully merged config as actually used, embedded verbatim. Recorded because reading the config files later shows what they say now, not what they said during the run."
+        }
+      }
+    },
+    "environment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["python_version", "platform", "packages"],
+      "properties": {
+        "python_version": { "type": "string" },
+        "platform": { "type": "string" },
+        "code_revision": {
+          "type": ["string", "null"],
+          "description": "git rev-parse HEAD, or null outside a repository. Null is recorded rather than omitted so an unversioned run is visibly unversioned."
+        },
+        "code_dirty": {
+          "type": ["boolean", "null"],
+          "description": "True when the working tree had uncommitted changes. A metric produced from a dirty tree is not reproducible from the recorded revision, and the manifest must say so."
+        },
+        "packages": {
+          "type": "object",
+          "description": "Installed version per direct dependency. numpy and shap are recorded together deliberately: the SHAP numba kernels are ABI-bound to the numpy version, so this pair explains a class of failure that no other field would.",
+          "additionalProperties": { "type": "string" }
+        }
+      }
+    },
+    "data_inputs": {
+      "type": "array",
+      "description": "The raw source files consumed, with size and digest. Provenance is documented in docs/data-provenance.md; this is the per-run evidence that the documented files are the ones that were read.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "bytes", "rows", "sha256"],
+        "properties": {
+          "path": { "type": "string" },
+          "bytes": { "type": "integer", "minimum": 0 },
+          "rows": { "type": "integer", "minimum": 0 },
+          "sha256": { "type": "string" }
+        }
+      }
+    },
+    "stages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "status", "seed"],
+        "properties": {
+          "name": { "type": "string" },
+          "status": {
+            "type": "string",
+            "enum": ["succeeded", "failed", "skipped_disabled", "skipped_upstream", "reused_cached"],
+            "description": "'reused_cached' and 'succeeded' are distinguished so a report cannot claim a number was recomputed when it was read from a previous run's artifact. 'skipped_upstream' distinguishes a stage that was switched off from one whose dependency was."
+          },
+          "seed": { "type": "integer", "description": "Derived as seed_for(root_seed, name)." },
+          "started_at_utc": { "type": "string", "format": "date-time" },
+          "duration_seconds": { "type": "number", "minimum": 0 },
+          "peak_rss_bytes": { "type": "integer", "minimum": 0 },
+          "rows_in": { "type": "integer", "minimum": 0 },
+          "rows_out": { "type": "integer", "minimum": 0 },
+          "inputs": { "type": "array", "items": { "type": "string" } },
+          "outputs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["artifact_id", "path", "sha256"],
+              "properties": {
+                "artifact_id": { "type": "string" },
+                "path": { "type": "string" },
+                "bytes": { "type": "integer", "minimum": 0 },
+                "rows": { "type": "integer", "minimum": 0 },
+                "sha256": {
+                  "type": "string",
+                  "description": "For CSV and JSON, the digest of the file. For Parquet, the digest of a canonical sorted projection rather than the file, because Parquet writers embed library metadata that varies between environments. research.md section 12 records why byte-identity is claimed for the submission only."
+                }
+              }
+            }
+          },
+          "error": {
+            "type": ["object", "null"],
+            "additionalProperties": false,
+            "properties": {
+              "type": { "type": "string" },
+              "message": { "type": "string" },
+              "traceback": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "gates": {
+      "type": "object",
+      "description": "The pass/fail record for each enforced guarantee. Present in the manifest so the guarantees are visible in the same artifact as the results they qualify, rather than in a separate file a reader might not open.",
+      "additionalProperties": false,
+      "required": ["leakage_audit", "submission_contract"],
+      "properties": {
+        "leakage_audit": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["passed", "boundary_overlap_rows", "embargo_months", "forward_leak_columns"],
+          "properties": {
+            "passed": { "type": "boolean" },
+            "boundary_overlap_rows": { "type": "integer", "minimum": 0 },
+            "embargo_months": { "type": "integer", "minimum": 0 },
+            "max_label_horizon_months": { "type": "integer", "minimum": 0 },
+            "forward_leak_columns": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "Feature names that failed either the outcome-name screen or the forward-perturbation check. Non-empty means exit code 3."
+            }
+          }
+        },
+        "submission_contract": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["passed", "violations"],
+          "properties": {
+            "passed": { "type": "boolean" },
+            "rows": { "type": "integer", "minimum": 0 },
+            "violations": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["assertion", "detail"],
+                "properties": {
+                  "assertion": { "type": "string" },
+                  "detail": { "type": "string" },
+                  "example_rows": { "type": "array", "items": { "type": "integer" } }
+                }
+              }
+            }
+          }
+        },
+        "llm_provider": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "provider": { "type": "string", "enum": ["groq", "offline"] },
+            "model_id": {
+              "type": ["string", "null"],
+              "description": "Read from config, never a literal in code. Recorded per run because hosted model availability changes and a metric attributed to the wrong model is a Principle V failure."
+            },
+            "generations": { "type": "integer", "minimum": 0 },
+            "rejections": { "type": "integer", "minimum": 0 },
+            "rejection_reasons": {
+              "type": "object",
+              "additionalProperties": { "type": "integer" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

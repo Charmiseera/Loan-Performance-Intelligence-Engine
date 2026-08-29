@@ -1,0 +1,210 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://intain-challenge-2026/loan-performance-intelligence/contracts/submission_schema.json",
+  "title": "submission.csv row contract",
+  "x-provenance": {
+    "status": "AUTHORED — not supplied by the organiser",
+    "why": [
+      "The problem statement contains no submission schema. Verified by full read of all six pages.",
+      "Section 11 names 'submission.csv' and describes it only as 'Predictions in the required format'.",
+      "The sole enumeration anywhere is a prose phrase in Section 6 describing submission_template.csv: 'Required output format for probabilities, next state, exception type, anomaly score, top drivers, action, and confidence.' That phrase supplies no identifier-form column names, no order, no dtypes, no ranges, no allowed-value sets, and no row key.",
+      "Section 7's field list is introduced as 'Example fields include' and its target sentence as 'should include', so both are explicitly illustrative rather than normative."
+    ],
+    "derivation": [
+      "Column set = the 7 target names printed in Section 7, mapped onto the 7 output items printed in Section 6, plus a row key.",
+      "Section 7 names the targets as *_flag; Section 6 requires *probabilities*. Probability columns therefore carry a _prob suffix and the flag-name mapping is recorded in x-target-mapping below. This is a naming decision, not a transcription.",
+      "exception_type values are derived from Section 6's own description of validation_rules.json ('balance consistency, date validity, delinquency consistency, closed/prepaid status, and document gaps') and of servicer_updates.csv ('source conflict detection, stale record logic, and reconciliation'), so the taxonomy is grounded in the document's wording rather than invented.",
+      "next_state values are authored; the document never enumerates a state space. See research.md section 14.",
+      "recommended_action values are authored; the document never enumerates an action set."
+    ],
+    "known_document_inconsistencies": [
+      "Section 6 prints 'submission_template.csv'; Sections 9 and 11 print 'submission.csv'. This contract targets the deliverable name, submission.csv.",
+      "Section 6 prints 'next state' and 'exception type' with spaces; Section 7 prints next_state and exception_type with underscores. This contract uses the Section 7 identifier form."
+    ],
+    "supersession": "If an organiser-supplied submission_template.csv arrives, it supersedes this file. Downstream code reads the contract from this path, so replacing it is a configuration change, not a code change.",
+    "declared_in": ["artifacts/reports/model_card.md", "README.md"]
+  },
+  "x-granularity": {
+    "row_key": ["loan_id", "reporting_month"],
+    "unit": "one row per scored loan-month",
+    "basis": "spec.md Assumption 4. The document states no row key; the prediction unit is used, which is the reading most consistent with Section 7's per-loan-month field list.",
+    "uniqueness": "The pair (loan_id, reporting_month) MUST be unique across the file.",
+    "sort": "Rows MUST be sorted ascending by loan_id then reporting_month. Required for the byte-identity guarantee in FR-071 / SC-002."
+  },
+  "x-target-mapping": {
+    "next_3m_delinquency_flag": "next_3m_delinquency_prob",
+    "next_6m_delinquency_flag": "next_6m_delinquency_prob",
+    "next_12m_default_flag": "next_12m_default_prob",
+    "next_12m_prepayment_flag": "next_12m_prepayment_prob",
+    "next_state": "next_state",
+    "exception_required": "exception_required",
+    "exception_type": "exception_type"
+  },
+  "x-column-order": [
+    "loan_id",
+    "reporting_month",
+    "next_3m_delinquency_prob",
+    "next_6m_delinquency_prob",
+    "next_12m_default_prob",
+    "next_12m_prepayment_prob",
+    "next_state",
+    "exception_required",
+    "exception_type",
+    "anomaly_score",
+    "top_drivers",
+    "recommended_action",
+    "confidence"
+  ],
+  "x-csv-format": {
+    "delimiter": ",",
+    "header": true,
+    "line_terminator": "\\n",
+    "index_column": false,
+    "encoding": "utf-8",
+    "float_format": "%.6f",
+    "note": "No field may contain a comma, quote, or newline, so the file needs no quoting at all. top_drivers uses ';' as its internal separator for this reason."
+  },
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "loan_id",
+    "reporting_month",
+    "next_3m_delinquency_prob",
+    "next_6m_delinquency_prob",
+    "next_12m_default_prob",
+    "next_12m_prepayment_prob",
+    "next_state",
+    "exception_required",
+    "exception_type",
+    "anomaly_score",
+    "top_drivers",
+    "recommended_action",
+    "confidence"
+  ],
+  "properties": {
+    "loan_id": {
+      "type": "string",
+      "pattern": "^[A-Z0-9]{8,32}$",
+      "description": "Loan Sequence Number. Origination field 20 = performance field 1 in the Release 47 layout.",
+      "x-nullable": false
+    },
+    "reporting_month": {
+      "type": "integer",
+      "minimum": 199901,
+      "maximum": 209912,
+      "description": "As-of month as YYYYMM, matching the source encoding exactly (performance field 2). Integer rather than a formatted date string so that sort order is total and byte-stable.",
+      "x-nullable": false
+    },
+    "next_3m_delinquency_prob": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "description": "P(any month in (m, m+3] has delinquency status >= 1). Calibrated.",
+      "x-nullable": false,
+      "x-owner": "models/gbdt.py"
+    },
+    "next_6m_delinquency_prob": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "description": "P(any month in (m, m+6] has delinquency status >= 1). Calibrated.",
+      "x-nullable": false,
+      "x-owner": "models/gbdt.py"
+    },
+    "next_12m_default_prob": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "description": "P(credit-event termination with zero-balance code in (02,03,09,15) OR delinquency status >= 6, within (m, m+12]). Calibrated.",
+      "x-nullable": false,
+      "x-owner": "models/gbdt.py"
+    },
+    "next_12m_prepayment_prob": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "description": "P(termination with zero-balance code 01 within (m, m+12]). Calibrated.",
+      "x-nullable": false,
+      "x-owner": "models/gbdt.py"
+    },
+    "next_state": {
+      "type": "string",
+      "enum": ["current", "dq_30", "dq_60", "dq_90_plus", "prepaid", "defaulted"],
+      "description": "Predicted state at m+3. AUTHORED vocabulary; the document enumerates no state space. The delinquency tail 04-99 collapses into dq_90_plus because measured counts thin sharply beyond three months and per-state metrics on single-digit support would be noise presented as measurement.",
+      "x-nullable": false,
+      "x-owner": "models/multistate.py"
+    },
+    "exception_required": {
+      "type": "integer",
+      "enum": [0, 1],
+      "description": "Whether the record requires reviewer exception handling. Integer 0/1 rather than a boolean literal so the CSV has one unambiguous rendering.",
+      "x-nullable": false,
+      "x-owner": "anomaly/"
+    },
+    "exception_type": {
+      "type": "string",
+      "enum": [
+        "none",
+        "balance_inconsistency",
+        "date_validity",
+        "delinquency_inconsistency",
+        "closed_status_conflict",
+        "document_gap",
+        "source_conflict",
+        "stale_record"
+      ],
+      "description": "Exception category. Values 2-6 derive from Section 6's description of validation_rules.json; values 7-8 from its description of servicer_updates.csv. MUST be exactly 'none' when exception_required is 0.",
+      "x-nullable": false,
+      "x-owner": "anomaly/",
+      "x-cross-field-rule": "exception_required == 0 <=> exception_type == 'none'"
+    },
+    "anomaly_score": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "description": "Combined anomaly score. Higher is more anomalous. Normalised to [0,1] because the document states no scale; the normalisation rule is recorded in the model card.",
+      "x-nullable": false,
+      "x-owner": "anomaly/combine.py"
+    },
+    "top_drivers": {
+      "type": "string",
+      "pattern": "^([a-z0-9_]+=-?[0-9]+\\.[0-9]{4})(;[a-z0-9_]+=-?[0-9]+\\.[0-9]{4}){0,2}$",
+      "maxLength": 256,
+      "description": "Up to three semicolon-separated feature=signed_contribution pairs from the local attribution of the highest-probability outcome, ordered by descending absolute contribution. Semicolon rather than comma so the CSV needs no quoting. Signed, because 'this feature pushed risk down' is information a reviewer needs and an unsigned magnitude discards.",
+      "x-nullable": false,
+      "x-owner": "explain/local_attribution.py"
+    },
+    "recommended_action": {
+      "type": "string",
+      "enum": [
+        "no_action",
+        "monitor",
+        "request_document",
+        "verify_balance",
+        "reconcile_source",
+        "escalate_review"
+      ],
+      "description": "AUTHORED vocabulary; the document enumerates no action set. Produced by a deterministic decision table over model outputs and rule flags (anomaly/actions.py) — NEVER by generated text. This column is the one most at risk of a Principle I violation, so its owner is a decision table with no LLM dependency in its input closure.",
+      "x-nullable": false,
+      "x-owner": "anomaly/actions.py"
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "description": "Model-derived confidence in the row's headline prediction. The method is named per column in the model card; a bare number without its method is not reportable under Principle V.",
+      "x-nullable": false,
+      "x-owner": "models/uncertainty.py"
+    }
+  },
+  "x-file-level-assertions": [
+    "Row count equals the number of scored loan-months in the score window recorded in artifacts/splits/split_definition.json.",
+    "No cell is null, empty, NaN, or infinite.",
+    "Column names and order match x-column-order exactly.",
+    "(loan_id, reporting_month) is unique.",
+    "Rows are sorted ascending by (loan_id, reporting_month).",
+    "exception_required == 0 if and only if exception_type == 'none'.",
+    "Every loan_id appears in artifacts/ingest/loans.parquet.",
+    "Every reporting_month falls inside the score window."
+  ]
+}

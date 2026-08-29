@@ -1,0 +1,77 @@
+# Feature registry configuration
+# Every feature builder must declare its as-of window (lo, hi) where hi <= 0
+# Forward-looking windows (hi > 0) are strictly rejected at registration time.
+
+static_features:
+  - name: "credit_score"
+    dtype: "float64"
+    impute_strategy: "median"
+  - name: "original_upb"
+    dtype: "float64"
+    log_transform: true
+  - name: "original_interest_rate"
+    dtype: "float64"
+  - name: "original_ltv"
+    dtype: "float64"
+    impute_strategy: "median"
+  - name: "original_dti"
+    dtype: "float64"
+    impute_strategy: "median"
+  - name: "original_loan_term"
+    dtype: "float64"
+  - name: "dti_ltv_risk_product"
+    dtype: "float64"
+  - name: "occupancy_status"
+    dtype: "categorical"
+  - name: "channel"
+    dtype: "categorical"
+  - name: "loan_purpose"
+    dtype: "categorical"
+  - name: "property_type"
+    dtype: "categorical"
+  - name: "property_state"
+    dtype: "categorical"
+
+panel_features:
+  - name: "current_actual_upb"
+    dtype: "float64"
+    window: [0, 0]
+  - name: "delinquency_status_num"
+    dtype: "float64"
+    window: [0, 0]
+  - name: "delinq_lag_1"
+    source: "delinquency_status_num"
+    window: [-1, -1]
+  - name: "delinq_lag_3"
+    source: "delinquency_status_num"
+    window: [-3, -3]
+  - name: "delinq_max_6m"
+    source: "delinquency_status_num"
+    window: [-6, 0]
+    agg: "max"
+  - name: "delinq_max_12m"
+    source: "delinquency_status_num"
+    window: [-12, 0]
+    agg: "max"
+  - name: "delinq_velocity_1m"
+    source: "delinquency_status_num"
+    window: [-1, 0]
+    agg: "delta"
+  - name: "upb_paydown_ratio_3m"
+    source: "current_actual_upb"
+    window: [-3, 0]
+    agg: "pct_change"
+  - name: "upb_paydown_ratio_6m"
+    source: "current_actual_upb"
+    window: [-6, 0]
+    agg: "pct_change"
+  - name: "upb_acceleration"
+    source: "current_actual_upb"
+    window: [-6, 0]
+    agg: "acceleration"
+  - name: "rate_spread_incentive"
+    source: "current_interest_rate"
+    window: [0, 0]
+  - name: "derived_seasoning"
+    dtype: "float64"
+    window: [0, 0]

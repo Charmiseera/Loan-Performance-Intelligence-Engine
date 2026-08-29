@@ -1,0 +1,10 @@
+# Grounded LLM Copilot configuration (US8 / Principle III)
+# Defaults to groq with qwen-2.5-32b when key is provided, falls back cleanly to offline provider
+
+provider: "offline"
+model_id: "qwen-2.5-32b"
+api_key_env_var: "GROQ_API_KEY"
+temperature: 0.0
+max_tokens: 1024
+grounding_min_citation_coverage: 0.95
+strict_numeric_validation: true
