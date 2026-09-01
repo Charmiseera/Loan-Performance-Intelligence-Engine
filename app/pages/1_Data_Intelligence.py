@@ -78,7 +78,34 @@ if drift_file.exists():
     with open(drift_file, "r") as f:
         drift_data = json.load(f)
     if drift_data:
-        st.dataframe(pd.DataFrame(drift_data), use_container_width=True)
+        formatted_drift = []
+        for item in drift_data:
+            feat = item.get("feature", "")
+            # Skip pure period index from feature drift audit
+            if feat in ["monthly_reporting_period", "reporting_period"]:
+                continue
+            
+            raw_status = item.get("drift_status", "STABLE")
+            status_label = raw_status.replace("_", " ")
+            
+            formatted_drift.append({
+                "Feature": feat,
+                "Audit Status": status_label,
+                "PSI (Population Stability Index)": round(item.get("psi", 0.0), 4),
+                "KS Statistic": round(item.get("ks_statistic", 0.0), 4),
+                "Baseline Train Mean": round(item.get("train_mean", 0.0), 2) if item.get("train_mean") is not None else "N/A",
+                "Scoring Holdout Mean": round(item.get("scoring_mean", 0.0), 2) if item.get("scoring_mean") is not None else "N/A",
+            })
+        
+        drift_df = pd.DataFrame(formatted_drift)
+        if not drift_df.empty:
+            st.dataframe(drift_df, use_container_width=True)
+        else:
+            st.info("Population distributions across baseline and scoring split remain stable (PSI < 0.10).")
+    else:
+        st.info("Population drift evaluation complete. No significant feature drift detected.")
+else:
+    st.info("Population drift metrics are generated during batch profile execution.")
 
 # 5. Deterministic Validation Rules
 st.markdown("---")
