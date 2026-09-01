@@ -1,0 +1,62 @@
+[
+  {
+    "baseline_brier": 0.04331,
+    "baseline_model": "LogisticRegression (L2, balanced)",
+    "baseline_pr_auc": 0.5332,
+    "baseline_roc_auc": 0.8832,
+    "improved_brier": 0.0169,
+    "improved_model": "LightGBM + Isotonic Calibration",
+    "improved_pr_auc": 0.6087,
+    "improved_roc_auc": 0.8972,
+    "improvement_direction": "IMPROVED",
+    "positive_base_rate": 0.03148,
+    "pr_auc_delta": 0.0754,
+    "roc_auc_delta": 0.014,
+    "target": "prob_deterioration_3m"
+  },
+  {
+    "baseline_brier": 0.05591,
+    "baseline_model": "LogisticRegression (L2, balanced)",
+    "baseline_pr_auc": 0.4655,
+    "baseline_roc_auc": 0.8471,
+    "improved_brier": 0.02611,
+    "improved_model": "LightGBM + Isotonic Calibration",
+    "improved_pr_auc": 0.5366,
+    "improved_roc_auc": 0.858,
+    "improvement_direction": "IMPROVED",
+    "positive_base_rate": 0.04291,
+    "pr_auc_delta": 0.0711,
+    "roc_auc_delta": 0.011,
+    "target": "prob_deterioration_6m"
+  },
+  {
+    "baseline_brier": 0.02475,
+    "baseline_model": "LogisticRegression (L2, balanced)",
+    "baseline_pr_auc": 0.5823,
+    "baseline_roc_auc": 0.8882,
+    "improved_brier": 0.01361,
+    "improved_model": "LightGBM + Isotonic Calibration",
+    "improved_pr_auc": 0.6199,
+    "improved_roc_auc": 0.9023,
+    "improvement_direction": "IMPROVED",
+    "positive_base_rate": 0.02661,
+    "pr_auc_delta": 0.0376,
+    "roc_auc_delta": 0.0141,
+    "target": "prob_default_12m"
+  },
+  {
+    "baseline_brier": 0.21765,
+    "baseline_model": "LogisticRegression (L2, balanced)",
+    "baseline_pr_auc": 0.2406,
+    "baseline_roc_auc": 0.6099,
+    "improved_brier": 0.13696,
+    "improved_model": "LightGBM + Isotonic Calibration",
+    "improved_pr_auc": 0.3195,
+    "improved_roc_auc": 0.6648,
+    "improvement_direction": "IMPROVED",
+    "positive_base_rate": 0.17932,
+    "pr_auc_delta": 0.079,
+    "roc_auc_delta": 0.0549,
+    "target": "prob_prepay_12m"
+  }
+]

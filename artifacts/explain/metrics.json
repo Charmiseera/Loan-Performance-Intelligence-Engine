@@ -1,0 +1,6 @@
+{
+  "counterfactuals_generated": 10,
+  "error_casebook_evaluated": 621092,
+  "records_explained": 756520,
+  "top_global_feature": "credit_score"
+}

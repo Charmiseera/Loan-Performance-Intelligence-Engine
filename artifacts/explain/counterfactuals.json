@@ -1,0 +1,152 @@
+[
+  {
+    "actionable_perturbations": {
+      "current_actual_upb": {
+        "action": "Principal Curtailment of $2,333",
+        "current": 10233.32,
+        "delta": -2333.32,
+        "recommended": 7900.0
+      }
+    },
+    "baseline_default_prob": 0.185,
+    "feasibility_score": 0.88,
+    "immutable_features_preserved": true,
+    "loan_id": "F06Q10008554",
+    "target_default_prob": 0.03
+  },
+  {
+    "actionable_perturbations": {
+      "current_actual_upb": {
+        "action": "Principal Curtailment of $2,242",
+        "current": 9741.82,
+        "delta": -2241.82,
+        "recommended": 7500.0
+      }
+    },
+    "baseline_default_prob": 0.185,
+    "feasibility_score": 0.88,
+    "immutable_features_preserved": true,
+    "loan_id": "F06Q10008554",
+    "target_default_prob": 0.03
+  },
+  {
+    "actionable_perturbations": {
+      "current_actual_upb": {
+        "action": "Principal Curtailment of $2,148",
+        "current": 9247.56,
+        "delta": -2147.56,
+        "recommended": 7100.0
+      }
+    },
+    "baseline_default_prob": 0.185,
+    "feasibility_score": 0.88,
+    "immutable_features_preserved": true,
+    "loan_id": "F06Q10008554",
+    "target_default_prob": 0.03
+  },
+  {
+    "actionable_perturbations": {
+      "current_actual_upb": {
+        "action": "Principal Curtailment of $2,051",
+        "current": 8950.52,
+        "delta": -2050.52,
+        "recommended": 6900.0
+      }
+    },
+    "baseline_default_prob": 0.185,
+    "feasibility_score": 0.88,
+    "immutable_features_preserved": true,
+    "loan_id": "F06Q10008554",
+    "target_default_prob": 0.03
+  },
+  {
+    "actionable_perturbations": {
+      "current_actual_upb": {
+        "action": "Principal Curtailment of $1,952",
+        "current": 8451.81,
+        "delta": -1951.81,
+        "recommended": 6500.0
+      }
+    },
+    "baseline_default_prob": 0.185,
+    "feasibility_score": 0.88,
+    "immutable_features_preserved": true,
+    "loan_id": "F06Q10008554",
+    "target_default_prob": 0.03
+  },
+  {
+    "actionable_perturbations": {
+      "current_actual_upb": {
+        "action": "Principal Curtailment of $1,850",
+        "current": 7950.29,
+        "delta": -1850.29,
+        "recommended": 6100.0
+      }
+    },
+    "baseline_default_prob": 0.185,
+    "feasibility_score": 0.88,
+    "immutable_features_preserved": true,
+    "loan_id": "F06Q10008554",
+    "target_default_prob": 0.03
+  },
+  {
+    "actionable_perturbations": {
+      "current_actual_upb": {
+        "action": "Principal Curtailment of $1,746",
+        "current": 7445.95,
+        "delta": -1745.95,
+        "recommended": 5700.0
+      }
+    },
+    "baseline_default_prob": 0.185,
+    "feasibility_score": 0.88,
+    "immutable_features_preserved": true,
+    "loan_id": "F06Q10008554",
+    "target_default_prob": 0.03
+  },
+  {
+    "actionable_perturbations": {
+      "current_actual_upb": {
+        "action": "Principal Curtailment of $1,639",
+        "current": 6938.77,
+        "delta": -1638.77,
+        "recommended": 5300.0
+      }
+    },
+    "baseline_default_prob": 0.185,
+    "feasibility_score": 0.88,
+    "immutable_features_preserved": true,
+    "loan_id": "F06Q10008554",
+    "target_default_prob": 0.03
+  },
+  {
+    "actionable_perturbations": {
+      "current_actual_upb": {
+        "action": "Principal Curtailment of $1,529",
+        "current": 6428.74,
+        "delta": -1528.74,
+        "recommended": 4900.0
+      }
+    },
+    "baseline_default_prob": 0.185,
+    "feasibility_score": 0.88,
+    "immutable_features_preserved": true,
+    "loan_id": "F06Q10008554",
+    "target_default_prob": 0.03
+  },
+  {
+    "actionable_perturbations": {
+      "current_actual_upb": {
+        "action": "Principal Curtailment of $1,416",
+        "current": 5915.84,
+        "delta": -1415.84,
+        "recommended": 4500.0
+      }
+    },
+    "baseline_default_prob": 0.185,
+    "feasibility_score": 0.88,
+    "immutable_features_preserved": true,
+    "loan_id": "F06Q10008554",
+    "target_default_prob": 0.03
+  }
+]

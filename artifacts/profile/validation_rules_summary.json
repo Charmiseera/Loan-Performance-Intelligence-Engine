@@ -1,0 +1,10 @@
+{
+  "RULE_INTEREST_RATE_BOUNDS": {
+    "evaluated_records": 60000,
+    "rule_name": "Interest Rate Reasonable Range (0-30%)",
+    "sample_violating_ids": [],
+    "severity": "HIGH",
+    "violation_count": 0,
+    "violation_rate": 0.0
+  }
+}

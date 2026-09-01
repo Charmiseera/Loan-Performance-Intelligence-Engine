@@ -1,0 +1,174 @@
+{
+  "baseline_metrics": {
+    "prob_default_12m": {
+      "brier_score": 0.024751940524432737,
+      "ece": 0.0551015425257064,
+      "log_loss": 0.12170768795801569,
+      "positive_base_rate": 0.02661119447682469,
+      "positive_count": 16528,
+      "pr_auc": 0.5823103084384215,
+      "recall_at_target_precision": 0.6037633107454018,
+      "roc_auc": 0.8881977401895442,
+      "target_precision_threshold": 0.5,
+      "total_samples": 621092
+    },
+    "prob_deterioration_3m": {
+      "brier_score": 0.04330912497104954,
+      "ece": 0.10494836473562702,
+      "log_loss": 0.19796238314709072,
+      "positive_base_rate": 0.03148325851886677,
+      "positive_count": 19554,
+      "pr_auc": 0.5332332324151043,
+      "recall_at_target_precision": 0.566738263270942,
+      "roc_auc": 0.88315599962864,
+      "target_precision_threshold": 0.5,
+      "total_samples": 621092
+    },
+    "prob_deterioration_6m": {
+      "brier_score": 0.05591230558516359,
+      "ece": 0.12006319461620851,
+      "log_loss": 0.23757996056321654,
+      "positive_base_rate": 0.042911517134337586,
+      "positive_count": 26652,
+      "pr_auc": 0.46551665438150935,
+      "recall_at_target_precision": 0.4665315923758067,
+      "roc_auc": 0.8470668210342551,
+      "target_precision_threshold": 0.5,
+      "total_samples": 621092
+    },
+    "prob_prepay_12m": {
+      "brier_score": 0.2176548389038665,
+      "ece": 0.2551354465894327,
+      "log_loss": 0.6297314508423227,
+      "positive_base_rate": 0.17931803983950848,
+      "positive_count": 111373,
+      "pr_auc": 0.24057598543864886,
+      "recall_at_target_precision": 0.017239366812423117,
+      "roc_auc": 0.6098733871936661,
+      "target_precision_threshold": 0.5,
+      "total_samples": 621092
+    }
+  },
+  "baseline_model_type": "LogisticRegression (L2, balanced)",
+  "metrics": {
+    "prob_default_12m": {
+      "brier_score": 0.013610596189094703,
+      "ece": 1.183882583742281e-09,
+      "log_loss": 0.06321930221721511,
+      "positive_base_rate": 0.02661119447682469,
+      "positive_count": 16528,
+      "pr_auc": 0.6199413654000004,
+      "recall_at_target_precision": 0.6457526621490803,
+      "roc_auc": 0.9023391745215882,
+      "target_precision_threshold": 0.5,
+      "total_samples": 621092
+    },
+    "prob_deterioration_3m": {
+      "brier_score": 0.01690118225361568,
+      "ece": 1.5632144745489277e-09,
+      "log_loss": 0.07500911051448234,
+      "positive_base_rate": 0.03148325851886677,
+      "positive_count": 19554,
+      "pr_auc": 0.6086759685153865,
+      "recall_at_target_precision": 0.6358289863966452,
+      "roc_auc": 0.8971863605688998,
+      "target_precision_threshold": 0.5,
+      "total_samples": 621092
+    },
+    "prob_deterioration_6m": {
+      "brier_score": 0.026107166260054313,
+      "ece": 1.4461625626921345e-09,
+      "log_loss": 0.11136707364970691,
+      "positive_base_rate": 0.042911517134337586,
+      "positive_count": 26652,
+      "pr_auc": 0.536594136058143,
+      "recall_at_target_precision": 0.5574440942518385,
+      "roc_auc": 0.8580348503718629,
+      "target_precision_threshold": 0.5,
+      "total_samples": 621092
+    },
+    "prob_prepay_12m": {
+      "brier_score": 0.13696094894507096,
+      "ece": 1.5905856465706567e-09,
+      "log_loss": 0.43814706741594794,
+      "positive_base_rate": 0.17931803983950848,
+      "positive_count": 111373,
+      "pr_auc": 0.3195452972593589,
+      "recall_at_target_precision": 0.08515528898386503,
+      "roc_auc": 0.6648170738890253,
+      "target_precision_threshold": 0.5,
+      "total_samples": 621092
+    }
+  },
+  "model_comparison": [
+    {
+      "baseline_brier": 0.04331,
+      "baseline_model": "LogisticRegression (L2, balanced)",
+      "baseline_pr_auc": 0.5332,
+      "baseline_roc_auc": 0.8832,
+      "improved_brier": 0.0169,
+      "improved_model": "LightGBM + Isotonic Calibration",
+      "improved_pr_auc": 0.6087,
+      "improved_roc_auc": 0.8972,
+      "improvement_direction": "IMPROVED",
+      "positive_base_rate": 0.03148,
+      "pr_auc_delta": 0.0754,
+      "roc_auc_delta": 0.014,
+      "target": "prob_deterioration_3m"
+    },
+    {
+      "baseline_brier": 0.05591,
+      "baseline_model": "LogisticRegression (L2, balanced)",
+      "baseline_pr_auc": 0.4655,
+      "baseline_roc_auc": 0.8471,
+      "improved_brier": 0.02611,
+      "improved_model": "LightGBM + Isotonic Calibration",
+      "improved_pr_auc": 0.5366,
+      "improved_roc_auc": 0.858,
+      "improvement_direction": "IMPROVED",
+      "positive_base_rate": 0.04291,
+      "pr_auc_delta": 0.0711,
+      "roc_auc_delta": 0.011,
+      "target": "prob_deterioration_6m"
+    },
+    {
+      "baseline_brier": 0.02475,
+      "baseline_model": "LogisticRegression (L2, balanced)",
+      "baseline_pr_auc": 0.5823,
+      "baseline_roc_auc": 0.8882,
+      "improved_brier": 0.01361,
+      "improved_model": "LightGBM + Isotonic Calibration",
+      "improved_pr_auc": 0.6199,
+      "improved_roc_auc": 0.9023,
+      "improvement_direction": "IMPROVED",
+      "positive_base_rate": 0.02661,
+      "pr_auc_delta": 0.0376,
+      "roc_auc_delta": 0.0141,
+      "target": "prob_default_12m"
+    },
+    {
+      "baseline_brier": 0.21765,
+      "baseline_model": "LogisticRegression (L2, balanced)",
+      "baseline_pr_auc": 0.2406,
+      "baseline_roc_auc": 0.6099,
+      "improved_brier": 0.13696,
+      "improved_model": "LightGBM + Isotonic Calibration",
+      "improved_pr_auc": 0.3195,
+      "improved_roc_auc": 0.6648,
+      "improvement_direction": "IMPROVED",
+      "positive_base_rate": 0.17932,
+      "pr_auc_delta": 0.079,
+      "roc_auc_delta": 0.0549,
+      "target": "prob_prepay_12m"
+    }
+  ],
+  "model_type": "LightGBM + Isotonic Calibration",
+  "scoring_record_count": 756520,
+  "targets_trained": [
+    "prob_deterioration_3m",
+    "prob_deterioration_6m",
+    "prob_default_12m",
+    "prob_prepay_12m",
+    "next_state"
+  ]
+}

@@ -1,0 +1,3098 @@
+{
+  "adverse": {
+    "channel": {
+      "B": {
+        "loan_count": 84436,
+        "projected_default_rate": 0.03652,
+        "projected_deterioration_rate": 0.05668,
+        "projected_prepay_rate": 0.04625
+      },
+      "C": {
+        "loan_count": 206028,
+        "projected_default_rate": 0.0387,
+        "projected_deterioration_rate": 0.05888,
+        "projected_prepay_rate": 0.04785
+      },
+      "R": {
+        "loan_count": 454861,
+        "projected_default_rate": 0.04012,
+        "projected_deterioration_rate": 0.06121,
+        "projected_prepay_rate": 0.04989
+      },
+      "T": {
+        "loan_count": 11195,
+        "projected_default_rate": 0.20895,
+        "projected_deterioration_rate": 0.25449,
+        "projected_prepay_rate": 0.07811
+      }
+    },
+    "loan_purpose": {
+      "C": {
+        "loan_count": 171461,
+        "projected_default_rate": 0.04808,
+        "projected_deterioration_rate": 0.07219,
+        "projected_prepay_rate": 0.04977
+      },
+      "N": {
+        "loan_count": 337472,
+        "projected_default_rate": 0.03102,
+        "projected_deterioration_rate": 0.05052,
+        "projected_prepay_rate": 0.04926
+      },
+      "P": {
+        "loan_count": 247587,
+        "projected_default_rate": 0.05224,
+        "projected_deterioration_rate": 0.07344,
+        "projected_prepay_rate": 0.04918
+      }
+    },
+    "original_loan_term": {
+      "102": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00269,
+        "projected_deterioration_rate": 0.01591,
+        "projected_prepay_rate": 0.02411
+      },
+      "120": {
+        "loan_count": 6563,
+        "projected_default_rate": 0.02889,
+        "projected_deterioration_rate": 0.04304,
+        "projected_prepay_rate": 0.06516
+      },
+      "131": {
+        "loan_count": 72,
+        "projected_default_rate": 0.00397,
+        "projected_deterioration_rate": 0.0127,
+        "projected_prepay_rate": 0.02532
+      },
+      "132": {
+        "loan_count": 64,
+        "projected_default_rate": 0.01196,
+        "projected_deterioration_rate": 0.02436,
+        "projected_prepay_rate": 0.15839
+      },
+      "138": {
+        "loan_count": 9,
+        "projected_default_rate": 0.02493,
+        "projected_deterioration_rate": 0.02556,
+        "projected_prepay_rate": 0.34586
+      },
+      "144": {
+        "loan_count": 524,
+        "projected_default_rate": 0.0192,
+        "projected_deterioration_rate": 0.05449,
+        "projected_prepay_rate": 0.0548
+      },
+      "146": {
+        "loan_count": 36,
+        "projected_default_rate": 0.01766,
+        "projected_deterioration_rate": 0.0223,
+        "projected_prepay_rate": 0.03234
+      },
+      "153": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00323,
+        "projected_deterioration_rate": 0.01678,
+        "projected_prepay_rate": 0.0238
+      },
+      "154": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00309,
+        "projected_deterioration_rate": 0.01533,
+        "projected_prepay_rate": 0.03341
+      },
+      "156": {
+        "loan_count": 552,
+        "projected_default_rate": 0.01463,
+        "projected_deterioration_rate": 0.0448,
+        "projected_prepay_rate": 0.0653
+      },
+      "159": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00262,
+        "projected_deterioration_rate": 0.0177,
+        "projected_prepay_rate": 0.19173
+      },
+      "161": {
+        "loan_count": 12,
+        "projected_default_rate": 0.00247,
+        "projected_deterioration_rate": 0.01458,
+        "projected_prepay_rate": 0.35067
+      },
+      "162": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00329,
+        "projected_deterioration_rate": 0.01591,
+        "projected_prepay_rate": 0.18939
+      },
+      "165": {
+        "loan_count": 72,
+        "projected_default_rate": 0.01611,
+        "projected_deterioration_rate": 0.01725,
+        "projected_prepay_rate": 0.09647
+      },
+      "168": {
+        "loan_count": 239,
+        "projected_default_rate": 0.00753,
+        "projected_deterioration_rate": 0.01993,
+        "projected_prepay_rate": 0.08501
+      },
+      "174": {
+        "loan_count": 36,
+        "projected_default_rate": 0.01004,
+        "projected_deterioration_rate": 0.01855,
+        "projected_prepay_rate": 0.08649
+      },
+      "179": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00269,
+        "projected_deterioration_rate": 0.00993,
+        "projected_prepay_rate": 0.05765
+      },
+      "180": {
+        "loan_count": 145723,
+        "projected_default_rate": 0.02359,
+        "projected_deterioration_rate": 0.04078,
+        "projected_prepay_rate": 0.05507
+      },
+      "192": {
+        "loan_count": 129,
+        "projected_default_rate": 0.02116,
+        "projected_deterioration_rate": 0.03008,
+        "projected_prepay_rate": 0.08647
+      },
+      "204": {
+        "loan_count": 72,
+        "projected_default_rate": 0.03862,
+        "projected_deterioration_rate": 0.03037,
+        "projected_prepay_rate": 0.05321
+      },
+      "207": {
+        "loan_count": 36,
+        "projected_default_rate": 0.02663,
+        "projected_deterioration_rate": 0.05018,
+        "projected_prepay_rate": 0.04933
+      },
+      "216": {
+        "loan_count": 126,
+        "projected_default_rate": 0.02616,
+        "projected_deterioration_rate": 0.04137,
+        "projected_prepay_rate": 0.08345
+      },
+      "220": {
+        "loan_count": 2,
+        "projected_default_rate": 0.00135,
+        "projected_deterioration_rate": 0.00479,
+        "projected_prepay_rate": 0.15283
+      },
+      "228": {
+        "loan_count": 204,
+        "projected_default_rate": 0.02206,
+        "projected_deterioration_rate": 0.04415,
+        "projected_prepay_rate": 0.0475
+      },
+      "233": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00609,
+        "projected_deterioration_rate": 0.01591,
+        "projected_prepay_rate": 0.05219
+      },
+      "240": {
+        "loan_count": 48462,
+        "projected_default_rate": 0.0246,
+        "projected_deterioration_rate": 0.04342,
+        "projected_prepay_rate": 0.05033
+      },
+      "241": {
+        "loan_count": 84,
+        "projected_default_rate": 0.07872,
+        "projected_deterioration_rate": 0.0625,
+        "projected_prepay_rate": 0.05235
+      },
+      "252": {
+        "loan_count": 412,
+        "projected_default_rate": 0.01801,
+        "projected_deterioration_rate": 0.02642,
+        "projected_prepay_rate": 0.04288
+      },
+      "258": {
+        "loan_count": 36,
+        "projected_default_rate": 0.12295,
+        "projected_deterioration_rate": 0.1041,
+        "projected_prepay_rate": 0.03774
+      },
+      "263": {
+        "loan_count": 36,
+        "projected_default_rate": 0.0208,
+        "projected_deterioration_rate": 0.02232,
+        "projected_prepay_rate": 0.04034
+      },
+      "264": {
+        "loan_count": 284,
+        "projected_default_rate": 0.10936,
+        "projected_deterioration_rate": 0.19367,
+        "projected_prepay_rate": 0.05841
+      },
+      "273": {
+        "loan_count": 36,
+        "projected_default_rate": 0.03925,
+        "projected_deterioration_rate": 0.05308,
+        "projected_prepay_rate": 0.06173
+      },
+      "276": {
+        "loan_count": 265,
+        "projected_default_rate": 0.01951,
+        "projected_deterioration_rate": 0.03718,
+        "projected_prepay_rate": 0.05728
+      },
+      "280": {
+        "loan_count": 72,
+        "projected_default_rate": 0.02045,
+        "projected_deterioration_rate": 0.0308,
+        "projected_prepay_rate": 0.0698
+      },
+      "281": {
+        "loan_count": 36,
+        "projected_default_rate": 0.0135,
+        "projected_deterioration_rate": 0.02065,
+        "projected_prepay_rate": 0.05247
+      },
+      "283": {
+        "loan_count": 36,
+        "projected_default_rate": 0.02981,
+        "projected_deterioration_rate": 0.05448,
+        "projected_prepay_rate": 0.06428
+      },
+      "286": {
+        "loan_count": 36,
+        "projected_default_rate": 0.01792,
+        "projected_deterioration_rate": 0.04935,
+        "projected_prepay_rate": 0.05897
+      },
+      "288": {
+        "loan_count": 366,
+        "projected_default_rate": 0.02347,
+        "projected_deterioration_rate": 0.04154,
+        "projected_prepay_rate": 0.04374
+      },
+      "289": {
+        "loan_count": 3,
+        "projected_default_rate": 0.00556,
+        "projected_deterioration_rate": 0.01061,
+        "projected_prepay_rate": 0.03636
+      },
+      "291": {
+        "loan_count": 72,
+        "projected_default_rate": 0.014,
+        "projected_deterioration_rate": 0.0296,
+        "projected_prepay_rate": 0.06653
+      },
+      "293": {
+        "loan_count": 36,
+        "projected_default_rate": 0.01685,
+        "projected_deterioration_rate": 0.02186,
+        "projected_prepay_rate": 0.03604
+      },
+      "297": {
+        "loan_count": 72,
+        "projected_default_rate": 0.00809,
+        "projected_deterioration_rate": 0.03027,
+        "projected_prepay_rate": 0.05978
+      },
+      "298": {
+        "loan_count": 36,
+        "projected_default_rate": 0.01233,
+        "projected_deterioration_rate": 0.03626,
+        "projected_prepay_rate": 0.04317
+      },
+      "299": {
+        "loan_count": 36,
+        "projected_default_rate": 0.01035,
+        "projected_deterioration_rate": 0.01803,
+        "projected_prepay_rate": 0.03382
+      },
+      "300": {
+        "loan_count": 7925,
+        "projected_default_rate": 0.03882,
+        "projected_deterioration_rate": 0.06013,
+        "projected_prepay_rate": 0.04707
+      },
+      "302": {
+        "loan_count": 36,
+        "projected_default_rate": 0.01411,
+        "projected_deterioration_rate": 0.03489,
+        "projected_prepay_rate": 0.04881
+      },
+      "303": {
+        "loan_count": 36,
+        "projected_default_rate": 0.02156,
+        "projected_deterioration_rate": 0.03318,
+        "projected_prepay_rate": 0.04057
+      },
+      "305": {
+        "loan_count": 36,
+        "projected_default_rate": 0.02075,
+        "projected_deterioration_rate": 0.02399,
+        "projected_prepay_rate": 0.03926
+      },
+      "308": {
+        "loan_count": 144,
+        "projected_default_rate": 0.01334,
+        "projected_deterioration_rate": 0.02153,
+        "projected_prepay_rate": 0.04548
+      },
+      "309": {
+        "loan_count": 36,
+        "projected_default_rate": 0.02002,
+        "projected_deterioration_rate": 0.01901,
+        "projected_prepay_rate": 0.0385
+      },
+      "310": {
+        "loan_count": 36,
+        "projected_default_rate": 0.02129,
+        "projected_deterioration_rate": 0.02318,
+        "projected_prepay_rate": 0.05761
+      },
+      "311": {
+        "loan_count": 36,
+        "projected_default_rate": 0.01705,
+        "projected_deterioration_rate": 0.03799,
+        "projected_prepay_rate": 0.03577
+      },
+      "312": {
+        "loan_count": 432,
+        "projected_default_rate": 0.01822,
+        "projected_deterioration_rate": 0.0407,
+        "projected_prepay_rate": 0.04248
+      },
+      "322": {
+        "loan_count": 36,
+        "projected_default_rate": 0.01389,
+        "projected_deterioration_rate": 0.02229,
+        "projected_prepay_rate": 0.05762
+      },
+      "324": {
+        "loan_count": 1238,
+        "projected_default_rate": 0.03798,
+        "projected_deterioration_rate": 0.06611,
+        "projected_prepay_rate": 0.04525
+      },
+      "326": {
+        "loan_count": 72,
+        "projected_default_rate": 0.01233,
+        "projected_deterioration_rate": 0.03105,
+        "projected_prepay_rate": 0.06094
+      },
+      "327": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00569,
+        "projected_deterioration_rate": 0.01637,
+        "projected_prepay_rate": 0.03821
+      },
+      "328": {
+        "loan_count": 36,
+        "projected_default_rate": 0.02927,
+        "projected_deterioration_rate": 0.05536,
+        "projected_prepay_rate": 0.04644
+      },
+      "329": {
+        "loan_count": 36,
+        "projected_default_rate": 0.03114,
+        "projected_deterioration_rate": 0.12499,
+        "projected_prepay_rate": 0.04259
+      },
+      "331": {
+        "loan_count": 36,
+        "projected_default_rate": 0.02705,
+        "projected_deterioration_rate": 0.06754,
+        "projected_prepay_rate": 0.05213
+      },
+      "332": {
+        "loan_count": 36,
+        "projected_default_rate": 0.03109,
+        "projected_deterioration_rate": 0.03827,
+        "projected_prepay_rate": 0.05305
+      },
+      "333": {
+        "loan_count": 14,
+        "projected_default_rate": 0.01969,
+        "projected_deterioration_rate": 0.03502,
+        "projected_prepay_rate": 0.03327
+      },
+      "336": {
+        "loan_count": 521,
+        "projected_default_rate": 0.02508,
+        "projected_deterioration_rate": 0.04837,
+        "projected_prepay_rate": 0.0547
+      },
+      "337": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00301,
+        "projected_deterioration_rate": 0.00975,
+        "projected_prepay_rate": 0.04755
+      },
+      "338": {
+        "loan_count": 108,
+        "projected_default_rate": 0.01166,
+        "projected_deterioration_rate": 0.02385,
+        "projected_prepay_rate": 0.04408
+      },
+      "339": {
+        "loan_count": 39,
+        "projected_default_rate": 0.02668,
+        "projected_deterioration_rate": 0.03838,
+        "projected_prepay_rate": 0.03331
+      },
+      "340": {
+        "loan_count": 36,
+        "projected_default_rate": 0.01236,
+        "projected_deterioration_rate": 0.01787,
+        "projected_prepay_rate": 0.04548
+      },
+      "341": {
+        "loan_count": 45,
+        "projected_default_rate": 0.02019,
+        "projected_deterioration_rate": 0.02855,
+        "projected_prepay_rate": 0.05286
+      },
+      "342": {
+        "loan_count": 34,
+        "projected_default_rate": 0.0191,
+        "projected_deterioration_rate": 0.03418,
+        "projected_prepay_rate": 0.0483
+      },
+      "344": {
+        "loan_count": 72,
+        "projected_default_rate": 0.01901,
+        "projected_deterioration_rate": 0.03926,
+        "projected_prepay_rate": 0.04858
+      },
+      "348": {
+        "loan_count": 1040,
+        "projected_default_rate": 0.02165,
+        "projected_deterioration_rate": 0.04235,
+        "projected_prepay_rate": 0.0427
+      },
+      "350": {
+        "loan_count": 36,
+        "projected_default_rate": 0.02774,
+        "projected_deterioration_rate": 0.05919,
+        "projected_prepay_rate": 0.0586
+      },
+      "353": {
+        "loan_count": 36,
+        "projected_default_rate": 0.01041,
+        "projected_deterioration_rate": 0.02045,
+        "projected_prepay_rate": 0.04838
+      },
+      "354": {
+        "loan_count": 72,
+        "projected_default_rate": 0.01367,
+        "projected_deterioration_rate": 0.02971,
+        "projected_prepay_rate": 0.06512
+      },
+      "355": {
+        "loan_count": 48,
+        "projected_default_rate": 0.00999,
+        "projected_deterioration_rate": 0.0294,
+        "projected_prepay_rate": 0.11997
+      },
+      "359": {
+        "loan_count": 36,
+        "projected_default_rate": 0.0183,
+        "projected_deterioration_rate": 0.02071,
+        "projected_prepay_rate": 0.05399
+      },
+      "360": {
+        "loan_count": 538830,
+        "projected_default_rate": 0.0488,
+        "projected_deterioration_rate": 0.07124,
+        "projected_prepay_rate": 0.04747
+      },
+      "96": {
+        "loan_count": 135,
+        "projected_default_rate": 0.0086,
+        "projected_deterioration_rate": 0.02062,
+        "projected_prepay_rate": 0.05147
+      }
+    },
+    "property_state": {
+      "AK": {
+        "loan_count": 1515,
+        "projected_default_rate": 0.02684,
+        "projected_deterioration_rate": 0.05309,
+        "projected_prepay_rate": 0.04408
+      },
+      "AL": {
+        "loan_count": 7620,
+        "projected_default_rate": 0.04778,
+        "projected_deterioration_rate": 0.06255,
+        "projected_prepay_rate": 0.05693
+      },
+      "AR": {
+        "loan_count": 4821,
+        "projected_default_rate": 0.0571,
+        "projected_deterioration_rate": 0.07074,
+        "projected_prepay_rate": 0.04943
+      },
+      "AZ": {
+        "loan_count": 24864,
+        "projected_default_rate": 0.04236,
+        "projected_deterioration_rate": 0.06438,
+        "projected_prepay_rate": 0.05515
+      },
+      "CA": {
+        "loan_count": 96326,
+        "projected_default_rate": 0.02795,
+        "projected_deterioration_rate": 0.05308,
+        "projected_prepay_rate": 0.0502
+      },
+      "CO": {
+        "loan_count": 20483,
+        "projected_default_rate": 0.02958,
+        "projected_deterioration_rate": 0.05121,
+        "projected_prepay_rate": 0.06686
+      },
+      "CT": {
+        "loan_count": 8403,
+        "projected_default_rate": 0.0347,
+        "projected_deterioration_rate": 0.05448,
+        "projected_prepay_rate": 0.041
+      },
+      "DC": {
+        "loan_count": 2097,
+        "projected_default_rate": 0.0387,
+        "projected_deterioration_rate": 0.04876,
+        "projected_prepay_rate": 0.04623
+      },
+      "DE": {
+        "loan_count": 3572,
+        "projected_default_rate": 0.06084,
+        "projected_deterioration_rate": 0.06551,
+        "projected_prepay_rate": 0.04767
+      },
+      "FL": {
+        "loan_count": 46374,
+        "projected_default_rate": 0.07229,
+        "projected_deterioration_rate": 0.0821,
+        "projected_prepay_rate": 0.04335
+      },
+      "GA": {
+        "loan_count": 22776,
+        "projected_default_rate": 0.03961,
+        "projected_deterioration_rate": 0.06575,
+        "projected_prepay_rate": 0.04927
+      },
+      "GU": {
+        "loan_count": 180,
+        "projected_default_rate": 0.02795,
+        "projected_deterioration_rate": 0.06455,
+        "projected_prepay_rate": 0.04397
+      },
+      "HI": {
+        "loan_count": 1949,
+        "projected_default_rate": 0.06682,
+        "projected_deterioration_rate": 0.06913,
+        "projected_prepay_rate": 0.04002
+      },
+      "IA": {
+        "loan_count": 6097,
+        "projected_default_rate": 0.03027,
+        "projected_deterioration_rate": 0.04734,
+        "projected_prepay_rate": 0.05168
+      },
+      "ID": {
+        "loan_count": 5257,
+        "projected_default_rate": 0.03385,
+        "projected_deterioration_rate": 0.05106,
+        "projected_prepay_rate": 0.06215
+      },
+      "IL": {
+        "loan_count": 33319,
+        "projected_default_rate": 0.0449,
+        "projected_deterioration_rate": 0.06974,
+        "projected_prepay_rate": 0.04603
+      },
+      "IN": {
+        "loan_count": 16834,
+        "projected_default_rate": 0.04671,
+        "projected_deterioration_rate": 0.06359,
+        "projected_prepay_rate": 0.0558
+      },
+      "KS": {
+        "loan_count": 5329,
+        "projected_default_rate": 0.03839,
+        "projected_deterioration_rate": 0.05694,
+        "projected_prepay_rate": 0.06528
+      },
+      "KY": {
+        "loan_count": 9581,
+        "projected_default_rate": 0.02463,
+        "projected_deterioration_rate": 0.04022,
+        "projected_prepay_rate": 0.04886
+      },
+      "LA": {
+        "loan_count": 7336,
+        "projected_default_rate": 0.0746,
+        "projected_deterioration_rate": 0.09617,
+        "projected_prepay_rate": 0.0439
+      },
+      "MA": {
+        "loan_count": 20563,
+        "projected_default_rate": 0.04345,
+        "projected_deterioration_rate": 0.07262,
+        "projected_prepay_rate": 0.06052
+      },
+      "MD": {
+        "loan_count": 18879,
+        "projected_default_rate": 0.03868,
+        "projected_deterioration_rate": 0.06068,
+        "projected_prepay_rate": 0.03724
+      },
+      "ME": {
+        "loan_count": 3120,
+        "projected_default_rate": 0.0313,
+        "projected_deterioration_rate": 0.06059,
+        "projected_prepay_rate": 0.04267
+      },
+      "MI": {
+        "loan_count": 26813,
+        "projected_default_rate": 0.04225,
+        "projected_deterioration_rate": 0.06407,
+        "projected_prepay_rate": 0.04894
+      },
+      "MN": {
+        "loan_count": 18129,
+        "projected_default_rate": 0.03216,
+        "projected_deterioration_rate": 0.05662,
+        "projected_prepay_rate": 0.0429
+      },
+      "MO": {
+        "loan_count": 15579,
+        "projected_default_rate": 0.03561,
+        "projected_deterioration_rate": 0.05303,
+        "projected_prepay_rate": 0.06052
+      },
+      "MS": {
+        "loan_count": 2792,
+        "projected_default_rate": 0.08355,
+        "projected_deterioration_rate": 0.1037,
+        "projected_prepay_rate": 0.04961
+      },
+      "MT": {
+        "loan_count": 2586,
+        "projected_default_rate": 0.01635,
+        "projected_deterioration_rate": 0.05411,
+        "projected_prepay_rate": 0.0394
+      },
+      "NC": {
+        "loan_count": 23023,
+        "projected_default_rate": 0.03265,
+        "projected_deterioration_rate": 0.05776,
+        "projected_prepay_rate": 0.04586
+      },
+      "ND": {
+        "loan_count": 1788,
+        "projected_default_rate": 0.03854,
+        "projected_deterioration_rate": 0.05224,
+        "projected_prepay_rate": 0.03848
+      },
+      "NE": {
+        "loan_count": 3240,
+        "projected_default_rate": 0.03161,
+        "projected_deterioration_rate": 0.04461,
+        "projected_prepay_rate": 0.05484
+      },
+      "NH": {
+        "loan_count": 4176,
+        "projected_default_rate": 0.01386,
+        "projected_deterioration_rate": 0.03158,
+        "projected_prepay_rate": 0.04498
+      },
+      "NJ": {
+        "loan_count": 22289,
+        "projected_default_rate": 0.05214,
+        "projected_deterioration_rate": 0.07712,
+        "projected_prepay_rate": 0.04099
+      },
+      "NM": {
+        "loan_count": 3497,
+        "projected_default_rate": 0.07341,
+        "projected_deterioration_rate": 0.0877,
+        "projected_prepay_rate": 0.05337
+      },
+      "NV": {
+        "loan_count": 8426,
+        "projected_default_rate": 0.04259,
+        "projected_deterioration_rate": 0.06827,
+        "projected_prepay_rate": 0.04296
+      },
+      "NY": {
+        "loan_count": 29046,
+        "projected_default_rate": 0.05151,
+        "projected_deterioration_rate": 0.07464,
+        "projected_prepay_rate": 0.0365
+      },
+      "OH": {
+        "loan_count": 28474,
+        "projected_default_rate": 0.05162,
+        "projected_deterioration_rate": 0.06756,
+        "projected_prepay_rate": 0.05097
+      },
+      "OK": {
+        "loan_count": 5455,
+        "projected_default_rate": 0.03729,
+        "projected_deterioration_rate": 0.05805,
+        "projected_prepay_rate": 0.05027
+      },
+      "OR": {
+        "loan_count": 12405,
+        "projected_default_rate": 0.02677,
+        "projected_deterioration_rate": 0.04241,
+        "projected_prepay_rate": 0.05355
+      },
+      "PA": {
+        "loan_count": 25880,
+        "projected_default_rate": 0.05857,
+        "projected_deterioration_rate": 0.07291,
+        "projected_prepay_rate": 0.04106
+      },
+      "PR": {
+        "loan_count": 1153,
+        "projected_default_rate": 0.22594,
+        "projected_deterioration_rate": 0.24284,
+        "projected_prepay_rate": 0.04108
+      },
+      "RI": {
+        "loan_count": 3334,
+        "projected_default_rate": 0.04151,
+        "projected_deterioration_rate": 0.06988,
+        "projected_prepay_rate": 0.0552
+      },
+      "SC": {
+        "loan_count": 11343,
+        "projected_default_rate": 0.0315,
+        "projected_deterioration_rate": 0.06397,
+        "projected_prepay_rate": 0.04751
+      },
+      "SD": {
+        "loan_count": 1523,
+        "projected_default_rate": 0.01459,
+        "projected_deterioration_rate": 0.02577,
+        "projected_prepay_rate": 0.05674
+      },
+      "TN": {
+        "loan_count": 14134,
+        "projected_default_rate": 0.03796,
+        "projected_deterioration_rate": 0.05602,
+        "projected_prepay_rate": 0.0522
+      },
+      "TX": {
+        "loan_count": 49032,
+        "projected_default_rate": 0.04332,
+        "projected_deterioration_rate": 0.06915,
+        "projected_prepay_rate": 0.05281
+      },
+      "UT": {
+        "loan_count": 10477,
+        "projected_default_rate": 0.03311,
+        "projected_deterioration_rate": 0.05378,
+        "projected_prepay_rate": 0.06677
+      },
+      "VA": {
+        "loan_count": 23469,
+        "projected_default_rate": 0.03967,
+        "projected_deterioration_rate": 0.05882,
+        "projected_prepay_rate": 0.04182
+      },
+      "VI": {
+        "loan_count": 60,
+        "projected_default_rate": 0.0218,
+        "projected_deterioration_rate": 0.0409,
+        "projected_prepay_rate": 0.04349
+      },
+      "VT": {
+        "loan_count": 1990,
+        "projected_default_rate": 0.01685,
+        "projected_deterioration_rate": 0.03244,
+        "projected_prepay_rate": 0.04781
+      },
+      "WA": {
+        "loan_count": 21727,
+        "projected_default_rate": 0.0316,
+        "projected_deterioration_rate": 0.04784,
+        "projected_prepay_rate": 0.05089
+      },
+      "WI": {
+        "loan_count": 13691,
+        "projected_default_rate": 0.02694,
+        "projected_deterioration_rate": 0.04444,
+        "projected_prepay_rate": 0.06421
+      },
+      "WV": {
+        "loan_count": 2587,
+        "projected_default_rate": 0.05115,
+        "projected_deterioration_rate": 0.09998,
+        "projected_prepay_rate": 0.0408
+      },
+      "WY": {
+        "loan_count": 1107,
+        "projected_default_rate": 0.01623,
+        "projected_deterioration_rate": 0.02738,
+        "projected_prepay_rate": 0.0557
+      }
+    },
+    "servicer_name": {
+      "AMERIHOME MORTGAGE COMPANY, LLC": {
+        "loan_count": 2117,
+        "projected_default_rate": 0.0715,
+        "projected_deterioration_rate": 0.1216,
+        "projected_prepay_rate": 0.0483
+      },
+      "BANK OF AMERICA, N.A.": {
+        "loan_count": 13279,
+        "projected_default_rate": 0.04892,
+        "projected_deterioration_rate": 0.06789,
+        "projected_prepay_rate": 0.06848
+      },
+      "CALIBER HOME LOANS, INC.": {
+        "loan_count": 4566,
+        "projected_default_rate": 0.02789,
+        "projected_deterioration_rate": 0.04824,
+        "projected_prepay_rate": 0.04711
+      },
+      "CITIZENS BANK, NA": {
+        "loan_count": 12879,
+        "projected_default_rate": 0.02298,
+        "projected_deterioration_rate": 0.0396,
+        "projected_prepay_rate": 0.04299
+      },
+      "CMG MORTGAGE, INC.": {
+        "loan_count": 1837,
+        "projected_default_rate": 0.03897,
+        "projected_deterioration_rate": 0.06094,
+        "projected_prepay_rate": 0.04419
+      },
+      "CROSSCOUNTRY MORTGAGE, LLC": {
+        "loan_count": 1088,
+        "projected_default_rate": 0.03367,
+        "projected_deterioration_rate": 0.05678,
+        "projected_prepay_rate": 0.04285
+      },
+      "FIFTH THIRD BANK, NATIONAL ASSOCIATION": {
+        "loan_count": 14725,
+        "projected_default_rate": 0.06098,
+        "projected_deterioration_rate": 0.07911,
+        "projected_prepay_rate": 0.04878
+      },
+      "FREEDOM MORTGAGE CORPORATION": {
+        "loan_count": 20607,
+        "projected_default_rate": 0.03361,
+        "projected_deterioration_rate": 0.05762,
+        "projected_prepay_rate": 0.04253
+      },
+      "GUILD MORTGAGE COMPANY LLC": {
+        "loan_count": 1221,
+        "projected_default_rate": 0.0256,
+        "projected_deterioration_rate": 0.05342,
+        "projected_prepay_rate": 0.0521
+      },
+      "HOME POINT FINANCIAL CORPORATION": {
+        "loan_count": 1754,
+        "projected_default_rate": 0.0305,
+        "projected_deterioration_rate": 0.04954,
+        "projected_prepay_rate": 0.03665
+      },
+      "JPMORGAN CHASE BANK, NATIONAL ASSOCIATION": {
+        "loan_count": 82824,
+        "projected_default_rate": 0.02974,
+        "projected_deterioration_rate": 0.05056,
+        "projected_prepay_rate": 0.04675
+      },
+      "LAKEVIEW LOAN SERVICING, LLC": {
+        "loan_count": 15870,
+        "projected_default_rate": 0.04165,
+        "projected_deterioration_rate": 0.08651,
+        "projected_prepay_rate": 0.04671
+      },
+      "LOANDEPOT.COM, LLC": {
+        "loan_count": 9698,
+        "projected_default_rate": 0.02877,
+        "projected_deterioration_rate": 0.0487,
+        "projected_prepay_rate": 0.0354
+      },
+      "MARLIN MORTGAGE CAPITAL, LLC": {
+        "loan_count": 1294,
+        "projected_default_rate": 0.03786,
+        "projected_deterioration_rate": 0.05853,
+        "projected_prepay_rate": 0.03864
+      },
+      "MATRIX FINANCIAL SERVICES CORPORATION": {
+        "loan_count": 12522,
+        "projected_default_rate": 0.03095,
+        "projected_deterioration_rate": 0.04708,
+        "projected_prepay_rate": 0.04008
+      },
+      "NATIONSTAR MORTGAGE LLC DBA MR. COOPER": {
+        "loan_count": 49081,
+        "projected_default_rate": 0.0557,
+        "projected_deterioration_rate": 0.08064,
+        "projected_prepay_rate": 0.05243
+      },
+      "NEW RESIDENTIAL MORTGAGE LLC": {
+        "loan_count": 44450,
+        "projected_default_rate": 0.03801,
+        "projected_deterioration_rate": 0.06016,
+        "projected_prepay_rate": 0.04976
+      },
+      "NEWREZ LLC": {
+        "loan_count": 664,
+        "projected_default_rate": 0.09939,
+        "projected_deterioration_rate": 0.11131,
+        "projected_prepay_rate": 0.03403
+      },
+      "ONSLOW BAY FINANCIAL LLC": {
+        "loan_count": 17537,
+        "projected_default_rate": 0.03209,
+        "projected_deterioration_rate": 0.05441,
+        "projected_prepay_rate": 0.0446
+      },
+      "OTHER": {
+        "loan_count": 190814,
+        "projected_default_rate": 0.05121,
+        "projected_deterioration_rate": 0.07231,
+        "projected_prepay_rate": 0.05048
+      },
+      "PENNYMAC CORP.": {
+        "loan_count": 23463,
+        "projected_default_rate": 0.03063,
+        "projected_deterioration_rate": 0.04997,
+        "projected_prepay_rate": 0.04263
+      },
+      "PENNYMAC LOAN SERVICES, LLC": {
+        "loan_count": 5907,
+        "projected_default_rate": 0.03476,
+        "projected_deterioration_rate": 0.05549,
+        "projected_prepay_rate": 0.03962
+      },
+      "PHH ASSET SERVICES LLC": {
+        "loan_count": 2043,
+        "projected_default_rate": 0.03418,
+        "projected_deterioration_rate": 0.05549,
+        "projected_prepay_rate": 0.04991
+      },
+      "PHH MORTGAGE CORPORATION": {
+        "loan_count": 10663,
+        "projected_default_rate": 0.03095,
+        "projected_deterioration_rate": 0.04513,
+        "projected_prepay_rate": 0.04139
+      },
+      "PNC BANK, NA": {
+        "loan_count": 25028,
+        "projected_default_rate": 0.04864,
+        "projected_deterioration_rate": 0.06741,
+        "projected_prepay_rate": 0.04736
+      },
+      "ROCKET MORTGAGE, LLC": {
+        "loan_count": 36071,
+        "projected_default_rate": 0.05089,
+        "projected_deterioration_rate": 0.07414,
+        "projected_prepay_rate": 0.0413
+      },
+      "TH MSR HOLDINGS LLC": {
+        "loan_count": 11782,
+        "projected_default_rate": 0.03066,
+        "projected_deterioration_rate": 0.05111,
+        "projected_prepay_rate": 0.0468
+      },
+      "TRUIST BANK": {
+        "loan_count": 27889,
+        "projected_default_rate": 0.02941,
+        "projected_deterioration_rate": 0.0497,
+        "projected_prepay_rate": 0.05139
+      },
+      "U.S. BANK N.A.": {
+        "loan_count": 30021,
+        "projected_default_rate": 0.04428,
+        "projected_deterioration_rate": 0.06428,
+        "projected_prepay_rate": 0.06212
+      },
+      "UNITED WHOLESALE MORTGAGE, LLC": {
+        "loan_count": 15446,
+        "projected_default_rate": 0.04251,
+        "projected_deterioration_rate": 0.06138,
+        "projected_prepay_rate": 0.03953
+      },
+      "WELLS FARGO BANK, N.A.": {
+        "loan_count": 69380,
+        "projected_default_rate": 0.03503,
+        "projected_deterioration_rate": 0.05137,
+        "projected_prepay_rate": 0.05848
+      }
+    }
+  },
+  "baseline": {
+    "channel": {
+      "B": {
+        "loan_count": 84436,
+        "projected_default_rate": 0.01304,
+        "projected_deterioration_rate": 0.02576,
+        "projected_prepay_rate": 0.11563
+      },
+      "C": {
+        "loan_count": 206028,
+        "projected_default_rate": 0.01382,
+        "projected_deterioration_rate": 0.02676,
+        "projected_prepay_rate": 0.11963
+      },
+      "R": {
+        "loan_count": 454861,
+        "projected_default_rate": 0.01433,
+        "projected_deterioration_rate": 0.02782,
+        "projected_prepay_rate": 0.12473
+      },
+      "T": {
+        "loan_count": 11195,
+        "projected_default_rate": 0.07463,
+        "projected_deterioration_rate": 0.11568,
+        "projected_prepay_rate": 0.19527
+      }
+    },
+    "loan_purpose": {
+      "C": {
+        "loan_count": 171461,
+        "projected_default_rate": 0.01717,
+        "projected_deterioration_rate": 0.03281,
+        "projected_prepay_rate": 0.12442
+      },
+      "N": {
+        "loan_count": 337472,
+        "projected_default_rate": 0.01108,
+        "projected_deterioration_rate": 0.02296,
+        "projected_prepay_rate": 0.12315
+      },
+      "P": {
+        "loan_count": 247587,
+        "projected_default_rate": 0.01866,
+        "projected_deterioration_rate": 0.03338,
+        "projected_prepay_rate": 0.12294
+      }
+    },
+    "original_loan_term": {
+      "102": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00096,
+        "projected_deterioration_rate": 0.00723,
+        "projected_prepay_rate": 0.06029
+      },
+      "120": {
+        "loan_count": 6563,
+        "projected_default_rate": 0.01032,
+        "projected_deterioration_rate": 0.01956,
+        "projected_prepay_rate": 0.16291
+      },
+      "131": {
+        "loan_count": 72,
+        "projected_default_rate": 0.00142,
+        "projected_deterioration_rate": 0.00577,
+        "projected_prepay_rate": 0.06331
+      },
+      "132": {
+        "loan_count": 64,
+        "projected_default_rate": 0.00427,
+        "projected_deterioration_rate": 0.01107,
+        "projected_prepay_rate": 0.39597
+      },
+      "138": {
+        "loan_count": 9,
+        "projected_default_rate": 0.0089,
+        "projected_deterioration_rate": 0.01162,
+        "projected_prepay_rate": 0.86464
+      },
+      "144": {
+        "loan_count": 524,
+        "projected_default_rate": 0.00686,
+        "projected_deterioration_rate": 0.02477,
+        "projected_prepay_rate": 0.137
+      },
+      "146": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00631,
+        "projected_deterioration_rate": 0.01014,
+        "projected_prepay_rate": 0.08085
+      },
+      "153": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00115,
+        "projected_deterioration_rate": 0.00763,
+        "projected_prepay_rate": 0.05949
+      },
+      "154": {
+        "loan_count": 36,
+        "projected_default_rate": 0.0011,
+        "projected_deterioration_rate": 0.00697,
+        "projected_prepay_rate": 0.08353
+      },
+      "156": {
+        "loan_count": 552,
+        "projected_default_rate": 0.00522,
+        "projected_deterioration_rate": 0.02036,
+        "projected_prepay_rate": 0.16325
+      },
+      "159": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00093,
+        "projected_deterioration_rate": 0.00805,
+        "projected_prepay_rate": 0.47932
+      },
+      "161": {
+        "loan_count": 12,
+        "projected_default_rate": 0.00088,
+        "projected_deterioration_rate": 0.00663,
+        "projected_prepay_rate": 0.87669
+      },
+      "162": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00118,
+        "projected_deterioration_rate": 0.00723,
+        "projected_prepay_rate": 0.47348
+      },
+      "165": {
+        "loan_count": 72,
+        "projected_default_rate": 0.00575,
+        "projected_deterioration_rate": 0.00784,
+        "projected_prepay_rate": 0.24117
+      },
+      "168": {
+        "loan_count": 239,
+        "projected_default_rate": 0.00269,
+        "projected_deterioration_rate": 0.00906,
+        "projected_prepay_rate": 0.21251
+      },
+      "174": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00358,
+        "projected_deterioration_rate": 0.00843,
+        "projected_prepay_rate": 0.21622
+      },
+      "179": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00096,
+        "projected_deterioration_rate": 0.00451,
+        "projected_prepay_rate": 0.14411
+      },
+      "180": {
+        "loan_count": 145723,
+        "projected_default_rate": 0.00843,
+        "projected_deterioration_rate": 0.01854,
+        "projected_prepay_rate": 0.13766
+      },
+      "192": {
+        "loan_count": 129,
+        "projected_default_rate": 0.00756,
+        "projected_deterioration_rate": 0.01367,
+        "projected_prepay_rate": 0.21617
+      },
+      "204": {
+        "loan_count": 72,
+        "projected_default_rate": 0.01379,
+        "projected_deterioration_rate": 0.01381,
+        "projected_prepay_rate": 0.13301
+      },
+      "207": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00951,
+        "projected_deterioration_rate": 0.02281,
+        "projected_prepay_rate": 0.12331
+      },
+      "216": {
+        "loan_count": 126,
+        "projected_default_rate": 0.00934,
+        "projected_deterioration_rate": 0.01881,
+        "projected_prepay_rate": 0.20862
+      },
+      "220": {
+        "loan_count": 2,
+        "projected_default_rate": 0.00048,
+        "projected_deterioration_rate": 0.00218,
+        "projected_prepay_rate": 0.38209
+      },
+      "228": {
+        "loan_count": 204,
+        "projected_default_rate": 0.00788,
+        "projected_deterioration_rate": 0.02007,
+        "projected_prepay_rate": 0.11875
+      },
+      "233": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00217,
+        "projected_deterioration_rate": 0.00723,
+        "projected_prepay_rate": 0.13047
+      },
+      "240": {
+        "loan_count": 48462,
+        "projected_default_rate": 0.00879,
+        "projected_deterioration_rate": 0.01974,
+        "projected_prepay_rate": 0.12582
+      },
+      "241": {
+        "loan_count": 84,
+        "projected_default_rate": 0.02812,
+        "projected_deterioration_rate": 0.02841,
+        "projected_prepay_rate": 0.13088
+      },
+      "252": {
+        "loan_count": 412,
+        "projected_default_rate": 0.00643,
+        "projected_deterioration_rate": 0.01201,
+        "projected_prepay_rate": 0.1072
+      },
+      "258": {
+        "loan_count": 36,
+        "projected_default_rate": 0.04391,
+        "projected_deterioration_rate": 0.04732,
+        "projected_prepay_rate": 0.09436
+      },
+      "263": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00743,
+        "projected_deterioration_rate": 0.01015,
+        "projected_prepay_rate": 0.10084
+      },
+      "264": {
+        "loan_count": 284,
+        "projected_default_rate": 0.03906,
+        "projected_deterioration_rate": 0.08803,
+        "projected_prepay_rate": 0.14603
+      },
+      "273": {
+        "loan_count": 36,
+        "projected_default_rate": 0.01402,
+        "projected_deterioration_rate": 0.02413,
+        "projected_prepay_rate": 0.15433
+      },
+      "276": {
+        "loan_count": 265,
+        "projected_default_rate": 0.00697,
+        "projected_deterioration_rate": 0.0169,
+        "projected_prepay_rate": 0.1432
+      },
+      "280": {
+        "loan_count": 72,
+        "projected_default_rate": 0.0073,
+        "projected_deterioration_rate": 0.014,
+        "projected_prepay_rate": 0.17449
+      },
+      "281": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00482,
+        "projected_deterioration_rate": 0.00939,
+        "projected_prepay_rate": 0.13117
+      },
+      "283": {
+        "loan_count": 36,
+        "projected_default_rate": 0.01065,
+        "projected_deterioration_rate": 0.02476,
+        "projected_prepay_rate": 0.16071
+      },
+      "286": {
+        "loan_count": 36,
+        "projected_default_rate": 0.0064,
+        "projected_deterioration_rate": 0.02243,
+        "projected_prepay_rate": 0.14744
+      },
+      "288": {
+        "loan_count": 366,
+        "projected_default_rate": 0.00838,
+        "projected_deterioration_rate": 0.01888,
+        "projected_prepay_rate": 0.10936
+      },
+      "289": {
+        "loan_count": 3,
+        "projected_default_rate": 0.00198,
+        "projected_deterioration_rate": 0.00482,
+        "projected_prepay_rate": 0.0909
+      },
+      "291": {
+        "loan_count": 72,
+        "projected_default_rate": 0.005,
+        "projected_deterioration_rate": 0.01346,
+        "projected_prepay_rate": 0.16632
+      },
+      "293": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00602,
+        "projected_deterioration_rate": 0.00993,
+        "projected_prepay_rate": 0.0901
+      },
+      "297": {
+        "loan_count": 72,
+        "projected_default_rate": 0.00289,
+        "projected_deterioration_rate": 0.01376,
+        "projected_prepay_rate": 0.14944
+      },
+      "298": {
+        "loan_count": 36,
+        "projected_default_rate": 0.0044,
+        "projected_deterioration_rate": 0.01648,
+        "projected_prepay_rate": 0.10793
+      },
+      "299": {
+        "loan_count": 36,
+        "projected_default_rate": 0.0037,
+        "projected_deterioration_rate": 0.00819,
+        "projected_prepay_rate": 0.08456
+      },
+      "300": {
+        "loan_count": 7925,
+        "projected_default_rate": 0.01386,
+        "projected_deterioration_rate": 0.02733,
+        "projected_prepay_rate": 0.11767
+      },
+      "302": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00504,
+        "projected_deterioration_rate": 0.01586,
+        "projected_prepay_rate": 0.12202
+      },
+      "303": {
+        "loan_count": 36,
+        "projected_default_rate": 0.0077,
+        "projected_deterioration_rate": 0.01508,
+        "projected_prepay_rate": 0.10143
+      },
+      "305": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00741,
+        "projected_deterioration_rate": 0.0109,
+        "projected_prepay_rate": 0.09814
+      },
+      "308": {
+        "loan_count": 144,
+        "projected_default_rate": 0.00476,
+        "projected_deterioration_rate": 0.00979,
+        "projected_prepay_rate": 0.11371
+      },
+      "309": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00715,
+        "projected_deterioration_rate": 0.00864,
+        "projected_prepay_rate": 0.09625
+      },
+      "310": {
+        "loan_count": 36,
+        "projected_default_rate": 0.0076,
+        "projected_deterioration_rate": 0.01053,
+        "projected_prepay_rate": 0.14402
+      },
+      "311": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00609,
+        "projected_deterioration_rate": 0.01727,
+        "projected_prepay_rate": 0.08942
+      },
+      "312": {
+        "loan_count": 432,
+        "projected_default_rate": 0.00651,
+        "projected_deterioration_rate": 0.0185,
+        "projected_prepay_rate": 0.10619
+      },
+      "322": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00496,
+        "projected_deterioration_rate": 0.01013,
+        "projected_prepay_rate": 0.14405
+      },
+      "324": {
+        "loan_count": 1238,
+        "projected_default_rate": 0.01357,
+        "projected_deterioration_rate": 0.03005,
+        "projected_prepay_rate": 0.11313
+      },
+      "326": {
+        "loan_count": 72,
+        "projected_default_rate": 0.0044,
+        "projected_deterioration_rate": 0.01411,
+        "projected_prepay_rate": 0.15236
+      },
+      "327": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00203,
+        "projected_deterioration_rate": 0.00744,
+        "projected_prepay_rate": 0.09553
+      },
+      "328": {
+        "loan_count": 36,
+        "projected_default_rate": 0.01046,
+        "projected_deterioration_rate": 0.02516,
+        "projected_prepay_rate": 0.11609
+      },
+      "329": {
+        "loan_count": 36,
+        "projected_default_rate": 0.01112,
+        "projected_deterioration_rate": 0.05681,
+        "projected_prepay_rate": 0.10648
+      },
+      "331": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00966,
+        "projected_deterioration_rate": 0.0307,
+        "projected_prepay_rate": 0.13032
+      },
+      "332": {
+        "loan_count": 36,
+        "projected_default_rate": 0.0111,
+        "projected_deterioration_rate": 0.01739,
+        "projected_prepay_rate": 0.13263
+      },
+      "333": {
+        "loan_count": 14,
+        "projected_default_rate": 0.00703,
+        "projected_deterioration_rate": 0.01592,
+        "projected_prepay_rate": 0.08318
+      },
+      "336": {
+        "loan_count": 521,
+        "projected_default_rate": 0.00896,
+        "projected_deterioration_rate": 0.02198,
+        "projected_prepay_rate": 0.13676
+      },
+      "337": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00108,
+        "projected_deterioration_rate": 0.00443,
+        "projected_prepay_rate": 0.11888
+      },
+      "338": {
+        "loan_count": 108,
+        "projected_default_rate": 0.00417,
+        "projected_deterioration_rate": 0.01084,
+        "projected_prepay_rate": 0.11021
+      },
+      "339": {
+        "loan_count": 39,
+        "projected_default_rate": 0.00953,
+        "projected_deterioration_rate": 0.01745,
+        "projected_prepay_rate": 0.08327
+      },
+      "340": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00441,
+        "projected_deterioration_rate": 0.00812,
+        "projected_prepay_rate": 0.11371
+      },
+      "341": {
+        "loan_count": 45,
+        "projected_default_rate": 0.00721,
+        "projected_deterioration_rate": 0.01298,
+        "projected_prepay_rate": 0.13215
+      },
+      "342": {
+        "loan_count": 34,
+        "projected_default_rate": 0.00682,
+        "projected_deterioration_rate": 0.01553,
+        "projected_prepay_rate": 0.12076
+      },
+      "344": {
+        "loan_count": 72,
+        "projected_default_rate": 0.00679,
+        "projected_deterioration_rate": 0.01784,
+        "projected_prepay_rate": 0.12144
+      },
+      "348": {
+        "loan_count": 1040,
+        "projected_default_rate": 0.00773,
+        "projected_deterioration_rate": 0.01925,
+        "projected_prepay_rate": 0.10676
+      },
+      "350": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00991,
+        "projected_deterioration_rate": 0.0269,
+        "projected_prepay_rate": 0.1465
+      },
+      "353": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00372,
+        "projected_deterioration_rate": 0.0093,
+        "projected_prepay_rate": 0.12094
+      },
+      "354": {
+        "loan_count": 72,
+        "projected_default_rate": 0.00488,
+        "projected_deterioration_rate": 0.01351,
+        "projected_prepay_rate": 0.1628
+      },
+      "355": {
+        "loan_count": 48,
+        "projected_default_rate": 0.00357,
+        "projected_deterioration_rate": 0.01336,
+        "projected_prepay_rate": 0.29994
+      },
+      "359": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00654,
+        "projected_deterioration_rate": 0.00941,
+        "projected_prepay_rate": 0.13499
+      },
+      "360": {
+        "loan_count": 538830,
+        "projected_default_rate": 0.01743,
+        "projected_deterioration_rate": 0.03238,
+        "projected_prepay_rate": 0.11867
+      },
+      "96": {
+        "loan_count": 135,
+        "projected_default_rate": 0.00307,
+        "projected_deterioration_rate": 0.00937,
+        "projected_prepay_rate": 0.12868
+      }
+    },
+    "property_state": {
+      "AK": {
+        "loan_count": 1515,
+        "projected_default_rate": 0.00958,
+        "projected_deterioration_rate": 0.02413,
+        "projected_prepay_rate": 0.11019
+      },
+      "AL": {
+        "loan_count": 7620,
+        "projected_default_rate": 0.01706,
+        "projected_deterioration_rate": 0.02843,
+        "projected_prepay_rate": 0.14232
+      },
+      "AR": {
+        "loan_count": 4821,
+        "projected_default_rate": 0.02039,
+        "projected_deterioration_rate": 0.03216,
+        "projected_prepay_rate": 0.12359
+      },
+      "AZ": {
+        "loan_count": 24864,
+        "projected_default_rate": 0.01513,
+        "projected_deterioration_rate": 0.02927,
+        "projected_prepay_rate": 0.13788
+      },
+      "CA": {
+        "loan_count": 96326,
+        "projected_default_rate": 0.00998,
+        "projected_deterioration_rate": 0.02413,
+        "projected_prepay_rate": 0.1255
+      },
+      "CO": {
+        "loan_count": 20483,
+        "projected_default_rate": 0.01056,
+        "projected_deterioration_rate": 0.02328,
+        "projected_prepay_rate": 0.16714
+      },
+      "CT": {
+        "loan_count": 8403,
+        "projected_default_rate": 0.01239,
+        "projected_deterioration_rate": 0.02476,
+        "projected_prepay_rate": 0.10251
+      },
+      "DC": {
+        "loan_count": 2097,
+        "projected_default_rate": 0.01382,
+        "projected_deterioration_rate": 0.02216,
+        "projected_prepay_rate": 0.11558
+      },
+      "DE": {
+        "loan_count": 3572,
+        "projected_default_rate": 0.02173,
+        "projected_deterioration_rate": 0.02978,
+        "projected_prepay_rate": 0.11916
+      },
+      "FL": {
+        "loan_count": 46374,
+        "projected_default_rate": 0.02582,
+        "projected_deterioration_rate": 0.03732,
+        "projected_prepay_rate": 0.10838
+      },
+      "GA": {
+        "loan_count": 22776,
+        "projected_default_rate": 0.01415,
+        "projected_deterioration_rate": 0.02989,
+        "projected_prepay_rate": 0.12317
+      },
+      "GU": {
+        "loan_count": 180,
+        "projected_default_rate": 0.00998,
+        "projected_deterioration_rate": 0.02934,
+        "projected_prepay_rate": 0.10992
+      },
+      "HI": {
+        "loan_count": 1949,
+        "projected_default_rate": 0.02387,
+        "projected_deterioration_rate": 0.03142,
+        "projected_prepay_rate": 0.10006
+      },
+      "IA": {
+        "loan_count": 6097,
+        "projected_default_rate": 0.01081,
+        "projected_deterioration_rate": 0.02152,
+        "projected_prepay_rate": 0.1292
+      },
+      "ID": {
+        "loan_count": 5257,
+        "projected_default_rate": 0.01209,
+        "projected_deterioration_rate": 0.02321,
+        "projected_prepay_rate": 0.15539
+      },
+      "IL": {
+        "loan_count": 33319,
+        "projected_default_rate": 0.01603,
+        "projected_deterioration_rate": 0.0317,
+        "projected_prepay_rate": 0.11507
+      },
+      "IN": {
+        "loan_count": 16834,
+        "projected_default_rate": 0.01668,
+        "projected_deterioration_rate": 0.0289,
+        "projected_prepay_rate": 0.1395
+      },
+      "KS": {
+        "loan_count": 5329,
+        "projected_default_rate": 0.01371,
+        "projected_deterioration_rate": 0.02588,
+        "projected_prepay_rate": 0.16319
+      },
+      "KY": {
+        "loan_count": 9581,
+        "projected_default_rate": 0.0088,
+        "projected_deterioration_rate": 0.01828,
+        "projected_prepay_rate": 0.12215
+      },
+      "LA": {
+        "loan_count": 7336,
+        "projected_default_rate": 0.02664,
+        "projected_deterioration_rate": 0.04371,
+        "projected_prepay_rate": 0.10975
+      },
+      "MA": {
+        "loan_count": 20563,
+        "projected_default_rate": 0.01552,
+        "projected_deterioration_rate": 0.03301,
+        "projected_prepay_rate": 0.15131
+      },
+      "MD": {
+        "loan_count": 18879,
+        "projected_default_rate": 0.01381,
+        "projected_deterioration_rate": 0.02758,
+        "projected_prepay_rate": 0.09311
+      },
+      "ME": {
+        "loan_count": 3120,
+        "projected_default_rate": 0.01118,
+        "projected_deterioration_rate": 0.02754,
+        "projected_prepay_rate": 0.10668
+      },
+      "MI": {
+        "loan_count": 26813,
+        "projected_default_rate": 0.01509,
+        "projected_deterioration_rate": 0.02912,
+        "projected_prepay_rate": 0.12235
+      },
+      "MN": {
+        "loan_count": 18129,
+        "projected_default_rate": 0.01149,
+        "projected_deterioration_rate": 0.02574,
+        "projected_prepay_rate": 0.10724
+      },
+      "MO": {
+        "loan_count": 15579,
+        "projected_default_rate": 0.01272,
+        "projected_deterioration_rate": 0.0241,
+        "projected_prepay_rate": 0.15131
+      },
+      "MS": {
+        "loan_count": 2792,
+        "projected_default_rate": 0.02984,
+        "projected_deterioration_rate": 0.04714,
+        "projected_prepay_rate": 0.12403
+      },
+      "MT": {
+        "loan_count": 2586,
+        "projected_default_rate": 0.00584,
+        "projected_deterioration_rate": 0.0246,
+        "projected_prepay_rate": 0.09851
+      },
+      "NC": {
+        "loan_count": 23023,
+        "projected_default_rate": 0.01166,
+        "projected_deterioration_rate": 0.02625,
+        "projected_prepay_rate": 0.11466
+      },
+      "ND": {
+        "loan_count": 1788,
+        "projected_default_rate": 0.01377,
+        "projected_deterioration_rate": 0.02375,
+        "projected_prepay_rate": 0.09621
+      },
+      "NE": {
+        "loan_count": 3240,
+        "projected_default_rate": 0.01129,
+        "projected_deterioration_rate": 0.02028,
+        "projected_prepay_rate": 0.1371
+      },
+      "NH": {
+        "loan_count": 4176,
+        "projected_default_rate": 0.00495,
+        "projected_deterioration_rate": 0.01435,
+        "projected_prepay_rate": 0.11246
+      },
+      "NJ": {
+        "loan_count": 22289,
+        "projected_default_rate": 0.01862,
+        "projected_deterioration_rate": 0.03505,
+        "projected_prepay_rate": 0.10247
+      },
+      "NM": {
+        "loan_count": 3497,
+        "projected_default_rate": 0.02622,
+        "projected_deterioration_rate": 0.03986,
+        "projected_prepay_rate": 0.13343
+      },
+      "NV": {
+        "loan_count": 8426,
+        "projected_default_rate": 0.01521,
+        "projected_deterioration_rate": 0.03103,
+        "projected_prepay_rate": 0.1074
+      },
+      "NY": {
+        "loan_count": 29046,
+        "projected_default_rate": 0.0184,
+        "projected_deterioration_rate": 0.03393,
+        "projected_prepay_rate": 0.09124
+      },
+      "OH": {
+        "loan_count": 28474,
+        "projected_default_rate": 0.01844,
+        "projected_deterioration_rate": 0.03071,
+        "projected_prepay_rate": 0.12743
+      },
+      "OK": {
+        "loan_count": 5455,
+        "projected_default_rate": 0.01332,
+        "projected_deterioration_rate": 0.02639,
+        "projected_prepay_rate": 0.12567
+      },
+      "OR": {
+        "loan_count": 12405,
+        "projected_default_rate": 0.00956,
+        "projected_deterioration_rate": 0.01928,
+        "projected_prepay_rate": 0.13387
+      },
+      "PA": {
+        "loan_count": 25880,
+        "projected_default_rate": 0.02092,
+        "projected_deterioration_rate": 0.03314,
+        "projected_prepay_rate": 0.10266
+      },
+      "PR": {
+        "loan_count": 1153,
+        "projected_default_rate": 0.08069,
+        "projected_deterioration_rate": 0.11038,
+        "projected_prepay_rate": 0.10271
+      },
+      "RI": {
+        "loan_count": 3334,
+        "projected_default_rate": 0.01482,
+        "projected_deterioration_rate": 0.03176,
+        "projected_prepay_rate": 0.13799
+      },
+      "SC": {
+        "loan_count": 11343,
+        "projected_default_rate": 0.01125,
+        "projected_deterioration_rate": 0.02908,
+        "projected_prepay_rate": 0.11878
+      },
+      "SD": {
+        "loan_count": 1523,
+        "projected_default_rate": 0.00521,
+        "projected_deterioration_rate": 0.01171,
+        "projected_prepay_rate": 0.14186
+      },
+      "TN": {
+        "loan_count": 14134,
+        "projected_default_rate": 0.01356,
+        "projected_deterioration_rate": 0.02546,
+        "projected_prepay_rate": 0.13051
+      },
+      "TX": {
+        "loan_count": 49032,
+        "projected_default_rate": 0.01547,
+        "projected_deterioration_rate": 0.03143,
+        "projected_prepay_rate": 0.13203
+      },
+      "UT": {
+        "loan_count": 10477,
+        "projected_default_rate": 0.01182,
+        "projected_deterioration_rate": 0.02444,
+        "projected_prepay_rate": 0.16693
+      },
+      "VA": {
+        "loan_count": 23469,
+        "projected_default_rate": 0.01417,
+        "projected_deterioration_rate": 0.02673,
+        "projected_prepay_rate": 0.10456
+      },
+      "VI": {
+        "loan_count": 60,
+        "projected_default_rate": 0.00778,
+        "projected_deterioration_rate": 0.01859,
+        "projected_prepay_rate": 0.10873
+      },
+      "VT": {
+        "loan_count": 1990,
+        "projected_default_rate": 0.00602,
+        "projected_deterioration_rate": 0.01474,
+        "projected_prepay_rate": 0.11953
+      },
+      "WA": {
+        "loan_count": 21727,
+        "projected_default_rate": 0.01129,
+        "projected_deterioration_rate": 0.02175,
+        "projected_prepay_rate": 0.12724
+      },
+      "WI": {
+        "loan_count": 13691,
+        "projected_default_rate": 0.00962,
+        "projected_deterioration_rate": 0.0202,
+        "projected_prepay_rate": 0.16052
+      },
+      "WV": {
+        "loan_count": 2587,
+        "projected_default_rate": 0.01827,
+        "projected_deterioration_rate": 0.04545,
+        "projected_prepay_rate": 0.10199
+      },
+      "WY": {
+        "loan_count": 1107,
+        "projected_default_rate": 0.0058,
+        "projected_deterioration_rate": 0.01245,
+        "projected_prepay_rate": 0.13925
+      }
+    },
+    "servicer_name": {
+      "AMERIHOME MORTGAGE COMPANY, LLC": {
+        "loan_count": 2117,
+        "projected_default_rate": 0.02554,
+        "projected_deterioration_rate": 0.05527,
+        "projected_prepay_rate": 0.12074
+      },
+      "BANK OF AMERICA, N.A.": {
+        "loan_count": 13279,
+        "projected_default_rate": 0.01747,
+        "projected_deterioration_rate": 0.03086,
+        "projected_prepay_rate": 0.1712
+      },
+      "CALIBER HOME LOANS, INC.": {
+        "loan_count": 4566,
+        "projected_default_rate": 0.00996,
+        "projected_deterioration_rate": 0.02193,
+        "projected_prepay_rate": 0.11778
+      },
+      "CITIZENS BANK, NA": {
+        "loan_count": 12879,
+        "projected_default_rate": 0.00821,
+        "projected_deterioration_rate": 0.018,
+        "projected_prepay_rate": 0.10748
+      },
+      "CMG MORTGAGE, INC.": {
+        "loan_count": 1837,
+        "projected_default_rate": 0.01392,
+        "projected_deterioration_rate": 0.0277,
+        "projected_prepay_rate": 0.11048
+      },
+      "CROSSCOUNTRY MORTGAGE, LLC": {
+        "loan_count": 1088,
+        "projected_default_rate": 0.01203,
+        "projected_deterioration_rate": 0.02581,
+        "projected_prepay_rate": 0.10711
+      },
+      "FIFTH THIRD BANK, NATIONAL ASSOCIATION": {
+        "loan_count": 14725,
+        "projected_default_rate": 0.02178,
+        "projected_deterioration_rate": 0.03596,
+        "projected_prepay_rate": 0.12196
+      },
+      "FREEDOM MORTGAGE CORPORATION": {
+        "loan_count": 20607,
+        "projected_default_rate": 0.012,
+        "projected_deterioration_rate": 0.02619,
+        "projected_prepay_rate": 0.10632
+      },
+      "GUILD MORTGAGE COMPANY LLC": {
+        "loan_count": 1221,
+        "projected_default_rate": 0.00914,
+        "projected_deterioration_rate": 0.02428,
+        "projected_prepay_rate": 0.13024
+      },
+      "HOME POINT FINANCIAL CORPORATION": {
+        "loan_count": 1754,
+        "projected_default_rate": 0.01089,
+        "projected_deterioration_rate": 0.02252,
+        "projected_prepay_rate": 0.09161
+      },
+      "JPMORGAN CHASE BANK, NATIONAL ASSOCIATION": {
+        "loan_count": 82824,
+        "projected_default_rate": 0.01062,
+        "projected_deterioration_rate": 0.02298,
+        "projected_prepay_rate": 0.11688
+      },
+      "LAKEVIEW LOAN SERVICING, LLC": {
+        "loan_count": 15870,
+        "projected_default_rate": 0.01488,
+        "projected_deterioration_rate": 0.03932,
+        "projected_prepay_rate": 0.11678
+      },
+      "LOANDEPOT.COM, LLC": {
+        "loan_count": 9698,
+        "projected_default_rate": 0.01027,
+        "projected_deterioration_rate": 0.02213,
+        "projected_prepay_rate": 0.08851
+      },
+      "MARLIN MORTGAGE CAPITAL, LLC": {
+        "loan_count": 1294,
+        "projected_default_rate": 0.01352,
+        "projected_deterioration_rate": 0.0266,
+        "projected_prepay_rate": 0.0966
+      },
+      "MATRIX FINANCIAL SERVICES CORPORATION": {
+        "loan_count": 12522,
+        "projected_default_rate": 0.01106,
+        "projected_deterioration_rate": 0.0214,
+        "projected_prepay_rate": 0.10019
+      },
+      "NATIONSTAR MORTGAGE LLC DBA MR. COOPER": {
+        "loan_count": 49081,
+        "projected_default_rate": 0.01989,
+        "projected_deterioration_rate": 0.03665,
+        "projected_prepay_rate": 0.13107
+      },
+      "NEW RESIDENTIAL MORTGAGE LLC": {
+        "loan_count": 44450,
+        "projected_default_rate": 0.01358,
+        "projected_deterioration_rate": 0.02734,
+        "projected_prepay_rate": 0.12439
+      },
+      "NEWREZ LLC": {
+        "loan_count": 664,
+        "projected_default_rate": 0.0355,
+        "projected_deterioration_rate": 0.05059,
+        "projected_prepay_rate": 0.08509
+      },
+      "ONSLOW BAY FINANCIAL LLC": {
+        "loan_count": 17537,
+        "projected_default_rate": 0.01146,
+        "projected_deterioration_rate": 0.02473,
+        "projected_prepay_rate": 0.11151
+      },
+      "OTHER": {
+        "loan_count": 190814,
+        "projected_default_rate": 0.01829,
+        "projected_deterioration_rate": 0.03287,
+        "projected_prepay_rate": 0.12621
+      },
+      "PENNYMAC CORP.": {
+        "loan_count": 23463,
+        "projected_default_rate": 0.01094,
+        "projected_deterioration_rate": 0.02271,
+        "projected_prepay_rate": 0.10658
+      },
+      "PENNYMAC LOAN SERVICES, LLC": {
+        "loan_count": 5907,
+        "projected_default_rate": 0.01241,
+        "projected_deterioration_rate": 0.02522,
+        "projected_prepay_rate": 0.09905
+      },
+      "PHH ASSET SERVICES LLC": {
+        "loan_count": 2043,
+        "projected_default_rate": 0.01221,
+        "projected_deterioration_rate": 0.02522,
+        "projected_prepay_rate": 0.12479
+      },
+      "PHH MORTGAGE CORPORATION": {
+        "loan_count": 10663,
+        "projected_default_rate": 0.01105,
+        "projected_deterioration_rate": 0.02052,
+        "projected_prepay_rate": 0.10348
+      },
+      "PNC BANK, NA": {
+        "loan_count": 25028,
+        "projected_default_rate": 0.01737,
+        "projected_deterioration_rate": 0.03064,
+        "projected_prepay_rate": 0.11839
+      },
+      "ROCKET MORTGAGE, LLC": {
+        "loan_count": 36071,
+        "projected_default_rate": 0.01817,
+        "projected_deterioration_rate": 0.0337,
+        "projected_prepay_rate": 0.10325
+      },
+      "TH MSR HOLDINGS LLC": {
+        "loan_count": 11782,
+        "projected_default_rate": 0.01095,
+        "projected_deterioration_rate": 0.02323,
+        "projected_prepay_rate": 0.11701
+      },
+      "TRUIST BANK": {
+        "loan_count": 27889,
+        "projected_default_rate": 0.0105,
+        "projected_deterioration_rate": 0.02259,
+        "projected_prepay_rate": 0.12847
+      },
+      "U.S. BANK N.A.": {
+        "loan_count": 30021,
+        "projected_default_rate": 0.01582,
+        "projected_deterioration_rate": 0.02922,
+        "projected_prepay_rate": 0.15529
+      },
+      "UNITED WHOLESALE MORTGAGE, LLC": {
+        "loan_count": 15446,
+        "projected_default_rate": 0.01518,
+        "projected_deterioration_rate": 0.0279,
+        "projected_prepay_rate": 0.09883
+      },
+      "WELLS FARGO BANK, N.A.": {
+        "loan_count": 69380,
+        "projected_default_rate": 0.01251,
+        "projected_deterioration_rate": 0.02335,
+        "projected_prepay_rate": 0.14621
+      }
+    }
+  },
+  "high_prepayment": {
+    "channel": {
+      "B": {
+        "loan_count": 84436,
+        "projected_default_rate": 0.01043,
+        "projected_deterioration_rate": 0.02319,
+        "projected_prepay_rate": 0.28906
+      },
+      "C": {
+        "loan_count": 206028,
+        "projected_default_rate": 0.01106,
+        "projected_deterioration_rate": 0.02409,
+        "projected_prepay_rate": 0.29908
+      },
+      "R": {
+        "loan_count": 454861,
+        "projected_default_rate": 0.01146,
+        "projected_deterioration_rate": 0.02504,
+        "projected_prepay_rate": 0.31182
+      },
+      "T": {
+        "loan_count": 11195,
+        "projected_default_rate": 0.0597,
+        "projected_deterioration_rate": 0.10411,
+        "projected_prepay_rate": 0.48816
+      }
+    },
+    "loan_purpose": {
+      "C": {
+        "loan_count": 171461,
+        "projected_default_rate": 0.01374,
+        "projected_deterioration_rate": 0.02953,
+        "projected_prepay_rate": 0.31105
+      },
+      "N": {
+        "loan_count": 337472,
+        "projected_default_rate": 0.00886,
+        "projected_deterioration_rate": 0.02067,
+        "projected_prepay_rate": 0.30786
+      },
+      "P": {
+        "loan_count": 247587,
+        "projected_default_rate": 0.01492,
+        "projected_deterioration_rate": 0.03004,
+        "projected_prepay_rate": 0.30736
+      }
+    },
+    "original_loan_term": {
+      "102": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00077,
+        "projected_deterioration_rate": 0.00651,
+        "projected_prepay_rate": 0.15072
+      },
+      "120": {
+        "loan_count": 6563,
+        "projected_default_rate": 0.00825,
+        "projected_deterioration_rate": 0.01761,
+        "projected_prepay_rate": 0.40728
+      },
+      "131": {
+        "loan_count": 72,
+        "projected_default_rate": 0.00113,
+        "projected_deterioration_rate": 0.00519,
+        "projected_prepay_rate": 0.15828
+      },
+      "132": {
+        "loan_count": 64,
+        "projected_default_rate": 0.00342,
+        "projected_deterioration_rate": 0.00997,
+        "projected_prepay_rate": 0.98993
+      },
+      "138": {
+        "loan_count": 9,
+        "projected_default_rate": 0.00712,
+        "projected_deterioration_rate": 0.01046,
+        "projected_prepay_rate": 1.0
+      },
+      "144": {
+        "loan_count": 524,
+        "projected_default_rate": 0.00549,
+        "projected_deterioration_rate": 0.02229,
+        "projected_prepay_rate": 0.3425
+      },
+      "146": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00505,
+        "projected_deterioration_rate": 0.00912,
+        "projected_prepay_rate": 0.20213
+      },
+      "153": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00092,
+        "projected_deterioration_rate": 0.00686,
+        "projected_prepay_rate": 0.14873
+      },
+      "154": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00088,
+        "projected_deterioration_rate": 0.00627,
+        "projected_prepay_rate": 0.20882
+      },
+      "156": {
+        "loan_count": 552,
+        "projected_default_rate": 0.00418,
+        "projected_deterioration_rate": 0.01833,
+        "projected_prepay_rate": 0.40813
+      },
+      "159": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00075,
+        "projected_deterioration_rate": 0.00724,
+        "projected_prepay_rate": 1.0
+      },
+      "161": {
+        "loan_count": 12,
+        "projected_default_rate": 0.00071,
+        "projected_deterioration_rate": 0.00597,
+        "projected_prepay_rate": 1.0
+      },
+      "162": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00094,
+        "projected_deterioration_rate": 0.00651,
+        "projected_prepay_rate": 1.0
+      },
+      "165": {
+        "loan_count": 72,
+        "projected_default_rate": 0.0046,
+        "projected_deterioration_rate": 0.00706,
+        "projected_prepay_rate": 0.60292
+      },
+      "168": {
+        "loan_count": 239,
+        "projected_default_rate": 0.00215,
+        "projected_deterioration_rate": 0.00815,
+        "projected_prepay_rate": 0.53128
+      },
+      "174": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00287,
+        "projected_deterioration_rate": 0.00759,
+        "projected_prepay_rate": 0.54055
+      },
+      "179": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00077,
+        "projected_deterioration_rate": 0.00406,
+        "projected_prepay_rate": 0.36029
+      },
+      "180": {
+        "loan_count": 145723,
+        "projected_default_rate": 0.00674,
+        "projected_deterioration_rate": 0.01668,
+        "projected_prepay_rate": 0.34416
+      },
+      "192": {
+        "loan_count": 129,
+        "projected_default_rate": 0.00605,
+        "projected_deterioration_rate": 0.0123,
+        "projected_prepay_rate": 0.54041
+      },
+      "204": {
+        "loan_count": 72,
+        "projected_default_rate": 0.01104,
+        "projected_deterioration_rate": 0.01242,
+        "projected_prepay_rate": 0.33253
+      },
+      "207": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00761,
+        "projected_deterioration_rate": 0.02053,
+        "projected_prepay_rate": 0.30828
+      },
+      "216": {
+        "loan_count": 126,
+        "projected_default_rate": 0.00748,
+        "projected_deterioration_rate": 0.01693,
+        "projected_prepay_rate": 0.52154
+      },
+      "220": {
+        "loan_count": 2,
+        "projected_default_rate": 0.00038,
+        "projected_deterioration_rate": 0.00196,
+        "projected_prepay_rate": 0.95522
+      },
+      "228": {
+        "loan_count": 204,
+        "projected_default_rate": 0.0063,
+        "projected_deterioration_rate": 0.01806,
+        "projected_prepay_rate": 0.29687
+      },
+      "233": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00174,
+        "projected_deterioration_rate": 0.00651,
+        "projected_prepay_rate": 0.32618
+      },
+      "240": {
+        "loan_count": 48462,
+        "projected_default_rate": 0.00703,
+        "projected_deterioration_rate": 0.01776,
+        "projected_prepay_rate": 0.31455
+      },
+      "241": {
+        "loan_count": 84,
+        "projected_default_rate": 0.02249,
+        "projected_deterioration_rate": 0.02557,
+        "projected_prepay_rate": 0.32719
+      },
+      "252": {
+        "loan_count": 412,
+        "projected_default_rate": 0.00515,
+        "projected_deterioration_rate": 0.01081,
+        "projected_prepay_rate": 0.26799
+      },
+      "258": {
+        "loan_count": 36,
+        "projected_default_rate": 0.03513,
+        "projected_deterioration_rate": 0.04258,
+        "projected_prepay_rate": 0.2359
+      },
+      "263": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00594,
+        "projected_deterioration_rate": 0.00913,
+        "projected_prepay_rate": 0.25211
+      },
+      "264": {
+        "loan_count": 284,
+        "projected_default_rate": 0.03125,
+        "projected_deterioration_rate": 0.07923,
+        "projected_prepay_rate": 0.36507
+      },
+      "273": {
+        "loan_count": 36,
+        "projected_default_rate": 0.01121,
+        "projected_deterioration_rate": 0.02171,
+        "projected_prepay_rate": 0.38582
+      },
+      "276": {
+        "loan_count": 265,
+        "projected_default_rate": 0.00557,
+        "projected_deterioration_rate": 0.01521,
+        "projected_prepay_rate": 0.35801
+      },
+      "280": {
+        "loan_count": 72,
+        "projected_default_rate": 0.00584,
+        "projected_deterioration_rate": 0.0126,
+        "projected_prepay_rate": 0.43623
+      },
+      "281": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00386,
+        "projected_deterioration_rate": 0.00845,
+        "projected_prepay_rate": 0.32793
+      },
+      "283": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00852,
+        "projected_deterioration_rate": 0.02229,
+        "projected_prepay_rate": 0.40178
+      },
+      "286": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00512,
+        "projected_deterioration_rate": 0.02019,
+        "projected_prepay_rate": 0.36859
+      },
+      "288": {
+        "loan_count": 366,
+        "projected_default_rate": 0.00671,
+        "projected_deterioration_rate": 0.01699,
+        "projected_prepay_rate": 0.2734
+      },
+      "289": {
+        "loan_count": 3,
+        "projected_default_rate": 0.00159,
+        "projected_deterioration_rate": 0.00434,
+        "projected_prepay_rate": 0.22724
+      },
+      "291": {
+        "loan_count": 72,
+        "projected_default_rate": 0.004,
+        "projected_deterioration_rate": 0.01211,
+        "projected_prepay_rate": 0.4158
+      },
+      "293": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00482,
+        "projected_deterioration_rate": 0.00894,
+        "projected_prepay_rate": 0.22525
+      },
+      "297": {
+        "loan_count": 72,
+        "projected_default_rate": 0.00231,
+        "projected_deterioration_rate": 0.01238,
+        "projected_prepay_rate": 0.37361
+      },
+      "298": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00352,
+        "projected_deterioration_rate": 0.01483,
+        "projected_prepay_rate": 0.26982
+      },
+      "299": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00296,
+        "projected_deterioration_rate": 0.00737,
+        "projected_prepay_rate": 0.21139
+      },
+      "300": {
+        "loan_count": 7925,
+        "projected_default_rate": 0.01109,
+        "projected_deterioration_rate": 0.0246,
+        "projected_prepay_rate": 0.29417
+      },
+      "302": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00403,
+        "projected_deterioration_rate": 0.01427,
+        "projected_prepay_rate": 0.30505
+      },
+      "303": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00616,
+        "projected_deterioration_rate": 0.01358,
+        "projected_prepay_rate": 0.25358
+      },
+      "305": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00593,
+        "projected_deterioration_rate": 0.00981,
+        "projected_prepay_rate": 0.24535
+      },
+      "308": {
+        "loan_count": 144,
+        "projected_default_rate": 0.00381,
+        "projected_deterioration_rate": 0.00881,
+        "projected_prepay_rate": 0.28428
+      },
+      "309": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00572,
+        "projected_deterioration_rate": 0.00778,
+        "projected_prepay_rate": 0.24062
+      },
+      "310": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00608,
+        "projected_deterioration_rate": 0.00948,
+        "projected_prepay_rate": 0.36004
+      },
+      "311": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00487,
+        "projected_deterioration_rate": 0.01554,
+        "projected_prepay_rate": 0.22355
+      },
+      "312": {
+        "loan_count": 432,
+        "projected_default_rate": 0.00521,
+        "projected_deterioration_rate": 0.01665,
+        "projected_prepay_rate": 0.26548
+      },
+      "322": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00397,
+        "projected_deterioration_rate": 0.00912,
+        "projected_prepay_rate": 0.36011
+      },
+      "324": {
+        "loan_count": 1238,
+        "projected_default_rate": 0.01085,
+        "projected_deterioration_rate": 0.02704,
+        "projected_prepay_rate": 0.28283
+      },
+      "326": {
+        "loan_count": 72,
+        "projected_default_rate": 0.00352,
+        "projected_deterioration_rate": 0.0127,
+        "projected_prepay_rate": 0.38089
+      },
+      "327": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00163,
+        "projected_deterioration_rate": 0.0067,
+        "projected_prepay_rate": 0.23881
+      },
+      "328": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00836,
+        "projected_deterioration_rate": 0.02265,
+        "projected_prepay_rate": 0.29023
+      },
+      "329": {
+        "loan_count": 36,
+        "projected_default_rate": 0.0089,
+        "projected_deterioration_rate": 0.05113,
+        "projected_prepay_rate": 0.26619
+      },
+      "331": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00773,
+        "projected_deterioration_rate": 0.02763,
+        "projected_prepay_rate": 0.32581
+      },
+      "332": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00888,
+        "projected_deterioration_rate": 0.01565,
+        "projected_prepay_rate": 0.33157
+      },
+      "333": {
+        "loan_count": 14,
+        "projected_default_rate": 0.00562,
+        "projected_deterioration_rate": 0.01432,
+        "projected_prepay_rate": 0.20796
+      },
+      "336": {
+        "loan_count": 521,
+        "projected_default_rate": 0.00717,
+        "projected_deterioration_rate": 0.01979,
+        "projected_prepay_rate": 0.3419
+      },
+      "337": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00086,
+        "projected_deterioration_rate": 0.00399,
+        "projected_prepay_rate": 0.2972
+      },
+      "338": {
+        "loan_count": 108,
+        "projected_default_rate": 0.00333,
+        "projected_deterioration_rate": 0.00976,
+        "projected_prepay_rate": 0.27553
+      },
+      "339": {
+        "loan_count": 39,
+        "projected_default_rate": 0.00762,
+        "projected_deterioration_rate": 0.0157,
+        "projected_prepay_rate": 0.20817
+      },
+      "340": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00353,
+        "projected_deterioration_rate": 0.00731,
+        "projected_prepay_rate": 0.28427
+      },
+      "341": {
+        "loan_count": 45,
+        "projected_default_rate": 0.00577,
+        "projected_deterioration_rate": 0.01168,
+        "projected_prepay_rate": 0.33038
+      },
+      "342": {
+        "loan_count": 34,
+        "projected_default_rate": 0.00546,
+        "projected_deterioration_rate": 0.01398,
+        "projected_prepay_rate": 0.30189
+      },
+      "344": {
+        "loan_count": 72,
+        "projected_default_rate": 0.00543,
+        "projected_deterioration_rate": 0.01606,
+        "projected_prepay_rate": 0.3036
+      },
+      "348": {
+        "loan_count": 1040,
+        "projected_default_rate": 0.00619,
+        "projected_deterioration_rate": 0.01733,
+        "projected_prepay_rate": 0.2669
+      },
+      "350": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00792,
+        "projected_deterioration_rate": 0.02421,
+        "projected_prepay_rate": 0.36626
+      },
+      "353": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00297,
+        "projected_deterioration_rate": 0.00837,
+        "projected_prepay_rate": 0.30236
+      },
+      "354": {
+        "loan_count": 72,
+        "projected_default_rate": 0.00391,
+        "projected_deterioration_rate": 0.01215,
+        "projected_prepay_rate": 0.40699
+      },
+      "355": {
+        "loan_count": 48,
+        "projected_default_rate": 0.00285,
+        "projected_deterioration_rate": 0.01203,
+        "projected_prepay_rate": 0.74984
+      },
+      "359": {
+        "loan_count": 36,
+        "projected_default_rate": 0.00523,
+        "projected_deterioration_rate": 0.00847,
+        "projected_prepay_rate": 0.33747
+      },
+      "360": {
+        "loan_count": 538830,
+        "projected_default_rate": 0.01394,
+        "projected_deterioration_rate": 0.02914,
+        "projected_prepay_rate": 0.29667
+      },
+      "96": {
+        "loan_count": 135,
+        "projected_default_rate": 0.00246,
+        "projected_deterioration_rate": 0.00844,
+        "projected_prepay_rate": 0.32171
+      }
+    },
+    "property_state": {
+      "AK": {
+        "loan_count": 1515,
+        "projected_default_rate": 0.00767,
+        "projected_deterioration_rate": 0.02172,
+        "projected_prepay_rate": 0.27548
+      },
+      "AL": {
+        "loan_count": 7620,
+        "projected_default_rate": 0.01365,
+        "projected_deterioration_rate": 0.02559,
+        "projected_prepay_rate": 0.35581
+      },
+      "AR": {
+        "loan_count": 4821,
+        "projected_default_rate": 0.01631,
+        "projected_deterioration_rate": 0.02894,
+        "projected_prepay_rate": 0.30896
+      },
+      "AZ": {
+        "loan_count": 24864,
+        "projected_default_rate": 0.0121,
+        "projected_deterioration_rate": 0.02634,
+        "projected_prepay_rate": 0.3447
+      },
+      "CA": {
+        "loan_count": 96326,
+        "projected_default_rate": 0.00799,
+        "projected_deterioration_rate": 0.02172,
+        "projected_prepay_rate": 0.31374
+      },
+      "CO": {
+        "loan_count": 20483,
+        "projected_default_rate": 0.00845,
+        "projected_deterioration_rate": 0.02095,
+        "projected_prepay_rate": 0.41785
+      },
+      "CT": {
+        "loan_count": 8403,
+        "projected_default_rate": 0.00991,
+        "projected_deterioration_rate": 0.02229,
+        "projected_prepay_rate": 0.25627
+      },
+      "DC": {
+        "loan_count": 2097,
+        "projected_default_rate": 0.01106,
+        "projected_deterioration_rate": 0.01995,
+        "projected_prepay_rate": 0.28895
+      },
+      "DE": {
+        "loan_count": 3572,
+        "projected_default_rate": 0.01738,
+        "projected_deterioration_rate": 0.0268,
+        "projected_prepay_rate": 0.29791
+      },
+      "FL": {
+        "loan_count": 46374,
+        "projected_default_rate": 0.02065,
+        "projected_deterioration_rate": 0.03359,
+        "projected_prepay_rate": 0.27095
+      },
+      "GA": {
+        "loan_count": 22776,
+        "projected_default_rate": 0.01132,
+        "projected_deterioration_rate": 0.0269,
+        "projected_prepay_rate": 0.30793
+      },
+      "GU": {
+        "loan_count": 180,
+        "projected_default_rate": 0.00799,
+        "projected_deterioration_rate": 0.02641,
+        "projected_prepay_rate": 0.27481
+      },
+      "HI": {
+        "loan_count": 1949,
+        "projected_default_rate": 0.01909,
+        "projected_deterioration_rate": 0.02828,
+        "projected_prepay_rate": 0.25014
+      },
+      "IA": {
+        "loan_count": 6097,
+        "projected_default_rate": 0.00865,
+        "projected_deterioration_rate": 0.01937,
+        "projected_prepay_rate": 0.323
+      },
+      "ID": {
+        "loan_count": 5257,
+        "projected_default_rate": 0.00967,
+        "projected_deterioration_rate": 0.02089,
+        "projected_prepay_rate": 0.38847
+      },
+      "IL": {
+        "loan_count": 33319,
+        "projected_default_rate": 0.01283,
+        "projected_deterioration_rate": 0.02853,
+        "projected_prepay_rate": 0.28767
+      },
+      "IN": {
+        "loan_count": 16834,
+        "projected_default_rate": 0.01335,
+        "projected_deterioration_rate": 0.02601,
+        "projected_prepay_rate": 0.34876
+      },
+      "KS": {
+        "loan_count": 5329,
+        "projected_default_rate": 0.01097,
+        "projected_deterioration_rate": 0.02329,
+        "projected_prepay_rate": 0.40799
+      },
+      "KY": {
+        "loan_count": 9581,
+        "projected_default_rate": 0.00704,
+        "projected_deterioration_rate": 0.01645,
+        "projected_prepay_rate": 0.30538
+      },
+      "LA": {
+        "loan_count": 7336,
+        "projected_default_rate": 0.02132,
+        "projected_deterioration_rate": 0.03934,
+        "projected_prepay_rate": 0.27436
+      },
+      "MA": {
+        "loan_count": 20563,
+        "projected_default_rate": 0.01241,
+        "projected_deterioration_rate": 0.02971,
+        "projected_prepay_rate": 0.37828
+      },
+      "MD": {
+        "loan_count": 18879,
+        "projected_default_rate": 0.01105,
+        "projected_deterioration_rate": 0.02482,
+        "projected_prepay_rate": 0.23278
+      },
+      "ME": {
+        "loan_count": 3120,
+        "projected_default_rate": 0.00894,
+        "projected_deterioration_rate": 0.02479,
+        "projected_prepay_rate": 0.2667
+      },
+      "MI": {
+        "loan_count": 26813,
+        "projected_default_rate": 0.01207,
+        "projected_deterioration_rate": 0.02621,
+        "projected_prepay_rate": 0.30587
+      },
+      "MN": {
+        "loan_count": 18129,
+        "projected_default_rate": 0.00919,
+        "projected_deterioration_rate": 0.02316,
+        "projected_prepay_rate": 0.2681
+      },
+      "MO": {
+        "loan_count": 15579,
+        "projected_default_rate": 0.01017,
+        "projected_deterioration_rate": 0.02169,
+        "projected_prepay_rate": 0.37826
+      },
+      "MS": {
+        "loan_count": 2792,
+        "projected_default_rate": 0.02387,
+        "projected_deterioration_rate": 0.04242,
+        "projected_prepay_rate": 0.31007
+      },
+      "MT": {
+        "loan_count": 2586,
+        "projected_default_rate": 0.00467,
+        "projected_deterioration_rate": 0.02214,
+        "projected_prepay_rate": 0.24627
+      },
+      "NC": {
+        "loan_count": 23023,
+        "projected_default_rate": 0.00933,
+        "projected_deterioration_rate": 0.02363,
+        "projected_prepay_rate": 0.28665
+      },
+      "ND": {
+        "loan_count": 1788,
+        "projected_default_rate": 0.01101,
+        "projected_deterioration_rate": 0.02137,
+        "projected_prepay_rate": 0.24052
+      },
+      "NE": {
+        "loan_count": 3240,
+        "projected_default_rate": 0.00903,
+        "projected_deterioration_rate": 0.01825,
+        "projected_prepay_rate": 0.34274
+      },
+      "NH": {
+        "loan_count": 4176,
+        "projected_default_rate": 0.00396,
+        "projected_deterioration_rate": 0.01292,
+        "projected_prepay_rate": 0.28114
+      },
+      "NJ": {
+        "loan_count": 22289,
+        "projected_default_rate": 0.0149,
+        "projected_deterioration_rate": 0.03155,
+        "projected_prepay_rate": 0.25617
+      },
+      "NM": {
+        "loan_count": 3497,
+        "projected_default_rate": 0.02097,
+        "projected_deterioration_rate": 0.03588,
+        "projected_prepay_rate": 0.33358
+      },
+      "NV": {
+        "loan_count": 8426,
+        "projected_default_rate": 0.01217,
+        "projected_deterioration_rate": 0.02793,
+        "projected_prepay_rate": 0.26851
+      },
+      "NY": {
+        "loan_count": 29046,
+        "projected_default_rate": 0.01472,
+        "projected_deterioration_rate": 0.03053,
+        "projected_prepay_rate": 0.22811
+      },
+      "OH": {
+        "loan_count": 28474,
+        "projected_default_rate": 0.01475,
+        "projected_deterioration_rate": 0.02764,
+        "projected_prepay_rate": 0.31859
+      },
+      "OK": {
+        "loan_count": 5455,
+        "projected_default_rate": 0.01065,
+        "projected_deterioration_rate": 0.02375,
+        "projected_prepay_rate": 0.31419
+      },
+      "OR": {
+        "loan_count": 12405,
+        "projected_default_rate": 0.00765,
+        "projected_deterioration_rate": 0.01735,
+        "projected_prepay_rate": 0.33469
+      },
+      "PA": {
+        "loan_count": 25880,
+        "projected_default_rate": 0.01674,
+        "projected_deterioration_rate": 0.02983,
+        "projected_prepay_rate": 0.25666
+      },
+      "PR": {
+        "loan_count": 1153,
+        "projected_default_rate": 0.06456,
+        "projected_deterioration_rate": 0.09934,
+        "projected_prepay_rate": 0.25678
+      },
+      "RI": {
+        "loan_count": 3334,
+        "projected_default_rate": 0.01186,
+        "projected_deterioration_rate": 0.02859,
+        "projected_prepay_rate": 0.34499
+      },
+      "SC": {
+        "loan_count": 11343,
+        "projected_default_rate": 0.009,
+        "projected_deterioration_rate": 0.02617,
+        "projected_prepay_rate": 0.29695
+      },
+      "SD": {
+        "loan_count": 1523,
+        "projected_default_rate": 0.00417,
+        "projected_deterioration_rate": 0.01054,
+        "projected_prepay_rate": 0.35465
+      },
+      "TN": {
+        "loan_count": 14134,
+        "projected_default_rate": 0.01085,
+        "projected_deterioration_rate": 0.02292,
+        "projected_prepay_rate": 0.32627
+      },
+      "TX": {
+        "loan_count": 49032,
+        "projected_default_rate": 0.01238,
+        "projected_deterioration_rate": 0.02829,
+        "projected_prepay_rate": 0.33007
+      },
+      "UT": {
+        "loan_count": 10477,
+        "projected_default_rate": 0.00946,
+        "projected_deterioration_rate": 0.022,
+        "projected_prepay_rate": 0.41732
+      },
+      "VA": {
+        "loan_count": 23469,
+        "projected_default_rate": 0.01133,
+        "projected_deterioration_rate": 0.02406,
+        "projected_prepay_rate": 0.26139
+      },
+      "VI": {
+        "loan_count": 60,
+        "projected_default_rate": 0.00623,
+        "projected_deterioration_rate": 0.01673,
+        "projected_prepay_rate": 0.27182
+      },
+      "VT": {
+        "loan_count": 1990,
+        "projected_default_rate": 0.00481,
+        "projected_deterioration_rate": 0.01327,
+        "projected_prepay_rate": 0.29882
+      },
+      "WA": {
+        "loan_count": 21727,
+        "projected_default_rate": 0.00903,
+        "projected_deterioration_rate": 0.01957,
+        "projected_prepay_rate": 0.31809
+      },
+      "WI": {
+        "loan_count": 13691,
+        "projected_default_rate": 0.0077,
+        "projected_deterioration_rate": 0.01818,
+        "projected_prepay_rate": 0.4013
+      },
+      "WV": {
+        "loan_count": 2587,
+        "projected_default_rate": 0.01461,
+        "projected_deterioration_rate": 0.0409,
+        "projected_prepay_rate": 0.25498
+      },
+      "WY": {
+        "loan_count": 1107,
+        "projected_default_rate": 0.00464,
+        "projected_deterioration_rate": 0.0112,
+        "projected_prepay_rate": 0.34814
+      }
+    },
+    "servicer_name": {
+      "AMERIHOME MORTGAGE COMPANY, LLC": {
+        "loan_count": 2117,
+        "projected_default_rate": 0.02043,
+        "projected_deterioration_rate": 0.04975,
+        "projected_prepay_rate": 0.30186
+      },
+      "BANK OF AMERICA, N.A.": {
+        "loan_count": 13279,
+        "projected_default_rate": 0.01398,
+        "projected_deterioration_rate": 0.02777,
+        "projected_prepay_rate": 0.42799
+      },
+      "CALIBER HOME LOANS, INC.": {
+        "loan_count": 4566,
+        "projected_default_rate": 0.00797,
+        "projected_deterioration_rate": 0.01973,
+        "projected_prepay_rate": 0.29445
+      },
+      "CITIZENS BANK, NA": {
+        "loan_count": 12879,
+        "projected_default_rate": 0.00657,
+        "projected_deterioration_rate": 0.0162,
+        "projected_prepay_rate": 0.26871
+      },
+      "CMG MORTGAGE, INC.": {
+        "loan_count": 1837,
+        "projected_default_rate": 0.01113,
+        "projected_deterioration_rate": 0.02493,
+        "projected_prepay_rate": 0.2762
+      },
+      "CROSSCOUNTRY MORTGAGE, LLC": {
+        "loan_count": 1088,
+        "projected_default_rate": 0.00962,
+        "projected_deterioration_rate": 0.02323,
+        "projected_prepay_rate": 0.26779
+      },
+      "FIFTH THIRD BANK, NATIONAL ASSOCIATION": {
+        "loan_count": 14725,
+        "projected_default_rate": 0.01742,
+        "projected_deterioration_rate": 0.03236,
+        "projected_prepay_rate": 0.30489
+      },
+      "FREEDOM MORTGAGE CORPORATION": {
+        "loan_count": 20607,
+        "projected_default_rate": 0.0096,
+        "projected_deterioration_rate": 0.02357,
+        "projected_prepay_rate": 0.2658
+      },
+      "GUILD MORTGAGE COMPANY LLC": {
+        "loan_count": 1221,
+        "projected_default_rate": 0.00732,
+        "projected_deterioration_rate": 0.02185,
+        "projected_prepay_rate": 0.32561
+      },
+      "HOME POINT FINANCIAL CORPORATION": {
+        "loan_count": 1754,
+        "projected_default_rate": 0.00872,
+        "projected_deterioration_rate": 0.02027,
+        "projected_prepay_rate": 0.22903
+      },
+      "JPMORGAN CHASE BANK, NATIONAL ASSOCIATION": {
+        "loan_count": 82824,
+        "projected_default_rate": 0.0085,
+        "projected_deterioration_rate": 0.02068,
+        "projected_prepay_rate": 0.2922
+      },
+      "LAKEVIEW LOAN SERVICING, LLC": {
+        "loan_count": 15870,
+        "projected_default_rate": 0.0119,
+        "projected_deterioration_rate": 0.03539,
+        "projected_prepay_rate": 0.29195
+      },
+      "LOANDEPOT.COM, LLC": {
+        "loan_count": 9698,
+        "projected_default_rate": 0.00822,
+        "projected_deterioration_rate": 0.01992,
+        "projected_prepay_rate": 0.22128
+      },
+      "MARLIN MORTGAGE CAPITAL, LLC": {
+        "loan_count": 1294,
+        "projected_default_rate": 0.01082,
+        "projected_deterioration_rate": 0.02394,
+        "projected_prepay_rate": 0.24151
+      },
+      "MATRIX FINANCIAL SERVICES CORPORATION": {
+        "loan_count": 12522,
+        "projected_default_rate": 0.00884,
+        "projected_deterioration_rate": 0.01926,
+        "projected_prepay_rate": 0.25047
+      },
+      "NATIONSTAR MORTGAGE LLC DBA MR. COOPER": {
+        "loan_count": 49081,
+        "projected_default_rate": 0.01591,
+        "projected_deterioration_rate": 0.03299,
+        "projected_prepay_rate": 0.32767
+      },
+      "NEW RESIDENTIAL MORTGAGE LLC": {
+        "loan_count": 44450,
+        "projected_default_rate": 0.01086,
+        "projected_deterioration_rate": 0.02461,
+        "projected_prepay_rate": 0.31098
+      },
+      "NEWREZ LLC": {
+        "loan_count": 664,
+        "projected_default_rate": 0.0284,
+        "projected_deterioration_rate": 0.04553,
+        "projected_prepay_rate": 0.21272
+      },
+      "ONSLOW BAY FINANCIAL LLC": {
+        "loan_count": 17537,
+        "projected_default_rate": 0.00917,
+        "projected_deterioration_rate": 0.02226,
+        "projected_prepay_rate": 0.27878
+      },
+      "OTHER": {
+        "loan_count": 190814,
+        "projected_default_rate": 0.01463,
+        "projected_deterioration_rate": 0.02958,
+        "projected_prepay_rate": 0.31552
+      },
+      "PENNYMAC CORP.": {
+        "loan_count": 23463,
+        "projected_default_rate": 0.00875,
+        "projected_deterioration_rate": 0.02044,
+        "projected_prepay_rate": 0.26644
+      },
+      "PENNYMAC LOAN SERVICES, LLC": {
+        "loan_count": 5907,
+        "projected_default_rate": 0.00993,
+        "projected_deterioration_rate": 0.0227,
+        "projected_prepay_rate": 0.24761
+      },
+      "PHH ASSET SERVICES LLC": {
+        "loan_count": 2043,
+        "projected_default_rate": 0.00977,
+        "projected_deterioration_rate": 0.0227,
+        "projected_prepay_rate": 0.31197
+      },
+      "PHH MORTGAGE CORPORATION": {
+        "loan_count": 10663,
+        "projected_default_rate": 0.00884,
+        "projected_deterioration_rate": 0.01846,
+        "projected_prepay_rate": 0.25869
+      },
+      "PNC BANK, NA": {
+        "loan_count": 25028,
+        "projected_default_rate": 0.0139,
+        "projected_deterioration_rate": 0.02758,
+        "projected_prepay_rate": 0.29597
+      },
+      "ROCKET MORTGAGE, LLC": {
+        "loan_count": 36071,
+        "projected_default_rate": 0.01454,
+        "projected_deterioration_rate": 0.03033,
+        "projected_prepay_rate": 0.25812
+      },
+      "TH MSR HOLDINGS LLC": {
+        "loan_count": 11782,
+        "projected_default_rate": 0.00876,
+        "projected_deterioration_rate": 0.02091,
+        "projected_prepay_rate": 0.29252
+      },
+      "TRUIST BANK": {
+        "loan_count": 27889,
+        "projected_default_rate": 0.0084,
+        "projected_deterioration_rate": 0.02033,
+        "projected_prepay_rate": 0.32117
+      },
+      "U.S. BANK N.A.": {
+        "loan_count": 30021,
+        "projected_default_rate": 0.01265,
+        "projected_deterioration_rate": 0.02629,
+        "projected_prepay_rate": 0.38822
+      },
+      "UNITED WHOLESALE MORTGAGE, LLC": {
+        "loan_count": 15446,
+        "projected_default_rate": 0.01214,
+        "projected_deterioration_rate": 0.02511,
+        "projected_prepay_rate": 0.24708
+      },
+      "WELLS FARGO BANK, N.A.": {
+        "loan_count": 69380,
+        "projected_default_rate": 0.01001,
+        "projected_deterioration_rate": 0.02101,
+        "projected_prepay_rate": 0.36553
+      }
+    }
+  }
+}

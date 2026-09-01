@@ -1,0 +1,12 @@
+{
+  "model_metrics_keys": [
+    "prob_default_12m",
+    "prob_deterioration_3m",
+    "prob_deterioration_6m",
+    "prob_prepay_12m"
+  ],
+  "reports_rendered": [
+    "model_card.md",
+    "fairness_audit_report.json"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "target_default_12m_rate": 0.034907428666306056,
+  "target_deterioration_3m_rate": 0.04193125347799185,
+  "target_deterioration_6m_rate": 0.055154432566845546,
+  "target_next_state_counts": {
+    "30_DAYS_DELINQUENT": 51224,
+    "60_DAYS_DELINQUENT": 16285,
+    "90_PLUS_DELINQUENT": 75081,
+    "CURRENT": 3634755,
+    "PREPAID": 77250
+  },
+  "target_prepay_12m_rate": 0.114631498250789,
+  "total_rows": 3854595
+}

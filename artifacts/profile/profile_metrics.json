@@ -1,0 +1,480 @@
+{
+  "batch_quality_score": {
+    "batch_mean_quality_score": 100.0,
+    "batch_median_quality_score": 100.0,
+    "high_quality_record_share": 1.0,
+    "low_quality_record_share": 0.0,
+    "mean_completeness": 40.0,
+    "mean_consistency": 30.0,
+    "mean_validity": 30.0,
+    "total_records_scored": 60000
+  },
+  "missingness_patterns": [
+    {
+      "missing_field_count": 4,
+      "missing_fields": [
+        "pre_harp_loan_id",
+        "program_indicator",
+        "property_valuation_method",
+        "vantagescore_4"
+      ],
+      "record_count": 29653,
+      "share_of_total": 0.49422
+    },
+    {
+      "missing_field_count": 3,
+      "missing_fields": [
+        "pre_harp_loan_id",
+        "program_indicator",
+        "vantagescore_4"
+      ],
+      "record_count": 17586,
+      "share_of_total": 0.2931
+    },
+    {
+      "missing_field_count": 5,
+      "missing_fields": [
+        "msa_code",
+        "pre_harp_loan_id",
+        "program_indicator",
+        "property_valuation_method",
+        "vantagescore_4"
+      ],
+      "record_count": 5491,
+      "share_of_total": 0.09152
+    },
+    {
+      "missing_field_count": 4,
+      "missing_fields": [
+        "original_dti",
+        "program_indicator",
+        "property_valuation_method",
+        "vantagescore_4"
+      ],
+      "record_count": 2978,
+      "share_of_total": 0.04963
+    },
+    {
+      "missing_field_count": 4,
+      "missing_fields": [
+        "msa_code",
+        "pre_harp_loan_id",
+        "program_indicator",
+        "vantagescore_4"
+      ],
+      "record_count": 1643,
+      "share_of_total": 0.02738
+    }
+  ],
+  "origination_column_statistics": {
+    "amortization_type": {
+      "distinct_count": 1,
+      "dtype": "string",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "top_values": {
+        "FRM": 60000
+      },
+      "total_count": 60000
+    },
+    "borrower_count": {
+      "distinct_count": 4,
+      "dtype": "Int64",
+      "max": 4.0,
+      "mean": 1.5227,
+      "min": 1.0,
+      "null_count": 11,
+      "null_rate": 0.00018,
+      "p25": 1.0,
+      "p50": 2.0,
+      "p75": 2.0,
+      "std": 0.5059,
+      "total_count": 60000
+    },
+    "channel": {
+      "distinct_count": 4,
+      "dtype": "string",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "top_values": {
+        "B": 4430,
+        "C": 11218,
+        "R": 33084,
+        "T": 11268
+      },
+      "total_count": 60000
+    },
+    "credit_score": {
+      "distinct_count": 326,
+      "dtype": "float64",
+      "max": 835.0,
+      "mean": 744.5404,
+      "min": 300.0,
+      "null_count": 19,
+      "null_rate": 0.00032,
+      "p25": 710.0,
+      "p50": 756.0,
+      "p75": 787.0,
+      "std": 51.764,
+      "total_count": 60000
+    },
+    "first_payment_date": {
+      "distinct_count": 113,
+      "dtype": "Int64",
+      "max": 202208.0,
+      "mean": 201373.154,
+      "min": 200602.0,
+      "null_count": 0,
+      "null_rate": 0.0,
+      "p25": 200709.0,
+      "p50": 201357.0,
+      "p75": 202008.0,
+      "std": 580.1855,
+      "total_count": 60000
+    },
+    "first_time_homebuyer_flag": {
+      "distinct_count": 2,
+      "dtype": "string",
+      "null_count": 11,
+      "null_rate": 0.00018,
+      "top_values": {
+        "N": 52952,
+        "Y": 7037
+      },
+      "total_count": 60000
+    },
+    "harp_indicator": {
+      "distinct_count": 2,
+      "dtype": "string",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "top_values": {
+        "N": 55679,
+        "Y": 4321
+      },
+      "total_count": 60000
+    },
+    "interest_only_indicator": {
+      "distinct_count": 1,
+      "dtype": "string",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "top_values": {
+        "N": 60000
+      },
+      "total_count": 60000
+    },
+    "loan_id": {
+      "distinct_count": 60000,
+      "dtype": "string",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "top_values": {
+        "F21Q40859552": 1,
+        "F21Q40859574": 1,
+        "F21Q40859648": 1,
+        "F21Q40859796": 1,
+        "F21Q40860010": 1
+      },
+      "total_count": 60000
+    },
+    "loan_purpose": {
+      "distinct_count": 3,
+      "dtype": "string",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "top_values": {
+        "C": 15614,
+        "N": 22636,
+        "P": 21750
+      },
+      "total_count": 60000
+    },
+    "maturity_date": {
+      "distinct_count": 386,
+      "dtype": "Int64",
+      "max": 205207.0,
+      "mean": 204028.6725,
+      "min": 201106.0,
+      "null_count": 0,
+      "null_rate": 0.0,
+      "p25": 203606.0,
+      "p50": 203801.0,
+      "p75": 204602.0,
+      "std": 803.3241,
+      "total_count": 60000
+    },
+    "mi_percentage": {
+      "distinct_count": 24,
+      "dtype": "float64",
+      "max": 40.0,
+      "mean": 4.536,
+      "min": 0.0,
+      "null_count": 0,
+      "null_rate": 0.0,
+      "p25": 0.0,
+      "p50": 0.0,
+      "p75": 0.0,
+      "std": 10.0562,
+      "total_count": 60000
+    },
+    "msa_code": {
+      "distinct_count": 447,
+      "dtype": "string",
+      "null_count": 8631,
+      "null_rate": 0.14385,
+      "top_values": {
+        "12060": 1183,
+        "26420": 975,
+        "31084": 1400,
+        "38060": 1387,
+        "47894": 1115
+      },
+      "total_count": 60000
+    },
+    "occupancy_status": {
+      "distinct_count": 3,
+      "dtype": "string",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "top_values": {
+        "I": 3681,
+        "P": 53858,
+        "S": 2461
+      },
+      "total_count": 60000
+    },
+    "original_cltv": {
+      "distinct_count": 237,
+      "dtype": "float64",
+      "max": 431.0,
+      "mean": 73.473,
+      "min": 3.0,
+      "null_count": 2,
+      "null_rate": 3e-05,
+      "p25": 61.0,
+      "p50": 76.0,
+      "p75": 85.0,
+      "std": 21.0452,
+      "total_count": 60000
+    },
+    "original_dti": {
+      "distinct_count": 65,
+      "dtype": "float64",
+      "max": 65.0,
+      "mean": 34.4381,
+      "min": 1.0,
+      "null_count": 4742,
+      "null_rate": 0.07903,
+      "p25": 27.0,
+      "p50": 35.0,
+      "p75": 42.0,
+      "std": 10.8771,
+      "total_count": 60000
+    },
+    "original_interest_rate": {
+      "distinct_count": 652,
+      "dtype": "float64",
+      "max": 9.0,
+      "mean": 4.4457,
+      "min": 1.75,
+      "null_count": 0,
+      "null_rate": 0.0,
+      "p25": 3.25,
+      "p50": 3.99,
+      "p75": 6.125,
+      "std": 1.4858,
+      "total_count": 60000
+    },
+    "original_loan_term": {
+      "distinct_count": 119,
+      "dtype": "Int64",
+      "max": 480.0,
+      "mean": 319.6125,
+      "min": 60.0,
+      "null_count": 0,
+      "null_rate": 0.0,
+      "p25": 360.0,
+      "p50": 360.0,
+      "p75": 360.0,
+      "std": 73.3298,
+      "total_count": 60000
+    },
+    "original_ltv": {
+      "distinct_count": 222,
+      "dtype": "float64",
+      "max": 315.0,
+      "mean": 71.9638,
+      "min": 3.0,
+      "null_count": 2,
+      "null_rate": 3e-05,
+      "p25": 60.0,
+      "p50": 75.0,
+      "p75": 80.0,
+      "std": 20.0694,
+      "total_count": 60000
+    },
+    "original_upb": {
+      "distinct_count": 775,
+      "dtype": "float64",
+      "max": 1575000.0,
+      "mean": 227577.8167,
+      "min": 12000.0,
+      "null_count": 0,
+      "null_rate": 0.0,
+      "p25": 130000.0,
+      "p50": 200000.0,
+      "p75": 300000.0,
+      "std": 129353.1153,
+      "total_count": 60000
+    },
+    "postal_code": {
+      "distinct_count": 877,
+      "dtype": "string",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "top_values": {
+        "300": 582,
+        "600": 522,
+        "750": 546,
+        "852": 560,
+        "945": 623
+      },
+      "total_count": 60000
+    },
+    "pre_harp_loan_id": {
+      "distinct_count": 4321,
+      "dtype": "string",
+      "null_count": 55679,
+      "null_rate": 0.92798,
+      "top_values": {
+        "F04Q20275070": 1,
+        "F06Q20181885": 1,
+        "F06Q40009456": 1,
+        "F07Q20382190": 1,
+        "F09Q20195859": 1
+      },
+      "total_count": 60000
+    },
+    "prepayment_penalty_flag": {
+      "distinct_count": 2,
+      "dtype": "string",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "top_values": {
+        "N": 59974,
+        "Y": 26
+      },
+      "total_count": 60000
+    },
+    "program_indicator": {
+      "distinct_count": 3,
+      "dtype": "string",
+      "null_count": 59158,
+      "null_rate": 0.98597,
+      "top_values": {
+        "F": 59,
+        "H": 781,
+        "R": 2
+      },
+      "total_count": 60000
+    },
+    "property_state": {
+      "distinct_count": 54,
+      "dtype": "string",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "top_values": {
+        "CA": 7256,
+        "FL": 3715,
+        "IL": 2946,
+        "OH": 2216,
+        "TX": 3654
+      },
+      "total_count": 60000
+    },
+    "property_type": {
+      "distinct_count": 5,
+      "dtype": "string",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "top_values": {
+        "CO": 4654,
+        "CP": 135,
+        "MH": 421,
+        "PU": 13314,
+        "SF": 41476
+      },
+      "total_count": 60000
+    },
+    "property_valuation_method": {
+      "distinct_count": 2,
+      "dtype": "string",
+      "null_count": 40000,
+      "null_rate": 0.66667,
+      "top_values": {
+        "1": 7641,
+        "2": 12359
+      },
+      "total_count": 60000
+    },
+    "seller_name": {
+      "distinct_count": 63,
+      "dtype": "string",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "top_values": {
+        "BANK OF AMERICA, N.A.": 2267,
+        "COUNTRYWIDE HOME LOANS, INC.": 2359,
+        "OTHER": 16555,
+        "U.S. BANK N.A.": 2953,
+        "WELLS FARGO BANK, N.A.": 10151
+      },
+      "total_count": 60000
+    },
+    "super_conforming_flag": {
+      "distinct_count": 2,
+      "dtype": "string",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "top_values": {
+        "N": 58453,
+        "Y": 1547
+      },
+      "total_count": 60000
+    },
+    "unit_count": {
+      "distinct_count": 4,
+      "dtype": "Int64",
+      "max": 4.0,
+      "mean": 1.0267,
+      "min": 1.0,
+      "null_count": 13,
+      "null_rate": 0.00022,
+      "p25": 1.0,
+      "p50": 1.0,
+      "p75": 1.0,
+      "std": 0.2137,
+      "total_count": 60000
+    },
+    "vantagescore_4": {
+      "distinct_count": 0,
+      "dtype": "float64",
+      "null_count": 60000,
+      "null_rate": 1.0,
+      "total_count": 60000
+    }
+  },
+  "rule_violations": {
+    "RULE_INTEREST_RATE_BOUNDS": 0
+  },
+  "top_drift_features": [
+    "monthly_reporting_period",
+    "misc_expenses",
+    "current_interest_rate",
+    "current_month_modification_cost",
+    "modification_cost"
+  ],
+  "total_loans": 60000,
+  "total_monthly_records": 3854595
+}

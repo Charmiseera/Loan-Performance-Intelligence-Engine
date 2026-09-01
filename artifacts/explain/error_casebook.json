@@ -1,0 +1,151 @@
+{
+  "decision_threshold": 0.5,
+  "error_narrative": "Evaluated 621,092 cases. Identified 3,413 False Positives and 16,399 False Negatives at threshold 0.50.",
+  "false_negative_cases": [
+    {
+      "actual_outcome": 1,
+      "error_type": "FALSE_NEGATIVE",
+      "index": 34710,
+      "key_feature_values": {
+        "delinq_lag_1": 0.0,
+        "delinq_lag_3": 0.0,
+        "delinq_max_12m": 0.0,
+        "delinq_max_6m": 0.0,
+        "delinquency_status_num": 0.0,
+        "monthly_reporting_period": 201911.0
+      },
+      "predicted_probability": 0.0
+    },
+    {
+      "actual_outcome": 1,
+      "error_type": "FALSE_NEGATIVE",
+      "index": 23002,
+      "key_feature_values": {
+        "delinq_lag_1": 0.0,
+        "delinq_lag_3": 0.0,
+        "delinq_max_12m": 0.0,
+        "delinq_max_6m": 0.0,
+        "delinquency_status_num": 0.0,
+        "monthly_reporting_period": 201911.0
+      },
+      "predicted_probability": 0.0
+    },
+    {
+      "actual_outcome": 1,
+      "error_type": "FALSE_NEGATIVE",
+      "index": 35016,
+      "key_feature_values": {
+        "delinq_lag_1": 0.0,
+        "delinq_lag_3": 0.0,
+        "delinq_max_12m": 0.0,
+        "delinq_max_6m": 0.0,
+        "delinquency_status_num": 0.0,
+        "monthly_reporting_period": 201907.0
+      },
+      "predicted_probability": 0.0
+    },
+    {
+      "actual_outcome": 1,
+      "error_type": "FALSE_NEGATIVE",
+      "index": 320534,
+      "key_feature_values": {
+        "delinq_lag_1": 0.0,
+        "delinq_lag_3": 0.0,
+        "delinq_max_12m": 1.0,
+        "delinq_max_6m": 1.0,
+        "delinquency_status_num": 1.0,
+        "monthly_reporting_period": 202004.0
+      },
+      "predicted_probability": 0.0
+    },
+    {
+      "actual_outcome": 1,
+      "error_type": "FALSE_NEGATIVE",
+      "index": 320535,
+      "key_feature_values": {
+        "delinq_lag_1": 1.0,
+        "delinq_lag_3": 0.0,
+        "delinq_max_12m": 2.0,
+        "delinq_max_6m": 2.0,
+        "delinquency_status_num": 2.0,
+        "monthly_reporting_period": 202005.0
+      },
+      "predicted_probability": 0.0
+    }
+  ],
+  "false_negative_count": 16399,
+  "false_positive_cases": [
+    {
+      "actual_outcome": 0,
+      "error_type": "FALSE_POSITIVE",
+      "index": 214368,
+      "key_feature_values": {
+        "delinq_lag_1": 0.0,
+        "delinq_lag_3": 0.0,
+        "delinq_max_12m": 0.0,
+        "delinq_max_6m": 0.0,
+        "delinquency_status_num": 0.0,
+        "monthly_reporting_period": 201902.0
+      },
+      "predicted_probability": 1.0
+    },
+    {
+      "actual_outcome": 0,
+      "error_type": "FALSE_POSITIVE",
+      "index": 214369,
+      "key_feature_values": {
+        "delinq_lag_1": 0.0,
+        "delinq_lag_3": 0.0,
+        "delinq_max_12m": 0.0,
+        "delinq_max_6m": 0.0,
+        "delinquency_status_num": 0.0,
+        "monthly_reporting_period": 201903.0
+      },
+      "predicted_probability": 1.0
+    },
+    {
+      "actual_outcome": 0,
+      "error_type": "FALSE_POSITIVE",
+      "index": 214370,
+      "key_feature_values": {
+        "delinq_lag_1": 0.0,
+        "delinq_lag_3": 0.0,
+        "delinq_max_12m": 0.0,
+        "delinq_max_6m": 0.0,
+        "delinquency_status_num": 0.0,
+        "monthly_reporting_period": 201904.0
+      },
+      "predicted_probability": 1.0
+    },
+    {
+      "actual_outcome": 0,
+      "error_type": "FALSE_POSITIVE",
+      "index": 214371,
+      "key_feature_values": {
+        "delinq_lag_1": 0.0,
+        "delinq_lag_3": 0.0,
+        "delinq_max_12m": 0.0,
+        "delinq_max_6m": 0.0,
+        "delinquency_status_num": 0.0,
+        "monthly_reporting_period": 201905.0
+      },
+      "predicted_probability": 1.0
+    },
+    {
+      "actual_outcome": 0,
+      "error_type": "FALSE_POSITIVE",
+      "index": 19336,
+      "key_feature_values": {
+        "delinq_lag_1": 0.0,
+        "delinq_lag_3": 0.0,
+        "delinq_max_12m": 0.0,
+        "delinq_max_6m": 0.0,
+        "delinquency_status_num": 0.0,
+        "monthly_reporting_period": 202104.0
+      },
+      "predicted_probability": 1.0
+    }
+  ],
+  "false_positive_count": 3413,
+  "total_evaluated": 621092
+}

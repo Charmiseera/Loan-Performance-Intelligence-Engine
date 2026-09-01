@@ -1,0 +1,8 @@
+{
+  "censoring_handled": "Right-censoring at last observation month (FR-037)",
+  "cif_sum_valid": true,
+  "cohort_loans_analyzed": 50000,
+  "max_default_cif": 0.02811,
+  "max_prepay_cif": 0.4146,
+  "model_type": "Cause-Specific Competing Risks (Aalen-Johansen CIF)"
+}

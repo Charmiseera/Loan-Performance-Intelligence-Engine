@@ -1,0 +1,86 @@
+{
+  "method": "TreeSHAP",
+  "rankings": [
+    {
+      "feature": "credit_score",
+      "mean_abs_shap": 240.0
+    },
+    {
+      "feature": "dti_ltv_risk_product",
+      "mean_abs_shap": 184.0
+    },
+    {
+      "feature": "upb_paydown_ratio_3m",
+      "mean_abs_shap": 149.0
+    },
+    {
+      "feature": "current_actual_upb",
+      "mean_abs_shap": 129.0
+    },
+    {
+      "feature": "upb_acceleration",
+      "mean_abs_shap": 129.0
+    },
+    {
+      "feature": "original_dti",
+      "mean_abs_shap": 127.0
+    },
+    {
+      "feature": "original_interest_rate",
+      "mean_abs_shap": 113.0
+    },
+    {
+      "feature": "original_cltv",
+      "mean_abs_shap": 102.0
+    },
+    {
+      "feature": "current_interest_rate",
+      "mean_abs_shap": 94.0
+    },
+    {
+      "feature": "upb_paydown_ratio_6m",
+      "mean_abs_shap": 92.0
+    },
+    {
+      "feature": "original_ltv",
+      "mean_abs_shap": 80.0
+    },
+    {
+      "feature": "loan_age",
+      "mean_abs_shap": 78.0
+    },
+    {
+      "feature": "derived_seasoning",
+      "mean_abs_shap": 77.0
+    },
+    {
+      "feature": "original_upb",
+      "mean_abs_shap": 72.0
+    },
+    {
+      "feature": "property_state",
+      "mean_abs_shap": 65.0
+    },
+    {
+      "feature": "remaining_months_to_maturity",
+      "mean_abs_shap": 60.0
+    },
+    {
+      "feature": "delinq_max_6m",
+      "mean_abs_shap": 59.0
+    },
+    {
+      "feature": "rate_spread_incentive",
+      "mean_abs_shap": 58.0
+    },
+    {
+      "feature": "delinquency_status_num",
+      "mean_abs_shap": 57.0
+    },
+    {
+      "feature": "delinq_max_12m",
+      "mean_abs_shap": 42.0
+    }
+  ],
+  "sample_size": 5000
+}

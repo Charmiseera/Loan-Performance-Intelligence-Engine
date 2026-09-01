@@ -1,0 +1,13 @@
+{
+  "action_distribution": {
+    "DATA_INTEGRITY_AUDIT": 479,
+    "MONITOR": 744547,
+    "REFINANCE_RETENTION": 6597,
+    "SERVICER_OUTREACH": 4897
+  },
+  "exception_rate": 0.0006331623750859197,
+  "exceptions_required_count": 479,
+  "queue_size": 25,
+  "reconciliation_records": 100,
+  "total_records_scored": 756520
+}

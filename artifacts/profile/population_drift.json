@@ -1,0 +1,233 @@
+[
+  {
+    "drift_status": "SIGNIFICANT_DRIFT",
+    "feature": "monthly_reporting_period",
+    "ks_pvalue": 0.0,
+    "ks_statistic": 1.0,
+    "psi": 8.28183,
+    "scoring_count": 1633620,
+    "scoring_mean": 202256.7942,
+    "train_count": 2220975,
+    "train_mean": 201290.2236
+  },
+  {
+    "drift_status": "SIGNIFICANT_DRIFT",
+    "feature": "misc_expenses",
+    "ks_pvalue": 0.0,
+    "ks_statistic": 0.37903,
+    "psi": 2.23262,
+    "scoring_count": 86,
+    "scoring_mean": 1981.9609,
+    "train_count": 1603,
+    "train_mean": 887.3235
+  },
+  {
+    "drift_status": "SIGNIFICANT_DRIFT",
+    "feature": "current_interest_rate",
+    "ks_pvalue": 0.0,
+    "ks_statistic": 0.5169,
+    "psi": 2.09862,
+    "scoring_count": 1633620,
+    "scoring_mean": 3.434,
+    "train_count": 2220975,
+    "train_mean": 5.1091
+  },
+  {
+    "drift_status": "SIGNIFICANT_DRIFT",
+    "feature": "current_month_modification_cost",
+    "ks_pvalue": 0.0,
+    "ks_statistic": 0.50356,
+    "psi": 1.5386,
+    "scoring_count": 45193,
+    "scoring_mean": 130.1713,
+    "train_count": 77460,
+    "train_mean": 444.9405
+  },
+  {
+    "drift_status": "SIGNIFICANT_DRIFT",
+    "feature": "modification_cost",
+    "ks_pvalue": 0.0,
+    "ks_statistic": 0.5235,
+    "psi": 1.5099,
+    "scoring_count": 1046,
+    "scoring_mean": 19599.0632,
+    "train_count": 595,
+    "train_mean": 32783.585
+  },
+  {
+    "drift_status": "SIGNIFICANT_DRIFT",
+    "feature": "actual_loss",
+    "ks_pvalue": 0.0,
+    "ks_statistic": 0.47265,
+    "psi": 1.05481,
+    "scoring_count": 86,
+    "scoring_mean": 50295.9742,
+    "train_count": 1603,
+    "train_mean": 90928.4953
+  },
+  {
+    "drift_status": "SIGNIFICANT_DRIFT",
+    "feature": "legal_costs",
+    "ks_pvalue": 0.002728,
+    "ks_statistic": 0.19832,
+    "psi": 0.60543,
+    "scoring_count": 86,
+    "scoring_mean": 4646.3279,
+    "train_count": 1603,
+    "train_mean": 3504.9838
+  },
+  {
+    "drift_status": "SIGNIFICANT_DRIFT",
+    "feature": "maintenance_costs",
+    "ks_pvalue": 0.141282,
+    "ks_statistic": 0.12524,
+    "psi": 0.3627,
+    "scoring_count": 86,
+    "scoring_mean": 11466.6658,
+    "train_count": 1603,
+    "train_mean": 5075.8969
+  },
+  {
+    "drift_status": "SIGNIFICANT_DRIFT",
+    "feature": "non_mi_recoveries",
+    "ks_pvalue": 0.016298,
+    "ks_statistic": 0.16922,
+    "psi": 0.33888,
+    "scoring_count": 86,
+    "scoring_mean": -3749.8015,
+    "train_count": 1603,
+    "train_mean": -2013.6877
+  },
+  {
+    "drift_status": "SIGNIFICANT_DRIFT",
+    "feature": "loan_age",
+    "ks_pvalue": 0.0,
+    "ks_statistic": 0.20849,
+    "psi": 0.27797,
+    "scoring_count": 1633620,
+    "scoring_mean": 56.8555,
+    "train_count": 2220975,
+    "train_mean": 36.0755
+  },
+  {
+    "drift_status": "MODERATE_DRIFT",
+    "feature": "expenses",
+    "ks_pvalue": 0.011245,
+    "ks_statistic": 0.17568,
+    "psi": 0.21084,
+    "scoring_count": 86,
+    "scoring_mean": 29304.35,
+    "train_count": 1603,
+    "train_mean": 16131.7769
+  },
+  {
+    "drift_status": "MODERATE_DRIFT",
+    "feature": "remaining_months_to_maturity",
+    "ks_pvalue": 0.0,
+    "ks_statistic": 0.16702,
+    "psi": 0.16359,
+    "scoring_count": 1633620,
+    "scoring_mean": 256.8655,
+    "train_count": 2220912,
+    "train_mean": 286.0156
+  },
+  {
+    "drift_status": "MODERATE_DRIFT",
+    "feature": "delinquent_accrued_interest",
+    "ks_pvalue": 0.011866,
+    "ks_statistic": 0.17476,
+    "psi": 0.1354,
+    "scoring_count": 86,
+    "scoring_mean": 19262.2681,
+    "train_count": 1603,
+    "train_mean": 19513.0938
+  },
+  {
+    "drift_status": "MODERATE_DRIFT",
+    "feature": "zero_balance_removal_upb",
+    "ks_pvalue": 0.0,
+    "ks_statistic": 0.08177,
+    "psi": 0.13082,
+    "scoring_count": 15149,
+    "scoring_mean": 193089.6328,
+    "train_count": 26038,
+    "train_mean": 175865.7299
+  },
+  {
+    "drift_status": "MODERATE_DRIFT",
+    "feature": "taxes_insurance",
+    "ks_pvalue": 0.038703,
+    "ks_statistic": 0.15315,
+    "psi": 0.11971,
+    "scoring_count": 86,
+    "scoring_mean": 11209.3953,
+    "train_count": 1603,
+    "train_mean": 6663.5728
+  },
+  {
+    "drift_status": "MODERATE_DRIFT",
+    "feature": "interest_bearing_upb",
+    "ks_pvalue": 0.0,
+    "ks_statistic": 0.13573,
+    "psi": 0.11737,
+    "scoring_count": 1633620,
+    "scoring_mean": 211091.5294,
+    "train_count": 2220975,
+    "train_mean": 170512.8105
+  },
+  {
+    "drift_status": "MODERATE_DRIFT",
+    "feature": "current_actual_upb",
+    "ks_pvalue": 0.0,
+    "ks_statistic": 0.1351,
+    "psi": 0.11552,
+    "scoring_count": 1633620,
+    "scoring_mean": 211387.2684,
+    "train_count": 2220975,
+    "train_mean": 170977.7108
+  },
+  {
+    "drift_status": "MODERATE_DRIFT",
+    "feature": "estimated_ltv",
+    "ks_pvalue": 0.0,
+    "ks_statistic": 0.14282,
+    "psi": 0.11001,
+    "scoring_count": 1477512,
+    "scoring_mean": 45.8512,
+    "train_count": 368147,
+    "train_mean": 52.5073
+  },
+  {
+    "drift_status": "STABLE",
+    "feature": "mi_recoveries",
+    "ks_pvalue": 0.447501,
+    "ks_statistic": 0.09333,
+    "psi": 0.06066,
+    "scoring_count": 86,
+    "scoring_mean": -7429.0176,
+    "train_count": 1603,
+    "train_mean": -11463.8195
+  },
+  {
+    "drift_status": "STABLE",
+    "feature": "current_deferred_upb",
+    "ks_pvalue": 0.0,
+    "ks_statistic": 0.00806,
+    "psi": 0.0,
+    "scoring_count": 1633620,
+    "scoring_mean": 295.7394,
+    "train_count": 2220975,
+    "train_mean": 464.9003
+  },
+  {
+    "drift_status": "STABLE",
+    "feature": "bankruptcy_cramdown_costs",
+    "ks_pvalue": 1.0,
+    "ks_statistic": 0.00413,
+    "psi": 0.0,
+    "scoring_count": 115196,
+    "scoring_mean": 0.6376,
+    "train_count": 242,
+    "train_mean": 329.1196
+  }
+]

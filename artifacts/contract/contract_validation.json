@@ -1,0 +1,14 @@
+{
+  "records_with_violations": 4431,
+  "total_records_evaluated": 3854595,
+  "violation_counts_by_rule": {
+    "credit_score_range": 0,
+    "delinquency_code_validity": 0,
+    "interest_rate_bounds": 0,
+    "original_dti_range": 0,
+    "original_ltv_range": 3971,
+    "upb_balance_cap": 460,
+    "valid_maturity_sequence": 0
+  },
+  "violation_rate": 0.001149537110902702
+}

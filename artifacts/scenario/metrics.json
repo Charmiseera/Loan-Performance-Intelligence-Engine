@@ -1,0 +1,50 @@
+{
+  "adverse": {
+    "description": "Adverse credit shock: severe home price drop, unemployment spike, credit tightening [STATED ASSUMPTION \u2014 not a forecast]",
+    "portfolio_loan_months": 756520,
+    "projected_default_rate": 0.04183,
+    "projected_deterioration_rate": 0.06293,
+    "projected_prepay_rate": 0.04935
+  },
+  "baseline": {
+    "description": "Baseline economic trajectory with neutral rate and growth projections [STATED ASSUMPTION \u2014 not a forecast]",
+    "portfolio_loan_months": 756520,
+    "projected_default_rate": 0.01494,
+    "projected_deterioration_rate": 0.0286,
+    "projected_prepay_rate": 0.12337
+  },
+  "high_prepayment": {
+    "description": "Aggressive rate cut cycle triggering widespread refinancing wave [STATED ASSUMPTION \u2014 not a forecast]",
+    "portfolio_loan_months": 756520,
+    "projected_default_rate": 0.01195,
+    "projected_deterioration_rate": 0.02574,
+    "projected_prepay_rate": 0.30842
+  },
+  "monte_carlo": {
+    "cvar_99": 1440278396.1,
+    "expected_loss": 835306501.65,
+    "expected_loss_rate": 0.005104,
+    "loss_percentiles": {
+      "p10": 617043582.05,
+      "p25": 701077967.79,
+      "p50": 816862795.77,
+      "p75": 927486220.85,
+      "p90": 1071677085.26,
+      "p95": 1159563014.79,
+      "p99": 1300289092.22
+    },
+    "num_iterations": 1000,
+    "prepayment_cashflow_std": 68975943.88,
+    "total_active_loans": 756520,
+    "total_active_upb": 163654366210.25,
+    "var_95": 1159563014.79,
+    "var_99": 1300289092.22
+  },
+  "segment_dimensions_analyzed": [
+    "property_state",
+    "original_loan_term",
+    "servicer_name",
+    "loan_purpose",
+    "channel"
+  ]
+}

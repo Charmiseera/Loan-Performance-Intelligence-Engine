@@ -1,0 +1,21 @@
+{
+  "embargo_months": 12,
+  "scoring": {
+    "end": 202512,
+    "loan_count": 22790,
+    "row_count": 756520,
+    "start": 202301
+  },
+  "train": {
+    "end": 201712,
+    "loan_count": 39716,
+    "row_count": 1950602,
+    "start": 200601
+  },
+  "validation": {
+    "end": 202112,
+    "loan_count": 33980,
+    "row_count": 621092,
+    "start": 201901
+  }
+}

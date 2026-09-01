@@ -1,0 +1,50 @@
+{
+  "config_hash": "4c7eb166f2a11916094935a75059edb3b55d2ed0c484ede1db65f2ab41b5706f",
+  "end_time_utc": "2026-08-28T19:04:22.132980+00:00",
+  "os_info": "Windows 10",
+  "package_versions": {
+    "lightgbm": "4.7.0",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.9.0",
+    "xgboost": "3.2.0"
+  },
+  "python_version": "3.11.9",
+  "root_seed": 42,
+  "run_id": "run_20260828_190419_4c7eb166",
+  "stages": {
+    "report": {
+      "duration_seconds": 2.366978,
+      "end_time_utc": "2026-08-28T19:04:22.131980+00:00",
+      "error_message": null,
+      "input_artifacts": [
+        "models_manifest.json",
+        "contract_validation.json",
+        "global_importance.json",
+        "scenario_projections.json"
+      ],
+      "metrics_summary": {
+        "model_metrics_keys": [
+          "prob_default_12m",
+          "prob_deterioration_3m",
+          "prob_deterioration_6m",
+          "prob_prepay_12m"
+        ],
+        "reports_rendered": [
+          "model_card.md",
+          "fairness_audit_report.json"
+        ]
+      },
+      "output_artifacts": [
+        "model_card.md",
+        "fairness_audit_report.json"
+      ],
+      "stage_name": "report",
+      "start_time_utc": "2026-08-28T19:04:19.765002+00:00",
+      "status": "SUCCESS"
+    }
+  },
+  "start_time_utc": "2026-08-28T19:04:19.764313+00:00",
+  "total_duration_seconds": 2.368667
+}
