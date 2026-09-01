@@ -57,10 +57,19 @@ if profile_file.exists():
         if orig_stats:
             rows = []
             for col, stat in orig_stats.items():
-                m_pct = stat.get("missing_pct", 0.0)
-                status = "Complete" if m_pct == 0 else ("Moderate" if m_pct < 20 else "High Sparsity")
+                nr = stat.get("null_rate", stat.get("missing_pct", 0.0) / 100.0 if stat.get("missing_pct", 0.0) > 1.0 else stat.get("missing_pct", 0.0))
+                m_pct = nr * 100.0
+                if m_pct == 0.0:
+                    status = "Complete"
+                elif m_pct > 50.0:
+                    status = "High Sparsity (Sparse by Design)"
+                elif m_pct > 10.0:
+                    status = "Moderate Sparsity"
+                else:
+                    status = "Low Sparsity"
                 rows.append({"Attribute": col, "Missingness (%)": round(m_pct, 2), "Audit Status": status})
-            st.dataframe(pd.DataFrame(rows).sort_values("Missingness (%)", ascending=False), use_container_width=True)
+            df_missing = pd.DataFrame(rows).sort_values("Missingness (%)", ascending=False).reset_index(drop=True)
+            st.dataframe(df_missing, use_container_width=True)
 
     with tab2:
         perf_missing_demo = [
