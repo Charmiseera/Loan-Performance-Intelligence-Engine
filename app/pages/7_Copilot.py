@@ -148,9 +148,18 @@ if prompt_log_file.exists():
     logs = []
     with open(prompt_log_file, "r") as f:
         for line in f:
-            if line.strip():
-                logs.append(json.loads(line.strip()))
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                logs.append(json.loads(line))
+            except json.JSONDecodeError:
+                # Skip malformed or concatenated lines silently
+                pass
     if logs:
         st.dataframe(pd.DataFrame(logs), use_container_width=True)
+    else:
+        st.info("No valid audit log entries found.")
 else:
     st.info("Prompt audit log is populated during full pipeline batch execution.")
+
