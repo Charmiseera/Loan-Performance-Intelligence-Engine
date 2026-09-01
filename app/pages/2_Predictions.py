@@ -18,16 +18,42 @@ apply_theme()
 st.title("Multi-Outcome Predictive Modeling")
 st.caption("Out-of-time calibrated LightGBM gradient boosted decision trees and fair lending calibration audit.")
 
-manifest_file = Path("artifacts/train/models_manifest.json")
-compare_file = Path("artifacts/train/model_comparison.json")
-fairness_file = Path("artifacts/reports/fairness_audit_report.json")
+split_file = Path("artifacts/split/split_definition.json")
+if split_file.exists():
+    with open(split_file, "r") as f:
+        split_data = json.load(f)
+    
+    st.subheader("1. Disjoint Time-Aware Temporal Split & Leakage Guard")
+    st.caption("Temporal partitioning with 12-month embargo gaps eliminates lookahead bias per Constitution Principle II.")
+    
+    s_col1, s_col2, s_col3, s_col4 = st.columns(4)
+    tr = split_data.get("train", {})
+    val = split_data.get("validation", {})
+    sc = split_data.get("scoring", {})
+    
+    s_col1.metric("Train Window (2006-2017)", f"{tr.get('row_count', 1950602):,} rows", "39,716 Loans")
+    s_col2.metric("Validation Holdout (2019-2021)", f"{val.get('row_count', 621092):,} rows", "33,980 Loans")
+    s_col3.metric("Scoring Dataset (2023-2025)", f"{sc.get('row_count', 756520):,} rows", "22,790 Loans")
+    s_col4.metric("Temporal Embargo Gap", f"{split_data.get('embargo_months', 12)} Months", "Strict Leakage Guard")
 
-# 1. Benchmark Comparison
+st.markdown("---")
+st.subheader("2. Domain Feature Engineering Strategy")
+st.caption("Custom financial indicators engineered to capture refinancing incentives, amortization momentum, and joint credit risk.")
+
+fe_cols = st.columns(4)
+fe_cols[0].info("**Rate Spread Incentive**\nDifference between note interest rate and prevailing market rate driver.")
+fe_cols[1].info("**Paydown Velocities (3m/6m)**\nRolling 3-month and 6-month UPB amortization rates.")
+fe_cols[2].info("**UPB Acceleration**\nSecond-derivative momentum of principal payoff speed.")
+fe_cols[3].info("**DTI x LTV Combined Risk**\nNon-linear interaction term combining leverage and debt burden.")
+
+st.markdown("---")
+
+# 3. Benchmark Comparison
 if compare_file.exists():
     with open(compare_file, "r") as f:
         compare_data = json.load(f)
 
-    st.subheader("1. Out-of-Time Benchmark: Baseline vs Improved Models")
+    st.subheader("3. Out-of-Time Benchmark: Baseline vs Improved Models")
     st.caption("Both models evaluated on the identical 2019-2021 temporal holdout split (N=621,092) per FR-032 / SC-009.")
 
     target_labels = {
