@@ -19,7 +19,9 @@ st.title("Data Intelligence & Portfolio Profiling")
 st.caption("Comprehensive data health audit, cross-column validation rules, and population stability monitoring.")
 
 profile_file = Path("artifacts/profile/profile_metrics.json")
-drift_file = Path("artifacts/profile/advanced_drift_metrics.json")
+drift_file = Path("artifacts/profile/population_drift.json")
+if not drift_file.exists():
+    drift_file = Path("artifacts/profile/advanced_drift_metrics.json")
 rules_file = Path("artifacts/profile/validation_rules_summary.json")
 
 if profile_file.exists():
