@@ -30,39 +30,62 @@ if compare_file.exists():
     st.subheader("1. Out-of-Time Benchmark: Baseline vs Improved Models")
     st.caption("Both models evaluated on the identical 2019-2021 temporal holdout split (N=621,092) per FR-032 / SC-009.")
 
-    df_comp = pd.DataFrame(compare_data)
-    st.dataframe(df_comp, use_container_width=True)
+    target_labels = {
+        "prob_default_12m": "12-Month Default",
+        "prob_deterioration_3m": "3-Month Delinquency",
+        "prob_deterioration_6m": "6-Month Delinquency",
+        "prob_prepay_12m": "12-Month Prepayment"
+    }
+
+    formatted_comp = []
+    comp_map = {}
+    for row in compare_data:
+        tgt_key = row.get("target", row.get("Target", ""))
+        label = target_labels.get(tgt_key, tgt_key)
+        comp_map[tgt_key] = row
+        comp_map[label] = row
+
+        formatted_comp.append({
+            "Target Horizon": label,
+            "Baseline Model": row.get("baseline_model", row.get("Baseline Model", "Logistic Regression")),
+            "Baseline ROC-AUC": round(row.get("baseline_roc_auc", row.get("Baseline ROC-AUC", 0.0)), 4),
+            "Improved Model": row.get("improved_model", row.get("Improved Model", "LightGBM")),
+            "Improved ROC-AUC": round(row.get("improved_roc_auc", row.get("Improved ROC-AUC", 0.0)), 4),
+            "ROC-AUC Delta": round(row.get("roc_auc_delta", row.get("Delta ROC-AUC", 0.0)), 4),
+            "PR-AUC Delta": round(row.get("pr_auc_delta", row.get("Delta PR-AUC", 0.0)), 4),
+            "Brier Calibration": round(row.get("improved_brier", row.get("Improved Brier", 0.0)), 4),
+        })
+
+    st.dataframe(pd.DataFrame(formatted_comp), use_container_width=True)
 
     # Highlight metrics
     st.markdown("#### Performance Highlights")
     c1, c2, c3, c4 = st.columns(4)
-    
-    comp_map = {row.get("Target"): row for row in compare_data} if isinstance(compare_data, list) else {}
-    
-    def_row = comp_map.get("12m Default", {})
-    det3_row = comp_map.get("3m Deterioration", {})
-    det6_row = comp_map.get("6m Deterioration", {})
-    prep_row = comp_map.get("12m Prepayment", {})
+
+    def_row = comp_map.get("prob_default_12m", comp_map.get("12-Month Default", {}))
+    det3_row = comp_map.get("prob_deterioration_3m", comp_map.get("3-Month Delinquency", {}))
+    det6_row = comp_map.get("prob_deterioration_6m", comp_map.get("6-Month Delinquency", {}))
+    prep_row = comp_map.get("prob_prepay_12m", comp_map.get("12-Month Prepayment", {}))
 
     c1.metric(
         "12m Default ROC-AUC",
-        f"{def_row.get('Improved ROC-AUC', 0.9023):.4f}",
-        f"{def_row.get('Delta ROC-AUC', 0.012):+.4f} vs Baseline",
+        f"{def_row.get('improved_roc_auc', def_row.get('Improved ROC-AUC', 0.9023)):.4f}",
+        f"{def_row.get('roc_auc_delta', def_row.get('Delta ROC-AUC', 0.0141)):+.4f} vs Baseline",
     )
     c2.metric(
         "3m Delinquency ROC-AUC",
-        f"{det3_row.get('Improved ROC-AUC', 0.8972):.4f}",
-        f"{det3_row.get('Delta ROC-AUC', 0.014):+.4f} vs Baseline",
+        f"{det3_row.get('improved_roc_auc', det3_row.get('Improved ROC-AUC', 0.8972)):.4f}",
+        f"{det3_row.get('roc_auc_delta', det3_row.get('Delta ROC-AUC', 0.0140)):+.4f} vs Baseline",
     )
     c3.metric(
         "6m Delinquency ROC-AUC",
-        f"{det6_row.get('Improved ROC-AUC', 0.8580):.4f}",
-        f"{det6_row.get('Delta ROC-AUC', 0.011):+.4f} vs Baseline",
+        f"{det6_row.get('improved_roc_auc', det6_row.get('Improved ROC-AUC', 0.8580)):.4f}",
+        f"{det6_row.get('roc_auc_delta', det6_row.get('Delta ROC-AUC', 0.0110)):+.4f} vs Baseline",
     )
     c4.metric(
         "12m Prepayment ROC-AUC",
-        f"{prep_row.get('Improved ROC-AUC', 0.6648):.4f}",
-        f"{prep_row.get('Delta ROC-AUC', 0.082):+.4f} vs Baseline",
+        f"{prep_row.get('improved_roc_auc', prep_row.get('Improved ROC-AUC', 0.6648)):.4f}",
+        f"{prep_row.get('roc_auc_delta', prep_row.get('Delta ROC-AUC', 0.0549)):+.4f} vs Baseline",
     )
 
 # 2. Detailed Metrics

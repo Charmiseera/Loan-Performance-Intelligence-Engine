@@ -43,13 +43,14 @@ if queue_file.exists():
     with open(queue_file, "r") as f:
         queue_data = json.load(f)
 
+    loans_list = queue_data.get("loans", queue_data) if isinstance(queue_data, dict) else queue_data
     loan_options = [
         f"Rank #{q.get('queue_rank', idx)} | Loan {q.get('loan_id', 'UNKNOWN')} | Anomaly: {float(q.get('anomaly_score', 0.0)):.3f} | {q.get('exception_type', 'EXCEPTION')}"
-        for idx, q in enumerate(queue_data, start=1)
+        for idx, q in enumerate(loans_list, start=1)
     ]
     selected_option = st.selectbox("Select loan from Reviewer Queue:", loan_options)
     selected_idx = loan_options.index(selected_option)
-    selected_item = queue_data[selected_idx]
+    selected_item = loans_list[selected_idx]
 
     selected_loan_context = {
         "loan_id": str(selected_item.get("loan_id")),

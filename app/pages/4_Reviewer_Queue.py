@@ -28,7 +28,21 @@ if queue_file.exists():
     st.subheader("1. Prioritized Operational Triage Queue (Top Exceptions)")
     st.caption("Ordered strictly by composite priority score: Rule Severity (40%), Unsupervised Isolation Score (30%), and UPB Exposure (30%).")
 
-    df_queue = pd.DataFrame(queue_data)
+    loans_list = queue_data.get("loans", queue_data) if isinstance(queue_data, dict) else queue_data
+    formatted_queue = []
+    for item in loans_list:
+        formatted_queue.append({
+            "Queue Rank": item.get("queue_rank", "N/A"),
+            "Loan ID": item.get("loan_id", "N/A"),
+            "Priority Score": round(item.get("priority_score", 0.0), 4),
+            "Anomaly Score": round(item.get("anomaly_score", 0.0), 4),
+            "Flag Source": item.get("flag_source", "").replace("_", " "),
+            "Exception Type": item.get("exception_type", "").replace("_", " "),
+            "Recommended Action": item.get("recommended_action", "").replace("_", " "),
+            "Reporting Month": item.get("reporting_month", "N/A"),
+        })
+
+    df_queue = pd.DataFrame(formatted_queue)
     st.dataframe(df_queue, use_container_width=True)
 
 if reconcil_file.exists():
