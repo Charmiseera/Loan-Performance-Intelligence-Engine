@@ -18,7 +18,22 @@ apply_theme()
 st.title("Multi-Outcome Predictive Modeling")
 st.caption("Out-of-time calibrated LightGBM gradient boosted decision trees and fair lending calibration audit.")
 
-split_file = Path("artifacts/split/split_definition.json")
+split_file = ROOT_DIR / "artifacts" / "split" / "split_definition.json"
+if not split_file.exists():
+    split_file = Path("artifacts/split/split_definition.json")
+
+compare_file = ROOT_DIR / "artifacts" / "train" / "model_comparison.json"
+if not compare_file.exists():
+    compare_file = Path("artifacts/train/model_comparison.json")
+
+manifest_file = ROOT_DIR / "artifacts" / "train" / "models_manifest.json"
+if not manifest_file.exists():
+    manifest_file = Path("artifacts/train/models_manifest.json")
+
+fairness_file = ROOT_DIR / "artifacts" / "reports" / "fairness_audit_report.json"
+if not fairness_file.exists():
+    fairness_file = Path("artifacts/reports/fairness_audit_report.json")
+
 if split_file.exists():
     with open(split_file, "r") as f:
         split_data = json.load(f)
